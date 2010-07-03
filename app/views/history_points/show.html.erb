@@ -1,0 +1,18 @@
+<p>
+  <b>Latitude:</b>
+  <%=h @history_point.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @history_point.longitude %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%=h @history_point.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_history_point_path(@history_point) %> |
+<%= link_to 'Back', history_points_path %>
