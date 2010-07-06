@@ -1,0 +1,23 @@
+<p>
+  <b>Date:</b>
+  <%=h @order.date %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @order.price %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%=h @order.volume %>
+</p>
+
+<p>
+  <b>Manfee:</b>
+  <%=h @order.manfee %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

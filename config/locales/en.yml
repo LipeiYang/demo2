@@ -3,3 +3,12 @@
 
 en:
   hello: "Hello world"
+  listing_orders: "Listing orders"
+  t_date: "date"
+  t_price: "price"
+  t_volume: "volume"
+  t_manfee: "manfee"
+  t_customer: "customer"
+  t_product: "product"
+  
+  

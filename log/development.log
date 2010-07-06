@@ -1,0 +1,1509 @@
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-05 23:20:36) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: orders: SELECT * FROM "orders" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: orders: SELECT * FROM "orders" ):
+  app/controllers/orders_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (15.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "history_points" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "latitude" float, "longitude" float, "time" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100703101301')[0m
+Migrating to CreateProducts (20100705150624)
+  [4;35;1mSQL (16.0ms)[0m   [0mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" float, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100705150624')[0m
+Migrating to CreateCustomers (20100705151124)
+  [4;35;1mSQL (16.0ms)[0m   [0mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100705151124')[0m
+Migrating to CreateOrders (20100705151548)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "price" float, "volume" float, "manfee" float, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100705151548')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("history_points")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-05 23:21:24) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+Completed in 282ms (View: 282, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("history_points")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-05 23:24:51) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("history_points")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("history_points")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateOrders (20100705151548)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "orders"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100705151548'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("history_points")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "price" float, "volume" float, "manfee" float, "customer_id" integer, "product_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100705151548')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("history_points")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-05 23:26:22) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-05 23:27:03) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-05 23:28:22) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 78ms (View: 15, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-07-05 23:28:24) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-07-05 23:28:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"2x/mDmLbLwyRj5Z5hcr3q49RTwLFQr+1QWjNlaTA8QU=", "product"=>{"name"=>"A3", "price"=>"2.5"}}
+  [4;35;1mProduct Create (15.0ms)[0m   [0mINSERT INTO "products" ("name", "updated_at", "price", "created_at") VALUES('A3', '2010-07-05 15:28:30', 2.5, '2010-07-05 15:28:30')[0m
+Redirected to http://localhost:3000/products/1
+Completed in 109ms (DB: 15) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-07-05 23:28:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/products/1]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-05 23:28:32) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-07-05 23:28:44) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#new (for 127.0.0.1 at 2010-07-05 23:28:46) [GET]
+Rendering template within layouts/customers
+Rendering customers/new
+Completed in 78ms (View: 46, DB: 0) | 200 OK [http://localhost/customers/new]
+
+
+Processing CustomersController#create (for 127.0.0.1 at 2010-07-05 23:28:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"2x/mDmLbLwyRj5Z5hcr3q49RTwLFQr+1QWjNlaTA8QU=", "customer"=>{"name"=>"杨里佩"}}
+  [4;35;1mCustomer Create (0.0ms)[0m   [0mINSERT INTO "customers" ("name", "updated_at", "created_at") VALUES('杨里佩', '2010-07-05 15:28:51', '2010-07-05 15:28:51')[0m
+Redirected to http://localhost:3000/customers/1
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/customers]
+
+
+Processing CustomersController#show (for 127.0.0.1 at 2010-07-05 23:28:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/customers/1]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-07-05 23:28:55) [GET]
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/customers]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-07-05 23:31:57) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-05 23:32:09) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-05 23:32:15) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-05 23:32:17) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-05 23:32:27) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 00:30:41) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:07:16) [GET]
+  [4;36;1mOrder Load (62.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+Completed in 515ms (View: 375, DB: 62) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:07:19) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:07:37) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:09:58) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:10:15) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-07-06 21:10:51) [POST]
+  Parameters: {"commit"=>"Create", "order"=>{"manfee"=>"1", "date(1i)"=>"2010", "price"=>"2.5", "date(2i)"=>"7", "date(3i)"=>"6", "product_id"=>"1", "customer_id"=>"1", "volume"=>"10"}, "authenticity_token"=>"lbCiZllIByBvL3S9u56M0HNPfu0nnpjOkR6aYRsMm7U="}
+  [4;35;1mOrder Create (0.0ms)[0m   [0mINSERT INTO "orders" ("manfee", "updated_at", "price", "date", "product_id", "customer_id", "volume", "created_at") VALUES(1.0, '2010-07-06 13:10:51', 2.5, '2010-07-06', 1, 1, 10.0, '2010-07-06 13:10:51')[0m
+Redirected to http://localhost:3000/orders/1
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-06 21:10:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/orders/1]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:10:54) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:11:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders/1/edit]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:11:26) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:12:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Completed in 109ms (View: 109, DB: 0) | 200 OK [http://localhost/orders/1/edit]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:12:08) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-06 21:12:19) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 171ms (View: 156, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-07-06 21:12:30) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-07-06 21:13:20) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"lbCiZllIByBvL3S9u56M0HNPfu0nnpjOkR6aYRsMm7U=", "product"=>{"name"=>"中碳", "price"=>"5"}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("name", "updated_at", "price", "created_at") VALUES('中碳', '2010-07-06 13:13:20', 5.0, '2010-07-06 13:13:20')[0m
+Redirected to http://localhost:3000/products/2
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-07-06 21:13:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/products/2]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-07-06 21:13:22) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:13:34) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:13:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders/1/edit]
+
+
+Processing OrdersController#update (for 127.0.0.1 at 2010-07-06 21:13:44) [PUT]
+  Parameters: {"commit"=>"Update", "order"=>{"manfee"=>"1.0", "date(1i)"=>"2010", "price"=>"2.5", "date(2i)"=>"7", "date(3i)"=>"6", "product_id"=>"2", "volume"=>"10.0"}, "authenticity_token"=>"lbCiZllIByBvL3S9u56M0HNPfu0nnpjOkR6aYRsMm7U=", "id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+  [4;35;1mOrder Update (0.0ms)[0m   [0mUPDATE "orders" SET "product_id" = 2, "updated_at" = '2010-07-06 13:13:44' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/orders/1
+Completed in 187ms (DB: 0) | 302 Found [http://localhost/orders/1]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-06 21:13:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 125ms (View: 93, DB: 0) | 200 OK [http://localhost/orders/1]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:13:48) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:13:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders/1/edit]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:14:04) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:14:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/1/edit]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:14:45) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:15:13) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:16:22) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:16:57) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:17:09) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:17:20) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:17:34) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 187ms (View: 156, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-06 21:18:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/orders/1]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-07-06 21:23:13) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 109ms (View: 15, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:24:00) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:28:11) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:30:16) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 203ms (View: 94, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:30:23) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;35;1mOrder Load (16.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 140ms (View: 46, DB: 16) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:31:43) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:38:17) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:38:43) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 125ms (View: 125, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:38:47) [GET]
+  Parameters: {"locale"=>"en"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders?locale=en]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:38:53) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:38:59) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:43:13) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:43:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/1/edit]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:46:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:48:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:48:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (188.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:48:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:48:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (171.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:48:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:48:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:49:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:49:11) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 109ms (View: 93, DB: 0) | 200 OK [http://localhost/orders/]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-06 21:49:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/orders/1]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 21:49:16) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 21:49:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/edit.html.erb:8
+    app/views/orders/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-06 21:49:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders/1]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:49:59) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:50:59) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:51:36) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:52:32) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select  %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8:in `date_select'
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:52:36) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select  %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8:in `date_select'
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:52:47) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8:in `date_select'
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:53:25) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8:in `date_select'
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:53:33) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (stack level too deep) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:54:18) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (stack level too deep) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (15735.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:54:43) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:54:43) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:55:00) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 109ms (View: 93, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:55:18) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:57:37) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:58:15) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 21:58:44) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
