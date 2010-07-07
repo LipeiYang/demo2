@@ -4,10 +4,6 @@
 en:
   hello: "Hello world"
   listing_orders: "Listing orders"
-  Show: "Show"
-  Edit: "Edit"
-  Destroy: "Destroy"
-  New order: "New order"
   # t_date: "date"
   # t_price: "price"
   # t_volume: "volume"

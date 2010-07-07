@@ -4,7 +4,7 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :t_date %><br />
+    <%= f.label :date %><br />
     <%= f.date_select :date %>
   </p>
   <p>
@@ -26,6 +26,10 @@
   <p>
     <%= f.label :customer %><br />
     <%= collection_select(:order, :customer_id, Customer.all, :id, :name)%>
+  </p>   
+  <p>
+    <%= f.label :is_paied %><br />
+    <%= f.text_field :is_paied%>
   </p>   
   <p>
     <%= f.submit 'Create' %>

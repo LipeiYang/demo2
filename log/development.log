@@ -1507,3 +1507,1306 @@ ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/v
 Rendered rescues/_trace (78.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:00:25) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:00:42) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:00:45) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:00:46) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:01:05) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:01:06) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:01:41) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:01:47) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-06 22:01:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 62ms (View: 15, DB: 0) | 200 OK [http://localhost/orders/1]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:01:52) [GET]
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 46, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-06 22:01:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 1) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 171ms (View: 140, DB: 0) | 200 OK [http://localhost/orders/1/edit]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:01:56) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:01:58) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:01:59) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:02:12) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:02:17) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:02:34) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:02:37) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:03:00) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:03:01) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:03:41) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 250ms (View: 141, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:03:44) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:03:52) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:03:54) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:03:57) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:05:03) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:05:12) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= t :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:05:40) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:05:42) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 140ms (View: 94, DB: 15) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:05:49) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:05:51) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:06:22) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:06:40) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :t_date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:12:48) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:13:51) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:13:57) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:14:32) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 219ms (View: 125, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:14:38) [GET]
+  Parameters: {"locale"=>"zh"}
+Rendering template within layouts/orders
+Rendering orders/new
+
+ActionView::TemplateError (can't convert Symbol into String) on line #8 of app/views/orders/new.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :date %><br />
+8:     <%= f.date_select :date %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :product %><br />
+
+    app/views/orders/new.html.erb:8
+    app/views/orders/new.html.erb:3
+    app/controllers/orders_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-06 22:15:19) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 109ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/new?locale=en]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-06 22:17:13) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:02:28) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 437ms (View: 344, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:05:37) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:21:12) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:23:02) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:23:50) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 32, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:24:10) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-07 22:24:14) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 172ms (View: 157, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-07-07 22:24:25) [POST]
+  Parameters: {"commit"=>"Create", "order"=>{"manfee"=>"5", "date(1i)"=>"2010", "price"=>"2.5", "date(2i)"=>"7", "date(3i)"=>"7", "product_id"=>"1", "customer_id"=>"1", "volume"=>"6"}, "authenticity_token"=>"FIdku0bdlRnTC7p+DBmFc5VjwCNqKUluTGU7c9/jcmQ="}
+  [4;36;1mOrder Create (0.0ms)[0m   [0;1mINSERT INTO "orders" ("manfee", "updated_at", "price", "date", "product_id", "customer_id", "volume", "created_at") VALUES(5.0, '2010-07-07 14:24:25', 2.5, '2010-07-07', 1, 1, 6.0, '2010-07-07 14:24:25')[0m
+Redirected to http://localhost:3000/orders/2
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-07 22:24:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 2) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/orders/2]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:24:28) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:25:25) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:29:20) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 172ms (View: 125, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:34:09) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-07 22:35:05) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-07-07 22:35:11) [POST]
+  Parameters: {"commit"=>"Create", "order"=>{"manfee"=>"6", "date(1i)"=>"2010", "price"=>"5", "date(2i)"=>"7", "date(3i)"=>"7", "product_id"=>"1", "customer_id"=>"1", "volume"=>"6"}, "authenticity_token"=>"FIdku0bdlRnTC7p+DBmFc5VjwCNqKUluTGU7c9/jcmQ="}
+  [4;36;1mOrder Create (0.0ms)[0m   [0;1mINSERT INTO "orders" ("manfee", "updated_at", "price", "date", "product_id", "customer_id", "volume", "created_at") VALUES(6.0, '2010-07-07 14:35:11', 5.0, '2010-07-07', 1, 1, 6.0, '2010-07-07 14:35:11')[0m
+Redirected to http://localhost:3000/orders/3
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-07 22:35:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 3) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/orders/3]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:35:13) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:38:15) [GET]
+  [4;35;1mOrder Load (15.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 94ms (View: 79, DB: 15) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:39:50) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100707144524')[0m
+Migrating to AddIsPaiedToOrders (20100707144821)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mALTER TABLE "orders" ADD "is_paied" varchar(255)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100707144821')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("history_points")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:49:54) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-07 22:49:57) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:50:01) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-07 22:51:11) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 140ms (View: 125, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-07-07 22:51:28) [POST]
+  Parameters: {"commit"=>"Create", "order"=>{"manfee"=>"3", "date(1i)"=>"2010", "price"=>"3", "date(2i)"=>"7", "date(3i)"=>"7", "product_id"=>"1", "is_paied"=>"是", "customer_id"=>"1", "volume"=>"3"}, "authenticity_token"=>"FIdku0bdlRnTC7p+DBmFc5VjwCNqKUluTGU7c9/jcmQ="}
+  [4;35;1mOrder Create (0.0ms)[0m   [0mINSERT INTO "orders" ("manfee", "updated_at", "price", "date", "product_id", "customer_id", "is_paied", "volume", "created_at") VALUES(3.0, '2010-07-07 14:51:28', 3.0, '2010-07-07', 1, 1, '是', 3.0, '2010-07-07 14:51:28')[0m
+Redirected to http://localhost:3000/orders/4
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-07 22:51:29) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 4) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/orders/4]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 22:51:31) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:12:56) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:14:55) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:14:57) [GET]
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 141ms (View: 125, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:15:05) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:15:06) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:20:34) [GET]
+  [4;35;1mOrder Load (16.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:21:35) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:22:22) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 204ms (View: 188, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:23:03) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:25:09) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:25:24) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:25:25) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 188ms (View: 141, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:28:46) [GET]
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 46, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-07 23:29:06) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 4) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/orders/4]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:29:08) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-07-07 23:29:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 3) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/orders/3]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:29:12) [GET]
+  [4;36;1mOrder Load (15.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 47, DB: 15) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-07 23:29:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 4) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Completed in 141ms (View: 141, DB: 0) | 200 OK [http://localhost/orders/4/edit]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:29:22) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:36:18) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:44:57) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:45:06) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:47:05) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 250ms (View: 203, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:47:29) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:49:55) [GET]
+  Parameters: {"locale"=>"zh"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders?locale=zh]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-07 23:51:21) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-07 23:51:23) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]

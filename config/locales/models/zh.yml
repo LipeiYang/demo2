@@ -4,10 +4,7 @@
 zh:
   hello: "你好"
   listing_orders: "交易清单"
-  Show: "查看"
-  Edit: "修改"
-  Destroy: "删除"
-  New order: "添加订单"
+
 #  t_date: "日期"
 #  t_price: "价格（元）"
 #  t_volume: "数量（公斤）"
