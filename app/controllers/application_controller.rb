@@ -13,4 +13,19 @@ class ApplicationController < ActionController::Base
   def set_locale
     I18n.locale = params[:locale]
   end
+  
+
+  helper_method :admin?    
+  protected  
+  def admin?
+    session[:password] == "369"  
+  end     
+  
+  def authorize  
+    unless admin?  
+      flash[:error] = "Unauthorized access"
+      redirect_to login_path  
+      false  
+    end  
+  end 
 end

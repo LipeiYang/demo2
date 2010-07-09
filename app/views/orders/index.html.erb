@@ -1,5 +1,6 @@
 <h1><%=t :listing_orders %></h1>
-
+<h3><%= link_to t('New order'), new_order_path %></h3>
+<%= select_year(Time.now) %><%= select_month(Time.now) %>
 <table>
   <tr>
     <th>日期</th>
@@ -22,9 +23,9 @@
     <td><%=h order.customer.name %></td>
     <td><%=h order.totale %></td>
     <td><%=h order.is_paied %></td>
-    <td><%= link_to t('Show'), order %></td>
+    <!-- <td><%= link_to t('Show'), order %></td> -->
     <td><%= link_to t('Edit'), edit_order_path(order) %></td>
-    <td><%= link_to t('Destroy'), order, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to t('Destroy'), order, :confirm => t('sure?'), :method => :delete %></td>
   </tr>
 <% end %>
 </table>
@@ -36,4 +37,3 @@
 
 <br />
 
-<%= link_to t('New order'), new_order_path %>
