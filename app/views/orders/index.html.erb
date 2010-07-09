@@ -22,7 +22,7 @@
     <td><%=h order.manfee %></td>
     <td><%=h order.customer.name %></td>
     <td><%=h order.totale %></td>
-    <td><%=h order.is_paied %></td>
+    <td><%=h t("t_#{order.is_paied}") %></td>
     <!-- <td><%= link_to t('Show'), order %></td> -->
     <td><%= link_to t('Edit'), edit_order_path(order) %></td>
     <td><%= link_to t('Destroy'), order, :confirm => t('sure?'), :method => :delete %></td>
@@ -34,6 +34,12 @@
 
 总加工费：<%=h @orders.inject(0) { |sum,order| sum += order.manfee }%>
 总金额：<%=h @orders.inject(0) { |sum,order| sum += order.totale }%>
-
+已付金额：<%=h @orders.inject(0) { |sum,order| 
+  if order.is_paied.eql?('yes')
+    sum += order.totale 
+  else 
+    sum += 0 
+  end 
+  }%>
 <br />
 

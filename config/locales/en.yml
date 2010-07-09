@@ -12,6 +12,7 @@ en:
   Editing order: "Editing order"
   Back: "Back"
   Logout: "Logout"
+  Login: "Login"
   Create: "Create"
   t_date: "date"
   t_price: "price"
@@ -19,7 +20,11 @@ en:
   t_manfee: "manfee"
   t_customer: "customer"
   t_product: "product"
+  t_is_paied: "is_paied"
+  Password: "Password"
   sure?: "sure?"
+  t_yes: "Yes"
+  t_no: "No"
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]  

@@ -25,8 +25,8 @@
     <%= collection_select(:order, :customer_id, Customer.all, :id, :name)%>
   </p>     
   <p>
-    <%= f.label :is_paied %><br />
-    <%= f.text_field :is_paied%>
+    <%= f.label t('t_is_paied') %>: 
+    <%= check_box(:order, :is_paied, {}, "yes", "no") %>
   </p>  
   <p>
     <%= f.submit t(button_label) %>

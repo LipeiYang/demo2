@@ -1,23 +1,31 @@
 <p>
-  <b>Date:</b>
+  <b><%= t('t_date') %>:</b>
   <%=h @order.date %>
 </p>
-
 <p>
-  <b>Price:</b>
+  <b><%= t('t_product') %>:</b>
+  <%=h @order.product.name %>
+</p>
+<p>
+  <b><%= t('t_price') %>:</b>
   <%=h @order.price %>
 </p>
 
 <p>
-  <b>Volume:</b>
+  <b><%= t('t_volume') %>:</b>
   <%=h @order.volume %>
 </p>
-
 <p>
-  <b>Manfee:</b>
+  <b><%= t('t_manfee') %>:</b>
   <%=h @order.manfee %>
 </p>
-
-
+<p>
+  <b><%= t('t_customer') %>:</b>
+  <%=h @order.customer.name %>
+</p>
+<p>
+  <b><%= t('t_is_paied') %>:</b>
+  <%=h t("t_#{@order.is_paied}") %>
+</p>
 <%= link_to t('Edit'), edit_order_path(@order) %> |
 <%= link_to t('Back'), orders_path %>

@@ -12,6 +12,7 @@ zh:
   Editing order: "修改订单"
   Back: "返回"
   Logout: "退出"
+  Login: "登录"
   Create: "确定"
   t_date: "日期"
   t_price: "价格（元）"
@@ -19,7 +20,11 @@ zh:
   t_manfee: "加工费（元）"
   t_customer: "客户"
   t_product: "产品"
+  t_is_paied: "已付"
   sure?: "确定吗？"
+  Password: "密码"
+  t_yes: "是"
+  t_no: "否"  
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]
