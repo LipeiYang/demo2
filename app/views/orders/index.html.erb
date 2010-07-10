@@ -1,6 +1,6 @@
 <h1><%=t :listing_orders %></h1>
 <h3><%= link_to t('New order'), new_order_path %></h3>
-<%= select_year(Time.now) %><%= select_month(Time.now) %>
+<!-- <%= select_year(Time.now) %><%= select_month(Time.now) %> -->
 <table>
   <tr>
     <th>日期</th>
@@ -32,14 +32,13 @@
 
 <br />
 
-总加工费：<%=h @orders.inject(0) { |sum,order| sum += order.manfee }%>
-总金额：<%=h @orders.inject(0) { |sum,order| sum += order.totale }%>
+总加工费：<%=h @orders.inject(0) { |sum,order| sum += order.manfee }%><br />
 已付金额：<%=h @orders.inject(0) { |sum,order| 
-  if order.is_paied.eql?('yes')
-    sum += order.totale 
-  else 
-    sum += 0 
-  end 
-  }%>
-<br />
+                                    if order.is_paied.eql?('yes')
+                                      sum += order.totale 
+                                    else 
+                                      sum += 0 
+                                    end 
+                                  }%><br />
+总金额：<%=h @orders.inject(0) { |sum,order| sum += order.totale }%><br />
 

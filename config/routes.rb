@@ -4,8 +4,6 @@ ActionController::Routing::Routes.draw do |map|
   map.login 'login', :controller => 'sessions', :action => 'new'
   map.logout 'logout', :controller => 'sessions', :action => 'destroy'
   
-  map.resources :users
-
   map.resource :sessions
   
   map.resources :orders
@@ -13,8 +11,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :customers
 
   map.resources :products
-
-  map.resources :history_points
 
   # The priority is based upon order of creation: first created -> highest priority.
 
