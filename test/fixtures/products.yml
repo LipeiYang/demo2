@@ -1,9 +1,18 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  price: 1.5
+A3:
+  name: A3
+  price: 4.8
 
-two:
-  name: MyString
-  price: 1.5
+zt:
+  name: 中碳
+  price: 5
+
+l12:
+  name: 氯12
+  price: 14
+
+42ln:
+  name: 42ln
+  price: 8
+  

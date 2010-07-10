@@ -9955,3 +9955,47 @@ Rendering orders/index
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
 Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."name" = 'A3') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."name" = '42ln') LIMIT 1[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("name", "updated_at", "price", "created_at") VALUES('42ln', '2010-07-10 10:35:20', 8.0, '2010-07-10 10:35:20')[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."name" = 'A3') LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."name" = '中碳') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."name" = '氯12') LIMIT 1[0m
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("name", "updated_at", "price", "created_at") VALUES('氯12', '2010-07-10 10:37:33', 14.0, '2010-07-10 10:37:33')[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."name" = '42ln') LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-10 18:37:48) [GET]
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered orders/_order_update_tempale (31.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-10 18:38:06) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" [0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+Completed in 141ms (View: 141, DB: 0) | 200 OK [http://localhost/orders]
