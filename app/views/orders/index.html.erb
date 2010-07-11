@@ -48,5 +48,12 @@
                                       sum += 0 
                                     end 
                                   }%> </h3>
+  <table>
+    <% customer_unpaied_list.each_pair do |key, value| %>
+      <tr>
+        <td><%=h key %></td>
+        <td><%=h value %></td>
+      </tr>
+    <% end %>
+  </table>                                  
 <h3>总金额：<%=h @orders.inject(0) { |sum,order| sum += order.totale }%> </h3>
-
