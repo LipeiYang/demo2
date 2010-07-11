@@ -32,13 +32,21 @@
 
 <br />
 
-总加工费：<%=h @orders.inject(0) { |sum,order| sum += order.manfee }%><br />
-已付金额：<%=h @orders.inject(0) { |sum,order| 
+<h3>总材料费：<%=h @orders.inject(0) { |sum,order| sum += order.material_fee }%> </h3>
+<h3>总加工费：<%=h @orders.inject(0) { |sum,order| sum += order.manfee }%> </h3>
+<h3>已付金额：<%=h @orders.inject(0) { |sum,order| 
                                     if order.is_paied.eql?('yes')
                                       sum += order.totale 
                                     else 
                                       sum += 0 
                                     end 
                                   }%><br />
-总金额：<%=h @orders.inject(0) { |sum,order| sum += order.totale }%><br />
+<h3>未付金额：<%=h @orders.inject(0) { |sum,order| 
+                                    if order.is_paied.eql?('no')
+                                      sum += order.totale 
+                                    else 
+                                      sum += 0 
+                                    end 
+                                  }%> </h3>
+<h3>总金额：<%=h @orders.inject(0) { |sum,order| sum += order.totale }%> </h3>
 
