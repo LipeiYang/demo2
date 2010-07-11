@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100710085040) do
+ActiveRecord::Schema.define(:version => 20100711152631) do
 
   create_table "customers", :force => true do |t|
     t.string   "name"
@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(:version => 20100710085040) do
 
   create_table "orders", :force => true do |t|
     t.date     "date"
-    t.float    "price"
-    t.float    "volume"
-    t.float    "manfee"
+    t.float    "price",       :default => 0.0
+    t.float    "volume",      :default => 0.0
+    t.float    "manfee",      :default => 0.0
     t.integer  "customer_id"
     t.integer  "product_id"
     t.datetime "created_at"
