@@ -33,6 +33,14 @@
 <br />
 
 <h3>总材料费：<%=h @orders.inject(0) { |sum,order| sum += order.material_fee }%> </h3>
+  <table>
+    <% product_position_list.each do |o| %>
+      <tr>
+        <td><%=h o[0] %></td>
+        <td><%=h o[1] %></td>
+      </tr>
+    <% end %>
+  </table>                                  
 <h3>总加工费：<%=h @orders.inject(0) { |sum,order| sum += order.manfee }%> </h3>
 <h3>已付金额：<%=h @orders.inject(0) { |sum,order| 
                                     if order.is_paied.eql?('yes')
@@ -49,10 +57,10 @@
                                     end 
                                   }%> </h3>
   <table>
-    <% customer_unpaied_list.each_pair do |key, value| %>
+    <% customer_unpaied_list.each do |o| %>
       <tr>
-        <td><%=h key %></td>
-        <td><%=h value %></td>
+        <td><%=h o[0] %></td>
+        <td><%=h o[1] %></td>
       </tr>
     <% end %>
   </table>                                  
