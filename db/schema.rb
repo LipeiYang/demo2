@@ -9,31 +9,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100711152631) do
+ActiveRecord::Schema.define(:version => 20100715141845) do
 
   create_table "customers", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "name"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "orders", :force => true do |t|
-    t.date     "date"
-    t.float    "price",       :default => 0.0
-    t.float    "volume",      :default => 0.0
-    t.float    "manfee",      :default => 0.0
-    t.integer  "customer_id"
-    t.integer  "product_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "is_paied"
+    t.date      "date"
+    t.float     "price",       :default => 0.0
+    t.float     "volume",      :default => 0.0
+    t.float     "manfee",      :default => 0.0
+    t.integer   "customer_id"
+    t.integer   "product_id"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "is_paied"
+    t.integer   "seq_no"
   end
 
   create_table "products", :force => true do |t|
-    t.string   "name"
-    t.float    "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "name"
+    t.float     "price"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
 end

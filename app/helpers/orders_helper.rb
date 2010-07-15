@@ -8,7 +8,7 @@ module OrdersHelper
         rlt[o.customer.name]+=o.totale
       end
     end
-    rlt.sort{|a,b| a[1]<=>b[1]}
+    rlt.sort_by{|a| -a[1]}
   end
   
   def product_position_list
@@ -19,6 +19,6 @@ module OrdersHelper
         rlt[o.product.name]+=o.material_fee
       end
     end
-    rlt.sort{|a,b| a[1]<=>b[1]}
+    rlt.sort_by{|a| -a[1]}
   end
 end

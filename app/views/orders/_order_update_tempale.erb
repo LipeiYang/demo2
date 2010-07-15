@@ -1,6 +1,10 @@
 <% form_for(@order) do |f| %>
   <%= f.error_messages %>
   <p>
+    <%= f.label t('t_seq_no') %><br />
+    <%= f.text_field :seq_no %>
+  </p>
+  <p>
     <%= f.label t('t_date') %><br />
     <%= f.date_select :date %>
   </p>

@@ -14,6 +14,7 @@ en:
   Logout: "Logout"
   Login: "Login"
   Create: "Create"
+  t_seq_no: "seq_no"
   t_date: "date"
   t_price: "price"
   t_volume: "volume"

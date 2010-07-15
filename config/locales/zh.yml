@@ -14,6 +14,7 @@ zh:
   Logout: "退出"
   Login: "登录"
   Create: "确定"
+  t_seq_no: "编号"
   t_date: "日期"
   t_price: "价格（元）"
   t_volume: "数量（公斤）"

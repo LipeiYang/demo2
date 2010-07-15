@@ -4,7 +4,7 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.xml
   def index
-    @orders = Order.all
+    @orders = Order.all :order => "seq_no DESC"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -27,7 +27,7 @@ class OrdersController < ApplicationController
   # GET /orders/new.xml
   def new
     @order = Order.new
-
+    @order.seq_no = Order.last.id+1
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @order }
