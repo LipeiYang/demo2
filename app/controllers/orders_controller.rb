@@ -4,7 +4,7 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.xml
   def index
-    @orders = Order.all :order => "seq_no DESC"
+    @orders = Order.all :order => "date DESC, seq_no DESC"
 
     respond_to do |format|
       format.html # index.html.erb

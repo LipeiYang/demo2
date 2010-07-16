@@ -1,4 +1,8 @@
 <p>
+  <b><%= t('t_seq_no') %>:</b>
+  <%=h @order.seq_no %>
+</p>
+<p>
   <b><%= t('t_date') %>:</b>
   <%=h @order.date %>
 </p>
@@ -10,7 +14,6 @@
   <b><%= t('t_price') %>:</b>
   <%=h @order.price %>
 </p>
-
 <p>
   <b><%= t('t_volume') %>:</b>
   <%=h @order.volume %>
