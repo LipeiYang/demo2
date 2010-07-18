@@ -1,6 +1,7 @@
 <h1><%=t :listing_orders %></h1>
 <h3><%= link_to t('New order'), new_order_path %></h3>
 <!-- <%= select_year(Time.now) %><%= select_month(Time.now) %> -->
+<%= render :partial => "date_filter_form" %>
 <table>
   <tr>
     <th>编号</th>

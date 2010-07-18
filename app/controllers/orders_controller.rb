@@ -4,8 +4,18 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.xml
   def index
-    @orders = Order.all :order => "date DESC, seq_no DESC"
-
+    unless @start_date||params[:start]==nil
+        @start_date = Order.str_civil params[:start][:year], params[:start][:month], params[:start][:day]
+    else
+      @start_date = Date.today-1.days
+    end
+    unless @end_date||params[:end]==nil
+        @end_date = Order.str_civil params[:end][:year], params[:end][:month], params[:end][:day]
+    else
+      @end_date = Date.today
+    end    
+    @orders = Order.search_orders(@start_date, @end_date)
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @orders }
