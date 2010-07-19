@@ -2358,3 +2358,587 @@ Rendered orders/_date_filter_form (16.0ms)
   [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
 Completed in 94ms (View: 79, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 20:58:04) [GET]
+Redirected to http://localhost:3000/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 250ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-07-19 20:58:04) [GET]
+Rendering sessions/new
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-07-19 20:58:10) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"KogSOBSq0glfDZKikxMYz2ks2dJvoAvjA42LKcnVw2Q=", "password"=>"369"}
+Redirected to http://localhost:3000/orders
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 20:58:11) [GET]
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-18' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 250ms (View: 187, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 20:59:39) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"19", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"17", "year"=>"2010"}}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-17' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (15.0ms)
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 172ms (View: 141, DB: 15) | 200 OK [http://localhost/orders?start%5Byear%5D=2010&start%5Bmonth%5D=7&start%5Bday%5D=17&end%5Byear%5D=2010&end%5Bmonth%5D=7&end%5Bday%5D=19&commit=%E6%9F%A5%E6%89%BE]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-19 20:59:43) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" ORDER BY orders.id DESC LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered orders/_order_update_tempale (78.0ms)
+Completed in 187ms (View: 156, DB: 16) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 20:59:46) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-18' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-19 21:00:35) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" ORDER BY orders.id DESC LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered orders/_order_update_tempale (47.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:00:42) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-18' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:04:07) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"19", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"18", "year"=>"2010"}}
+
+NoMethodError (undefined method `-' for {"month"=>"7", "day"=>"18", "year"=>"2010"}:HashWithIndifferentAccess):
+  c:/Ruby/lib/ruby/1.8/date.rb:385:in `civil_to_jd'
+  c:/Ruby/lib/ruby/1.8/date.rb:607:in `valid_civil?'
+  c:/Ruby/lib/ruby/1.8/date.rb:726:in `new'
+  app/controllers/orders_controller.rb:7:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:04:33) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"19", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"18", "year"=>"2010"}}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-18' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (16.0ms)
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 93ms (View: 78, DB: 0) | 200 OK [http://localhost/orders?start%5Byear%5D=2010&start%5Bmonth%5D=7&start%5Bday%5D=18&end%5Byear%5D=2010&end%5Bmonth%5D=7&end%5Bday%5D=19&commit=%E6%9F%A5%E6%89%BE]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:04:42) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"19", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"18", "year"=>"2010"}}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-18' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/orders?start%5Byear%5D=2010&start%5Bmonth%5D=7&start%5Bday%5D=18&end%5Byear%5D=2010&end%5Bmonth%5D=7&end%5Bday%5D=19&commit=%E6%9F%A5%E6%89%BE]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:15:15) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"19", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"18", "year"=>"2010"}}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-18' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (16.0ms)
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 235ms (View: 173, DB: 15) | 200 OK [http://localhost/orders?start%5Byear%5D=2010&start%5Bmonth%5D=7&start%5Bday%5D=18&end%5Byear%5D=2010&end%5Bmonth%5D=7&end%5Bday%5D=19&commit=%E6%9F%A5%E6%89%BE]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:15:18) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"19", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"17", "year"=>"2010"}}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-17' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 156ms (View: 140, DB: 0) | 200 OK [http://localhost/orders?start%5Byear%5D=2010&start%5Bmonth%5D=7&start%5Bday%5D=17&end%5Byear%5D=2010&end%5Bmonth%5D=7&end%5Bday%5D=19&commit=%E6%9F%A5%E6%89%BE]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-19 21:15:22) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" ORDER BY orders.id DESC LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendered orders/_order_update_tempale (31.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:15:23) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-17' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 250ms (View: 234, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:15:32) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"19", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"16", "year"=>"2010"}}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-16' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (16.0ms)
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 234ms (View: 203, DB: 15) | 200 OK [http://localhost/orders?start%5Byear%5D=2010&start%5Bmonth%5D=7&start%5Bday%5D=16&end%5Byear%5D=2010&end%5Bmonth%5D=7&end%5Bday%5D=19&commit=%E6%9F%A5%E6%89%BE]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-07-19 21:15:37) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" ORDER BY orders.id DESC LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mProduct Load (15.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendered orders/_order_update_tempale (47.0ms)
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:15:39) [GET]
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-16' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (15.0ms)
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 313ms (View: 297, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-07-19 21:15:42) [GET]
+  Parameters: {"id"=>"85"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 85) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendered orders/_order_update_tempale (47.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/85/edit]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-19 21:15:44) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-16' and '2010-07-19') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Completed in 250ms (View: 234, DB: 0) | 200 OK [http://localhost/orders]

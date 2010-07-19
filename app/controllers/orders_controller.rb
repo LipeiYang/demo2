@@ -4,16 +4,21 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.xml
   def index
-    unless @start_date||params[:start]==nil
-        @start_date = Order.str_civil params[:start][:year], params[:start][:month], params[:start][:day]
-    else
-      @start_date = Date.today-1.days
+    if params[:start]!=nil
+      session[:start] = Order.str_civil params[:start][:year], params[:start][:month], params[:start][:day]
     end
-    unless @end_date||params[:end]==nil
+    if session[:start] == nil
+      session[:start] = Date.today-1.days
+    end
+    @start_date = session[:start]
+    puts "@start_date: #{@start_date}"
+    if params[:end]!=nil
         @end_date = Order.str_civil params[:end][:year], params[:end][:month], params[:end][:day]
-    else
-      @end_date = Date.today
-    end    
+    end
+    if session[:end] == nil
+      session[:end] = Date.today
+    end
+    @end_date = session[:end]    
     @orders = Order.search_orders(@start_date, @end_date)
     
     respond_to do |format|
