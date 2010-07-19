@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
     @start_date = session[:start]
     puts "@start_date: #{@start_date}"
     if params[:end]!=nil
-        @end_date = Order.str_civil params[:end][:year], params[:end][:month], params[:end][:day]
+        session[:end] = Order.str_civil params[:end][:year], params[:end][:month], params[:end][:day]
     end
     if session[:end] == nil
       session[:end] = Date.today
