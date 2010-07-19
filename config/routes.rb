@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :purchases
+
   
   map.home '', :controller => 'orders', :action => 'index'
   map.login 'login', :controller => 'sessions', :action => 'new'

@@ -1,0 +1,23 @@
+<p>
+  <b><%= t('t_date') %>:</b>
+  <%=h @purchase.date %>
+</p>
+
+<p>
+  <b><%= t('t_product') %>:</b>
+  <%=h @purchase.product.name %>
+</p>
+
+<p>
+  <b><%= t('t_price') %>:</b>
+  <%=h @purchase.price %>
+</p>
+
+<p>
+  <b><%= t('t_volume') %>:</b>
+  <%=h @purchase.volume %>
+</p>
+
+
+<%= link_to t('Edit'), edit_purchase_path(@purchase) %> |
+<%= link_to t('Back'), purchases_path %>

@@ -1,0 +1,5 @@
+<h1><%= t('New purchase') %></h1>
+
+<%= render :partial => "purchase_update_template", :locals =>{ :button_label => "Create"} %>
+
+<%= link_to t('Back'), purchases_path %>

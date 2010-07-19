@@ -1,0 +1,38 @@
+<% form_for(@order) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label t('t_seq_no') %><br />
+    <%= f.text_field :seq_no %>
+  </p>
+  <p>
+    <%= f.label t('t_date') %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label t('t_product') %><br />
+    <%= collection_select(:order, :product_id, Product.all, :id, :name)%>
+  </p>   
+  <p>
+    <%= f.label t('t_price') %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label t('t_volume') %><br />
+    <%= f.text_field :volume %>
+  </p>
+  <p>
+    <%= f.label t('t_manfee') %><br />
+    <%= f.text_field :manfee %>
+  </p>
+  <p>
+    <%= f.label t('t_customer') %><br />
+    <%= collection_select(:order, :customer_id, Customer.all, :id, :name)%>
+  </p>     
+  <p>
+    <%= f.label t('t_is_paied') %>: 
+    <%= check_box(:order, :is_paied, {}, "yes", "no") %>
+  </p>  
+  <p>
+    <%= f.submit t(button_label) %>
+  </p>
+<% end %>  

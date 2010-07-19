@@ -1,0 +1,34 @@
+<h1><%=t('Listing purchases') %></h1>
+<h3><%= link_to t('New purchase'), new_purchase_path %></h3>
+<table>
+  <tr>
+    <th><%= t('t_date') %></th>
+    <th><%= t('t_product') %></th>
+    <th><%= t('t_price') %></th>
+    <th><%= t('t_volume') %></th>
+  </tr>
+
+<% @purchases.each do |purchase| %>
+  <tr>
+    <td><%=h purchase.date %></td>
+    <td><%=h purchase.product.name %></td>
+    <td><%=h purchase.price %></td>
+    <td><%=h purchase.volume %></td>
+    <td><%= link_to t('Edit'), edit_purchase_path(purchase) %></td>
+    <td><%= link_to t('Destroy'), purchase, :confirm => t('sure?'), :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<h3>总材料费：<%=h @purchases.inject(0) { |sum,order| sum += order.total }%> </h3>
+  <table>
+    <% product_position_list.each do |o| %>
+      <tr>
+        <td><%=h o[0] %></td>
+        <td><%=h o[1] %></td>
+      </tr>
+    <% end %>
+  </table>                                  
+

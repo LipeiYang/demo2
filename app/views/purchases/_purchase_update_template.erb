@@ -1,0 +1,22 @@
+<% form_for(@purchase) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label t('t_date') %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label t('t_product') %><br />
+    <%= collection_select(:purchase, :product_id, Product.all, :id, :name) %>
+  </p>
+  <p>
+    <%= f.label t('t_price') %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label t('t_volume') %><br />
+    <%= f.text_field :volume %>
+  </p>
+  <p>
+    <%= f.submit t(button_label) %>
+  </p>
+<% end %>
