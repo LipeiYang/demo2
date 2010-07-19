@@ -1,5 +1,5 @@
 module PurchasesHelper
-  def product_position_list
+  def product_purchase_list
     rlt = {}
     @purchases.each do |o|
       if o.total > 0      

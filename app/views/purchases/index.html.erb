@@ -22,9 +22,9 @@
 
 <br />
 
-<h3>总材料费：<%=h @purchases.inject(0) { |sum,order| sum += order.total }%> </h3>
+<h3>总材料费：<%=h @purchases.inject(0) { |sum,purchase| sum += purchase.total }%> </h3>
   <table>
-    <% product_position_list.each do |o| %>
+    <% product_purchase_list.each do |o| %>
       <tr>
         <td><%=h o[0] %></td>
         <td><%=h o[1] %></td>

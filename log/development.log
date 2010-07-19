@@ -6230,3 +6230,211 @@ Rendered rescues/_trace (47.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
   [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-07-20 01:55:47) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-20 01:55:49) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-19' and '2010-07-20') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (16.0ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #40 of app/views/orders/index.html.erb:
+37: 
+38: <h3>总材料费：<%=h @orders.inject(0) { |sum,order| sum += order.material_fee }%> </h3>
+39:   <table>
+40:     <% product_position_list.each do |o| %>
+41:       <tr>
+42:         <td><%=h o[0] %></td>
+43:         <td><%=h o[1] %></td>
+
+    app/helpers/purchases_helper.rb:4:in `product_position_list'
+    app/views/orders/index.html.erb:40
+    app/controllers/orders_controller.rb:24:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-20 01:56:52) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-19' and '2010-07-20') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-20 01:58:00) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-19' and '2010-07-20') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (16.0ms)
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #40 of app/views/orders/index.html.erb:
+37: 
+38: <h3>总材料费：<%=h @orders.inject(0) { |sum,order| sum += order.material_fee }%> </h3>
+39:   <table>
+40:     <% product_position_list.each do |o| %>
+41:       <tr>
+42:         <td><%=h o[0] %></td>
+43:         <td><%=h o[1] %></td>
+
+    app/helpers/purchases_helper.rb:4:in `product_position_list'
+    app/views/orders/index.html.erb:40
+    app/controllers/orders_controller.rb:24:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-20 01:58:45) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-19' and '2010-07-20') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (16.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-07-20 01:58:46) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-20 01:58:47) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-19' and '2010-07-20') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-07-20 01:58:49) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-20 01:58:50) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-07-19' and '2010-07-20') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-07-20 01:58:58) [GET]
+  Parameters: {"commit"=>"查找", "end"=>{"month"=>"7", "day"=>"20", "year"=>"2010"}, "start"=>{"month"=>"7", "day"=>"16", "year"=>"2010"}}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-07-16' and '2010-07-20') ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/orders
+Rendering orders/index
+Rendered orders/_date_filter_form (0.0ms)
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendered layouts/_menu (15.0ms)
+Completed in 312ms (View: 218, DB: 0) | 200 OK [http://localhost/orders?start%5Byear%5D=2010&start%5Bmonth%5D=7&start%5Bday%5D=16&end%5Byear%5D=2010&end%5Bmonth%5D=7&end%5Bday%5D=20&commit=%E6%9F%A5%E6%89%BE]
