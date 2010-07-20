@@ -41,12 +41,16 @@
       <th>产品</th>
       <th>数量（公斤）</th>
       <th>合计</th>
+      <th>成本</th>
+      <th>利润</th>
     </tr>
     <% product_position_list.each do |o| %>
       <tr>
         <td><%=h o[0] %></td>
         <td><%=h o[1][:total_volume] %></td>
         <td><%=h o[1][:total_fee] %></td>
+        <td><%=h o[1][:total_cost] %></td>
+        <td><%=h o[1][:total_profit] %></td>
       </tr>
     <% end %>
   </table>                                  
