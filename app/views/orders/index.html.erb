@@ -35,30 +35,26 @@
 
 <br />
 
-<h3>总材料费：<%=h @orders.inject(0) { |sum,order| sum += order.material_fee }%> </h3>
+<h3>总材料费：<%=h total_material_fee %> </h3>
   <table>
+    <tr>
+      <th>产品</th>
+      <th>数量（公斤）</th>
+      <th>合计</th>
+    </tr>
     <% product_position_list.each do |o| %>
       <tr>
         <td><%=h o[0] %></td>
-        <td><%=h o[1] %></td>
+        <td><%=h o[1][:total_volume] %></td>
+        <td><%=h o[1][:total_fee] %></td>
       </tr>
     <% end %>
   </table>                                  
-<h3>总加工费：<%=h @orders.inject(0) { |sum,order| sum += order.manfee }%> </h3>
-<h3>已付金额：<%=h @orders.inject(0) { |sum,order| 
-                                    if order.is_paied.eql?('yes')
-                                      sum += order.totale 
-                                    else 
-                                      sum += 0 
-                                    end 
-                                  }%><br />
-<h3>未付金额：<%=h @orders.inject(0) { |sum,order| 
-                                    if order.is_paied.eql?('no')
-                                      sum += order.totale 
-                                    else 
-                                      sum += 0 
-                                    end 
-                                  }%> </h3>
+<h3>总材料成本：<%=h total_material_cost %> </h3>
+<h3>总加工费：<%=h total_manfee %> </h3>
+<h3>总盈利：<%=h total_profit %> </h3>
+<h3>已付金额：<%=h total_paied %><br />
+<h3>未付金额：<%=h total_unpaied %> </h3>
   <table>
     <% customer_unpaied_list.each do |o| %>
       <tr>
@@ -67,4 +63,4 @@
       </tr>
     <% end %>
   </table>                                  
-<h3>总金额：<%=h @orders.inject(0) { |sum,order| sum += order.totale }%> </h3>
+<h3>总金额：<%=h total %> </h3>

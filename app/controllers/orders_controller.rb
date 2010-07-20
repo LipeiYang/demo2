@@ -11,7 +11,6 @@ class OrdersController < ApplicationController
       session[:start] = Date.today-1.days
     end
     @start_date = session[:start]
-    puts "@start_date: #{@start_date}"
     if params[:end]!=nil
         session[:end] = Order.str_civil params[:end][:year], params[:end][:month], params[:end][:day]
     end

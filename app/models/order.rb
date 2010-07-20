@@ -20,4 +20,7 @@ class Order < ActiveRecord::Base
     price*volume+manfee
   end
   
+  def material_cost
+    product.price*volume
+  end
 end
