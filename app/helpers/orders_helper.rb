@@ -1,8 +1,13 @@
 module OrdersHelper
 
   def total_profit
+    total_revenue-(@end_date-@start_date+1)*370
+  end
+
+  def total_revenue
     total_material_fee-total_material_cost+total_manfee
   end
+
   
   def total_material_fee
     @orders.inject(0) { |sum,order| sum += order.material_fee }
