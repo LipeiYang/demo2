@@ -10,7 +10,7 @@
   </p>
   <p>
     <%= f.label t('t_product') %><br />
-    <%= collection_select(:order, :product_id, Product.all, :id, :name)%>
+    <%= collection_select(:order, :product_id, Product.all(:order=>"name"), :id, :name)%>
   </p>   
   <p>
     <%= f.label t('t_price') %><br />
@@ -26,7 +26,7 @@
   </p>
   <p>
     <%= f.label t('t_customer') %><br />
-    <%= collection_select(:order, :customer_id, Customer.all, :id, :name)%>
+    <%= collection_select(:order, :customer_id, Customer.all(:order=>"name"), :id, :name)%>
   </p>     
   <p>
     <%= f.label t('t_is_paied') %>: 

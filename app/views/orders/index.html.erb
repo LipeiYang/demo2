@@ -61,6 +61,10 @@
 <h3>已付金额：<%=h total_paied %><br />
 <h3>未付金额：<%=h total_unpaied %> </h3>
   <table>
+    <tr>
+      <th>客户</th>
+      <th>金额</th>
+    </tr>
     <% customer_unpaied_list.each do |o| %>
       <tr>
         <td><%=h o[0] %></td>
