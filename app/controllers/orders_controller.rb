@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @orders }
-      format.xls { send_data @orders.to_xls }
+      # format.xls { send_data @orders.to_xls }
     end
   end
 
