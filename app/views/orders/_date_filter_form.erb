@@ -3,5 +3,9 @@
   <%= select_date @start_date, :prefix => :start %>
   <%= label_tag t('end_date') %>:
   <%= select_date @end_date, :prefix => :end %>
+  <%= label_tag t('t_customer') %>:
+  <%= collection_select(:qry_ord, :customer_id, Customer.all(:order=>"name"), :id, :name, {:include_blank => true})%>
+  <%= label_tag t('t_product') %>:
+  <%= collection_select(:qry_ord, :product_id, Product.all(:order=>"name"), :id, :name, {:include_blank => true})%>
   <%= submit_tag t("Search") %>
 <% end %>

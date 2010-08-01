@@ -9,12 +9,12 @@
     <%= collection_select(:purchase, :product_id, Product.all, :id, :name) %>
   </p>
   <p>
-    <%= f.label t('t_price') %><br />
-    <%= f.text_field :price %>
-  </p>
-  <p>
     <%= f.label t('t_volume') %><br />
     <%= f.text_field :volume %>
+  </p>
+  <p>
+    <%= f.label t('t_price') %><br />
+    <%= f.text_field :price %>
   </p>
   <p>
     <%= f.submit t(button_label) %>

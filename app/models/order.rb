@@ -2,10 +2,16 @@ class Order < ActiveRecord::Base
   belongs_to :customer
   belongs_to :product
   
+  named_scope :for_date_range, lambda { |start_date, end_date| {:conditions => ["date between ? and ?", start_date, end_date]} }
+  named_scope :for_product, lambda { |qry_ord| {:conditions => ["product_id = ?", qry_ord.product_id]} }
+  named_scope :for_customer, lambda { |qry_ord| {:conditions => ["customer_id = ?", qry_ord.customer_id]} }
+  named_scope :by_date_seq_no, :order => 'date DESC, seq_no DESC'
   
-  def self.search_orders(start_date, end_date)
-    conditions = "date between '#{start_date}' and '#{end_date}'"
-    @orders = Order.all :conditions => conditions, :order => "date DESC, seq_no DESC"
+  def self.search_orders(start_date, end_date, qry_ord)
+    orders = Order.for_date_range(start_date, end_date)
+    orders = orders.for_product(qry_ord) unless qry_ord.product_id==0
+    orders = orders.for_customer(qry_ord) unless qry_ord.customer_id==0
+    orders.by_date_seq_no
   end
   
   def self.str_civil(year, month, day)

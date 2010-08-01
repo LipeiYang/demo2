@@ -7,23 +7,34 @@ class OrdersController < ApplicationController
     if params[:start]!=nil
       session[:start] = Order.str_civil params[:start][:year], params[:start][:month], params[:start][:day]
     end
-    if session[:start] == nil
-      session[:start] = Date.today-1.days
-    end
+    # if session[:start] == nil
+      session[:start] ||= Date.today-1.days
+    # end
     @start_date = session[:start]
     if params[:end]!=nil
         session[:end] = Order.str_civil params[:end][:year], params[:end][:month], params[:end][:day]
     end
-    if session[:end] == nil
-      session[:end] = Date.today
-    end
+    # if session[:end] == nil
+      session[:end] ||= Date.today
+    # end
     @end_date = session[:end]    
-    @orders = Order.search_orders(@start_date, @end_date)
+    
+    unless params[:qry_ord].blank?
+        session[:product_id] = params[:qry_ord][:product_id].to_i
+        session[:customer_id] = params[:qry_ord][:customer_id].to_i
+    end
+    session[:product_id] ||= '0'
+    session[:customer_id] ||= '0'
+      
+    @qry_ord = Order.new(:product_id=>session[:product_id], :customer_id=>session[:customer_id])
+    
+    logger.debug "@qry_ord.product_id: #{@qry_ord.product_id}"
+    
+    @orders = Order.search_orders(@start_date, @end_date, @qry_ord)
     
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @orders }
-      # format.xls { send_data @orders.to_xls }
     end
   end
 

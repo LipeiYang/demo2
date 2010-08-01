@@ -6,11 +6,11 @@
   <tr>
     <th>编号</th>
     <th>日期</th>
-    <th>产品</th>
-    <th>价格</th>
-    <th>数量（公斤）</th>
-    <th>加工费</th>
     <th>客户</th>
+    <th>产品</th>
+    <th>数量（公斤）</th>
+    <th>价格</th>
+    <th>加工费</th>
     <th>合计</th>
     <th>已付</th>
   </tr>
@@ -19,11 +19,11 @@
   <tr>
     <td><%=h order.seq_no %></td>
     <td><%=h order.date %></td>
-    <td><%=h order.product.name %></td>
-    <td><%=h order.price %></td>
-    <td><%=h order.volume %></td>
-    <td><%=h order.manfee %></td>
     <td><%=h order.customer.name %></td>
+    <td><%=h order.product.name %></td>
+    <td><%=h order.volume %></td>
+    <td><%=h order.price %></td>
+    <td><%=h order.manfee %></td>
     <td><%=h order.totale %></td>
     <td><%=h t("t_#{order.is_paied}") %></td>
     <!-- <td><%= link_to t('Show'), order %></td> -->
