@@ -2,6 +2,7 @@
 <h3><%= link_to t('New purchase'), new_purchase_path %></h3>
 <table>
   <tr>
+    <th><%= t('t_seq_no') %></th>
     <th><%= t('t_date') %></th>
     <th><%= t('t_product') %></th>
     <th><%= t('t_price') %></th>
@@ -10,6 +11,7 @@
 
 <% @purchases.each do |purchase| %>
   <tr>
+    <td><%=h purchase.seq_no %></td>
     <td><%=h purchase.date %></td>
     <td><%=h purchase.product.name %></td>
     <td><%=h purchase.price %></td>

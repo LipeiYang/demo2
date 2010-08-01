@@ -2,7 +2,7 @@ class PurchasesController < ApplicationController
   # GET /purchases
   # GET /purchases.xml
   def index
-    @purchases = Purchase.all :order => "date DESC"
+    @purchases = Purchase.all :order => 'date DESC, seq_no DESC'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,6 +25,7 @@ class PurchasesController < ApplicationController
   # GET /purchases/new.xml
   def new
     @purchase = Purchase.new
+    @purchase.seq_no = Purchase.last.id+1
 
     respond_to do |format|
       format.html # new.html.erb

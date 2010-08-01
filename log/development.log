@@ -8236,3 +8236,261 @@ Rendering purchases/index
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
 Rendered layouts/_menu (0.0ms)
 Completed in 340ms (View: 290, DB: 30) | 200 OK [http://localhost/purchases]
+  [4;36;1mSQL (10.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mALTER TABLE "purchases" ADD "seq_no" integer[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100801142229')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+  [4;35;1mPurchase Load (10.0ms)[0m   [0mSELECT * FROM "purchases" [0m
+  [4;36;1mPurchase Update (0.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:37', "seq_no" = 1 WHERE "id" = 1[0m
+  [4;35;1mPurchase Update (0.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:37', "seq_no" = 2 WHERE "id" = 2[0m
+  [4;36;1mPurchase Update (0.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:37', "seq_no" = 5 WHERE "id" = 5[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:37', "seq_no" = 6 WHERE "id" = 6[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:37', "seq_no" = 7 WHERE "id" = 7[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:37', "seq_no" = 8 WHERE "id" = 8[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 9 WHERE "id" = 9[0m
+  [4;35;1mPurchase Update (0.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 10 WHERE "id" = 10[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 11 WHERE "id" = 11[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 12 WHERE "id" = 12[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 13 WHERE "id" = 13[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 14 WHERE "id" = 14[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 16 WHERE "id" = 16[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 18 WHERE "id" = 18[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 19 WHERE "id" = 19[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:38', "seq_no" = 20 WHERE "id" = 20[0m
+  [4;36;1mPurchase Update (0.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 21 WHERE "id" = 21[0m
+  [4;35;1mPurchase Update (0.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 22 WHERE "id" = 22[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 23 WHERE "id" = 23[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 24 WHERE "id" = 24[0m
+  [4;36;1mPurchase Update (0.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 25 WHERE "id" = 25[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 26 WHERE "id" = 26[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 27 WHERE "id" = 27[0m
+  [4;35;1mPurchase Update (0.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:39', "seq_no" = 28 WHERE "id" = 28[0m
+  [4;36;1mPurchase Update (0.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:40', "seq_no" = 29 WHERE "id" = 29[0m
+  [4;35;1mPurchase Update (0.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:40', "seq_no" = 30 WHERE "id" = 30[0m
+  [4;36;1mPurchase Update (10.0ms)[0m   [0;1mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:40', "seq_no" = 31 WHERE "id" = 31[0m
+  [4;35;1mPurchase Update (10.0ms)[0m   [0mUPDATE "purchases" SET "updated_at" = '2010-08-01 14:28:40', "seq_no" = 32 WHERE "id" = 32[0m
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-01 22:30:51) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (10.0ms)
+Completed in 351ms (View: 330, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-08-01 22:30:57) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY purchases.id DESC LIMIT 1[0m
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendered purchases/_purchase_update_template (50.1ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 130ms (View: 110, DB: 0) | 200 OK [http://localhost/purchases/new]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-01 22:30:59) [GET]
+  [4;35;1mPurchase Load (10.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 330ms (View: 300, DB: 10) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#edit (for 127.0.0.1 at 2010-08-01 22:31:08) [GET]
+  Parameters: {"id"=>"32"}
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 32) [0m
+Rendering template within layouts/purchases
+Rendering purchases/edit
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendered purchases/_purchase_update_template (50.1ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 110ms (View: 80, DB: 0) | 200 OK [http://localhost/purchases/32/edit]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-01 22:31:13) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 551ms (View: 521, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#edit (for 127.0.0.1 at 2010-08-01 22:31:15) [GET]
+  Parameters: {"id"=>"32"}
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 32) [0m
+Rendering template within layouts/purchases
+Rendering purchases/edit
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendered purchases/_purchase_update_template (60.1ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 190ms (View: 100, DB: 0) | 200 OK [http://localhost/purchases/32/edit]
+
+
+Processing PurchasesController#update (for 127.0.0.1 at 2010-08-01 22:31:17) [PUT]
+  Parameters: {"commit"=>"更\346\226\260", "purchase"=>{"price"=>"5.7", "date(1i)"=>"2010", "product_id"=>"16", "date(2i)"=>"8", "date(3i)"=>"1", "seq_no"=>"32", "volume"=>"225.5"}, "authenticity_token"=>"E0Tv15hvuyUFkPzTrgOvNsycyrZO5ijQvs4/KsDNzjc=", "id"=>"32"}
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 32) [0m
+Redirected to http://localhost:3000/purchases/32
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/purchases/32]
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-08-01 22:31:17) [GET]
+  Parameters: {"id"=>"32"}
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 32) [0m
+Rendering template within layouts/purchases
+Rendering purchases/show
+  [4;35;1mProduct Load (10.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 120ms (View: 80, DB: 10) | 200 OK [http://localhost/purchases/32]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-01 22:31:20) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 511ms (View: 481, DB: 0) | 200 OK [http://localhost/purchases]
