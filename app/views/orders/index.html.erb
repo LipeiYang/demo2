@@ -48,7 +48,7 @@
       <tr>
         <td><%=h o[0] %></td>
         <td><%=h o[1][:total_volume] %></td>
-        <td><%=h o[1][:total_fee] %></td>
+        <td><%=h o[1][:total_mat_fee] %></td>
         <td><%=h o[1][:total_cost] %></td>
         <td><%=h o[1][:total_profit] %></td>
       </tr>
@@ -69,6 +69,25 @@
       <tr>
         <td><%=h o[0] %></td>
         <td><%=h o[1] %></td>
+      </tr>
+    <% end %>
+  </table>        
+<br />
+  <table>
+    <tr>
+      <th>客户</th>
+      <th>材料</th>
+      <th>材料利润</th>
+      <th>加工费</th>
+      <th>总收益</th>
+    </tr>
+    <% customer_position_list.each do |o| %>
+      <tr>
+        <td><%=h o[0] %></td>
+        <td><%=h o[1][:total_mat_fee] %></td>
+        <td><%=h o[1][:total_mat_profit] %></td>
+        <td><%=h o[1][:total_man_fee] %></td>
+        <td><%=h o[1][:total_profit] %></td>
       </tr>
     <% end %>
   </table>                                  
