@@ -13,12 +13,12 @@
     <%= collection_select(:order, :product_id, Product.all(:order=>"name"), :id, :name)%>
   </p>   
   <p>
-    <%= f.label t('t_price') %><br />
-    <%= f.text_field :price %>
-  </p>
-  <p>
     <%= f.label t('t_volume') %><br />
     <%= f.text_field :volume %>
+  </p>
+  <p>
+    <%= f.label t('t_price') %><br />
+    <%= f.text_field :price %>
   </p>
   <p>
     <%= f.label t('t_manfee') %><br />
