@@ -1,0 +1,20 @@
+<p>
+  <b><%= t('t_seq_no') %>:</b>
+  <%=h @receivable.seq_no %>
+</p>
+<p>
+  <b><%= t('t_date') %>:</b>
+  <%=h @receivable.date %>
+</p>
+<p>
+  <b><%= t('t_customer') %>:</b>
+  <%=h @receivable.customer.name %>
+</p>
+<p>
+  <b><%= t('t_amount') %>:</b>
+  <%=h @receivable.amount %>
+</p>
+
+
+<%= link_to t('Edit'), edit_receivable_path(@receivable) %> |
+<%= link_to t('Back'), receivables_path %>

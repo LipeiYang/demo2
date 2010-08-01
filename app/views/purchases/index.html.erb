@@ -14,8 +14,8 @@
     <td><%=h purchase.seq_no %></td>
     <td><%=h purchase.date %></td>
     <td><%=h purchase.product.name %></td>
-    <td><%=h purchase.price %></td>
     <td><%=h purchase.volume %></td>
+    <td><%=h purchase.price %></td>
     <td><%= link_to t('Edit'), edit_purchase_path(purchase) %></td>
     <td><%= link_to t('Destroy'), purchase, :confirm => t('sure?'), :method => :delete %></td>
   </tr>

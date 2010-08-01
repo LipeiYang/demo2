@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-08-02
+  customer_id: 1
+  amount: 1.5
+
+two:
+  date: 2010-08-02
+  customer_id: 1
+  amount: 1.5

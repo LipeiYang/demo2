@@ -1,0 +1,22 @@
+<% form_for(@receivable) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label t('t_seq_no') %><br />
+    <%= f.text_field :seq_no %>
+  </p>
+  <p>
+    <%= f.label t('t_date') %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label t('t_customer') %><br />
+    <%= f.collection_select(:customer_id, Customer.all(:order=>"name"), :id, :name)%>
+  </p>     
+  <p>
+    <%= f.label t('t_amount') %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.submit t(button_label) %>
+  </p>
+<% end %>

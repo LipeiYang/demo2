@@ -1,0 +1,24 @@
+<h1><%=t('Listing receivables') %></h1>
+<%= link_to t('New receivable'), new_receivable_path %>
+<table>
+  <tr>
+    <th><%= t('t_seq_no') %></th>
+    <th><%= t('t_date') %></th>
+    <th><%= t('t_customer') %></th>
+    <th><%= t('t_amount') %></th>
+  </tr>
+
+<% @receivables.each do |receivable| %>
+  <tr>
+    <td><%=h receivable.seq_no %></td>
+    <td><%=h receivable.date %></td>
+    <td><%=h receivable.customer.name %></td>
+    <td><%=h receivable.amount %></td>
+    <td><%= link_to t('Edit'), edit_receivable_path(receivable) %></td>
+    <td><%= link_to t('Destroy'), receivable, :confirm => t('sure?'), :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
