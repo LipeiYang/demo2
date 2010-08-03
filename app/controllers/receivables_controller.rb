@@ -3,7 +3,8 @@ class ReceivablesController < ApplicationController
   # GET /receivables.xml
   def index
     @receivables = Receivable.all :order => 'date DESC, seq_no DESC'
-
+    @unpaid_orders = Order.find_all_by_is_paied('no')
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @receivables }

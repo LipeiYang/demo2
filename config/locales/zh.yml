@@ -33,6 +33,7 @@ zh:
   t_product: "产品"
   t_is_paied: "已付"
   t_amount: "金额"
+  t_total: "总计"
   sure?: "确定吗？"
   Password: "密码"
   t_yes: "是"

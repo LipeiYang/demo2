@@ -33,6 +33,7 @@ en:
   t_product: "product"
   t_is_paied: "is_paied"
   t_amount: "amount" 
+  t_total: "total"
   Password: "Password"
   sure?: "sure?"
   t_yes: "Yes"

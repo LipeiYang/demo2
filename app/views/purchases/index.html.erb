@@ -7,6 +7,7 @@
     <th><%= t('t_product') %></th>
     <th><%= t('t_price') %></th>
     <th><%= t('t_volume') %></th>
+    <th><%= t('t_total') %></th>
   </tr>
 
 <% @purchases.each do |purchase| %>
@@ -16,6 +17,7 @@
     <td><%=h purchase.product.name %></td>
     <td><%=h purchase.volume %></td>
     <td><%=h purchase.price %></td>
+    <td><%=h purchase.total %></td>
     <td><%= link_to t('Edit'), edit_purchase_path(purchase) %></td>
     <td><%= link_to t('Destroy'), purchase, :confirm => t('sure?'), :method => :delete %></td>
   </tr>

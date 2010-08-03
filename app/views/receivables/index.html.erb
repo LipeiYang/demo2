@@ -22,3 +22,17 @@
 
 <br />
 
+<h3>未付金额：<%=h total_unrec %> </h3>
+  <table>
+    <tr>
+      <th>客户</th>
+      <th>金额</th>
+    </tr>
+    <% customer_unrec_list.each do |o| %>
+      <tr>
+        <td><%=h o[0] %></td>
+        <td><%=h o[1] %></td>
+      </tr>
+    <% end %>
+  </table>        
+

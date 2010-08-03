@@ -28,8 +28,6 @@ class OrdersController < ApplicationController
       
     @qry_ord = Order.new(:product_id=>session[:product_id], :customer_id=>session[:customer_id])
     
-    logger.debug "@qry_ord.product_id: #{@qry_ord.product_id}"
-    
     @orders = Order.search_orders(@start_date, @end_date, @qry_ord)
     
     respond_to do |format|
