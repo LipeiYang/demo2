@@ -18,6 +18,12 @@ class Order < ActiveRecord::Base
     Date.civil year.to_i, month.to_i, day.to_i
   end
   
+  def before_save
+    self.manfee ||=0
+    self.volume ||=0
+    self.price ||=0
+  end
+  
   def material_fee
     price*volume
   end
