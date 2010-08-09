@@ -13,15 +13,14 @@
 </p>
 
 <p>
-  <b><%= t('t_price') %>:</b>
-  <%=h @purchase.price %>
-</p>
-
-<p>
   <b><%= t('t_volume') %>:</b>
   <%=h @purchase.volume %>
 </p>
 
+<p>
+  <b><%= t('t_price') %>:</b>
+  <%=h @purchase.price %>
+</p>
 
 <%= link_to t('Edit'), edit_purchase_path(@purchase) %> |
 <%= link_to t('Back'), purchases_path %>
