@@ -3935,3 +3935,41 @@ Rendering purchases/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
 Rendered layouts/_menu (0.0ms)
 Completed in 340ms (View: 320, DB: 10) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-10 00:39:55) [GET]
+Redirected to http://localhost:3000/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-10 00:39:55) [GET]
+Rendering sessions/new
+Completed in 90ms (View: 20, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-10 00:39:59) [POST]
+  Parameters: {"commit"=>"登\345\275\225", "authenticity_token"=>"6lk7iDiVrxLkXRMf3306P2eOOee+eO5L1BJMKvUwCRA=", "password"=>"158158"}
+Redirected to http://localhost:3000/orders
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-10 00:39:59) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (80.1ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-09' and '2010-08-10') ORDER BY date DESC, seq_no DESC[0m
+  [4;36;1mCustomer Load (10.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+  [4;36;1mCustomer Load (10.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 180ms (View: 130, DB: 20) | 200 OK [http://localhost/orders]
