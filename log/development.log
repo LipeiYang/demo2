@@ -1963,3 +1963,1467 @@ Rendering purchases/new
 Rendered purchases/_purchase_update_template (31.0ms)
 Rendered layouts/_menu (0.0ms)
 Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/purchases/new]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-18 23:00:19) [GET]
+Redirected to http://localhost:3000/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 234ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-18 23:00:19) [GET]
+Rendering sessions/new
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-18 23:00:23) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k=", "password"=>"158158"}
+Redirected to http://localhost:3000/orders
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-18 23:00:24) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (109.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-17' and '2010-08-18') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (16.0ms)
+Completed in 281ms (View: 204, DB: 15) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-18 23:00:27) [GET]
+  [4;35;1mPurchase Load (16.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 313ms (View: 281, DB: 32) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-08-18 23:00:29) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY purchases.id DESC LIMIT 1[0m
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (78.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/purchases/new]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:00:35) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (78.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:11:17) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `t' for #<Class:0x45df1d4>):
+  app/models/purchase.rb:4
+  app/controllers/purchases_controller.rb:44:in `create'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:11:56) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (16.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:14:50) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:22:35) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (109.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 156ms (View: 125, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:31:51) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (32.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:33:30) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (32.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:34:07) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (16.0ms)
+Rendered layouts/_menu (16.0ms)
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:34:18) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (32.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 156ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:34:35) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (32.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:34:42) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0."}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:38:03) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0."}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:38:30) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0."}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:39:15) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0."}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:39:28) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"50", "price"=>"0..0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0."}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-18 23:39:51) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (156.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-17' and '2010-08-18') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 172ms (View: 172, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-18 23:39:54) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 219ms (View: 203, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-18 23:39:55) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-17' and '2010-08-18') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 78ms (View: 46, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-18 23:39:57) [GET]
+  [4;35;1mPurchase Load (15.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 328ms (View: 281, DB: 15) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-08-18 23:40:15) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY purchases.id DESC LIMIT 1[0m
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 15, DB: 16) | 200 OK [http://localhost/purchases/new]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:40:19) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"a", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+  [4;36;1mPurchase Create (0.0ms)[0m   [0;1mINSERT INTO "purchases" ("updated_at", "seq_no", "price", "date", "product_id", "volume", "created_at") VALUES('2010-08-18 15:40:19', 0, 0.0, '2010-08-18', 8, 0.0, '2010-08-18 15:40:19')[0m
+Redirected to http://localhost:3000/purchases/50
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/purchases]
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-08-18 23:40:20) [GET]
+  Parameters: {"id"=>"50"}
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 50) [0m
+Rendering template within layouts/purchases
+Rendering purchases/show
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases/50]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-18 23:40:23) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 235ms (View: 203, DB: 16) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-08-18 23:42:32) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY purchases.id DESC LIMIT 1[0m
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases/new]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:42:36) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:42:55) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"2.3", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (15.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 125ms (View: 32, DB: 15) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:44:12) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"2.3", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (32.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:44:36) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"2.3", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:44:56) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"2.3", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:45:13) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"2.3", "price"=>"w", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"w"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 141ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:48:15) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"2.3", "price"=>"w", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"w"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 32, DB: 15) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:48:41) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"2.3", "price"=>"w", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"w"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-18 23:49:00) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 313ms (View: 297, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-08-18 23:49:18) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY purchases.id DESC LIMIT 1[0m
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases/new]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:52:56) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+
+ActionView::TemplateError (syntax error on line 60, col 10: `          attributes:') on line #1 of app/views/purchases/new.html.erb:
+1: <h1><%= t('New purchase') %></h1>
+2: 
+3: <%= render :partial => "purchase_update_template", :locals =>{ :button_label => "Create"} %>
+4: 
+
+    c:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+    c:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+    app/views/purchases/new.html.erb:1
+    app/controllers/purchases_controller.rb:51:in `create'
+    app/controllers/purchases_controller.rb:46:in `create'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:53:23) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:53:38) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"0.0", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"0.0"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:53:50) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:54:03) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-18 23:56:39) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing ReceivablesController#index (for 127.0.0.1 at 2010-08-18 23:56:55) [GET]
+  [4;36;1mReceivable Load (0.0ms)[0m   [0;1mSELECT * FROM "receivables" ORDER BY date DESC, seq_no DESC[0m
+  [4;35;1mOrder Load (31.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."is_paied" = 'no') [0m
+Rendering template within layouts/receivables
+Rendering receivables/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 17) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 10) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 29) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 30) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 563ms (View: 484, DB: 31) | 200 OK [http://localhost/receivables]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-18 23:56:56) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (15.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-17' and '2010-08-18') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 78ms (View: 48, DB: 15) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:47:45) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:50:39) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+
+ActionView::TemplateError (translation data {:t_seq_no=>nil} can not be used with :count => 1) on line #2 of app/views/purchases/_purchase_update_template.erb:
+1: <% form_for(@purchase) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label t('t_seq_no') %><br />
+5:     <%= f.text_field_hl :seq_no %>
+
+    app/views/purchases/_purchase_update_template.erb:2
+    app/views/purchases/_purchase_update_template.erb:1
+    app/views/purchases/new.html.erb:3
+    app/controllers/purchases_controller.rb:51:in `create'
+    app/controllers/purchases_controller.rb:46:in `create'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:50:57) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+
+ActionView::TemplateError (translation data {{"t_seq_no"=>nil}=>nil} can not be used with :count => 1) on line #2 of app/views/purchases/_purchase_update_template.erb:
+1: <% form_for(@purchase) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label t('t_seq_no') %><br />
+5:     <%= f.text_field_hl :seq_no %>
+
+    app/views/purchases/_purchase_update_template.erb:2
+    app/views/purchases/_purchase_update_template.erb:1
+    app/views/purchases/new.html.erb:3
+    app/controllers/purchases_controller.rb:51:in `create'
+    app/controllers/purchases_controller.rb:46:in `create'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:51:12) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+
+ActionView::TemplateError (missing interpolation argument in "{{t_seq_no}}" ({:count=>"1"} given)) on line #2 of app/views/purchases/_purchase_update_template.erb:
+1: <% form_for(@purchase) do |f| %>
+2:   <%= f.error_messages %>
+3:   <p>
+4:     <%= f.label t('t_seq_no') %><br />
+5:     <%= f.text_field_hl :seq_no %>
+
+    app/views/purchases/_purchase_update_template.erb:2
+    app/views/purchases/_purchase_update_template.erb:1
+    app/views/purchases/new.html.erb:3
+    app/controllers/purchases_controller.rb:51:in `create'
+    app/controllers/purchases_controller.rb:46:in `create'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:51:25) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:56:28) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:58:37) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 00:59:06) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (32.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 01:03:28) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (32.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 01:04:40) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 01:05:33) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"q", "price"=>"s", "date(2i)"=>"8", "date(3i)"=>"18", "product_id"=>"8", "volume"=>"s"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (110.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 125ms (View: 110, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-19 01:05:42) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-17' and '2010-08-18') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-08-19 01:05:45) [GET]
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" ORDER BY orders.id DESC LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-08-19 01:05:49) [POST]
+  Parameters: {"commit"=>"确定", "order"=>{"manfee"=>"0.0", "date(1i)"=>"2010", "seq_no"=>"a", "price"=>"a", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>"a"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+  [4;35;1mOrder Create (0.0ms)[0m   [0mINSERT INTO "orders" ("manfee", "updated_at", "seq_no", "price", "date", "product_id", "customer_id", "is_paied", "volume", "created_at") VALUES(0.0, '2010-08-18 17:05:49', 0, 0.0, '2010-08-19', 8, 8, 'no', 0.0, '2010-08-18 17:05:49')[0m
+Redirected to http://localhost:3000/orders/406
+Completed in 141ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-08-19 01:05:49) [GET]
+  Parameters: {"id"=>"406"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 406) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders/406]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-19 01:05:52) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (31.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-17' and '2010-08-18') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-19 01:06:00) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 234ms (View: 219, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-08-19 01:06:02) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY purchases.id DESC LIMIT 1[0m
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (16.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases/new]
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-08-19 01:06:05) [POST]
+  Parameters: {"purchase"=>{"date(1i)"=>"2010", "seq_no"=>"a", "price"=>"a", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "volume"=>"a"}, "commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/purchases
+Rendering purchases/new
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered purchases/_purchase_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing ReceivablesController#new (for 127.0.0.1 at 2010-08-19 01:09:14) [GET]
+  [4;35;1mReceivable Load (0.0ms)[0m   [0mSELECT * FROM "receivables" ORDER BY receivables.id DESC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "receivables" ORDER BY receivables.id DESC LIMIT 1[0m
+Rendering template within layouts/receivables
+Rendering receivables/new
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+Rendered receivables/_receivable_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/receivables/new]
+
+
+Processing ReceivablesController#create (for 127.0.0.1 at 2010-08-19 01:09:17) [POST]
+  Parameters: {"commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k=", "receivable"=>{"date(1i)"=>"2010", "seq_no"=>"a", "date(2i)"=>"8", "date(3i)"=>"19", "amount"=>"a", "customer_id"=>"8"}}
+Rendering template within layouts/receivables
+Rendering receivables/new
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+Rendered receivables/_receivable_update_template (156.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 188ms (View: 172, DB: 0) | 200 OK [http://localhost/receivables]
+
+
+Processing OrdersController#new (for 127.0.0.1 at 2010-08-19 01:09:32) [GET]
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" ORDER BY orders.id DESC LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/orders/new]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-08-19 01:09:36) [POST]
+  Parameters: {"commit"=>"确定", "order"=>{"manfee"=>"a", "date(1i)"=>"2010", "seq_no"=>"a", "price"=>"a", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>"a"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mCustomer Load (15.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (47.0ms)
+Rendered layouts/_menu (16.0ms)
+Completed in 94ms (View: 64, DB: 15) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-08-19 01:09:56) [POST]
+  Parameters: {"commit"=>"确定", "order"=>{"manfee"=>"1.0.", "date(1i)"=>"2010", "seq_no"=>"5.6", "price"=>"1..0", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>".3"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+Rendering template within layouts/orders
+Rendering orders/new
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (125.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 157ms (View: 141, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#create (for 127.0.0.1 at 2010-08-19 01:10:17) [POST]
+  Parameters: {"commit"=>"确定", "order"=>{"manfee"=>".3", "date(1i)"=>"2010", "seq_no"=>"6", "price"=>".3", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>".3"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k="}
+  [4;36;1mOrder Create (0.0ms)[0m   [0;1mINSERT INTO "orders" ("manfee", "updated_at", "seq_no", "price", "date", "product_id", "customer_id", "is_paied", "volume", "created_at") VALUES(0.3, '2010-08-18 17:10:17', 6, 0.3, '2010-08-19', 8, 8, 'no', 0.3, '2010-08-18 17:10:17')[0m
+Redirected to http://localhost:3000/orders/407
+Completed in 172ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-08-19 01:10:18) [GET]
+  Parameters: {"id"=>"407"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 407) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/orders/407]
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-08-19 01:10:22) [GET]
+  Parameters: {"id"=>"407"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 407) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (47.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/orders/407/edit]
+
+
+Processing OrdersController#update (for 127.0.0.1 at 2010-08-19 01:10:27) [PUT]
+  Parameters: {"commit"=>"更新", "order"=>{"manfee"=>"q", "date(1i)"=>"2010", "seq_no"=>"q", "price"=>"q", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>"q"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k=", "id"=>"407"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 407) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (204.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 219ms (View: 204, DB: 0) | 200 OK [http://localhost/orders/407]
+
+
+Processing OrdersController#update (for 127.0.0.1 at 2010-08-19 01:11:15) [PUT]
+  Parameters: {"commit"=>"更新", "order"=>{"manfee"=>"q", "date(1i)"=>"2010", "seq_no"=>"q", "price"=>"q", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>"q"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k=", "id"=>"407"}
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 407) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (62.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/orders/407]
+
+
+Processing OrdersController#update (for 127.0.0.1 at 2010-08-19 01:11:35) [PUT]
+  Parameters: {"commit"=>"更新", "order"=>{"manfee"=>"q", "date(1i)"=>"2010", "seq_no"=>"q", "price"=>"q", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>"q"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k=", "id"=>"407"}
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 407) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (62.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 47, DB: 15) | 200 OK [http://localhost/orders/407]
+
+
+Processing OrdersController#update (for 127.0.0.1 at 2010-08-19 01:12:58) [PUT]
+  Parameters: {"commit"=>"更新", "order"=>{"manfee"=>"q", "date(1i)"=>"2010", "seq_no"=>"q", "price"=>"q", "date(2i)"=>"8", "date(3i)"=>"19", "product_id"=>"8", "is_paied"=>"no", "customer_id"=>"8", "volume"=>"q"}, "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k=", "id"=>"407"}
+  [4;36;1mOrder Load (15.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 407) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (62.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 93ms (View: 63, DB: 30) | 200 OK [http://localhost/orders/407]
+
+
+Processing ReceivablesController#create (for 127.0.0.1 at 2010-08-19 01:16:58) [POST]
+  Parameters: {"commit"=>"确定", "authenticity_token"=>"xwrANSTzo2EAj2Ff2I0SikUi0DruKVVt7w0sNXgu10k=", "receivable"=>{"date(1i)"=>"2010", "seq_no"=>"a", "date(2i)"=>"8", "date(3i)"=>"19", "amount"=>"a", "customer_id"=>"8"}}
+Rendering template within layouts/receivables
+Rendering receivables/new
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+Rendered receivables/_receivable_update_template (31.0ms)
+Rendered layouts/_menu (0.0ms)
+Completed in 47ms (View: 32, DB: 15) | 200 OK [http://localhost/receivables]

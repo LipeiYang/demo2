@@ -41,3 +41,31 @@ zh:
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]
+  
+  activerecord:
+    models:
+      order: "交易单"
+      purchase: "进货单"
+      receivable: "收款单"
+    attributes:
+      order:
+        seq_no: "编号"
+        volume: "数量（公斤）"    
+        price: "价格（元）"
+        manfee: "加工费（元）"
+      purchase:
+        seq_no: "编号"
+        volume: "数量（公斤）"    
+        price: "价格（元）"
+      receivable:
+        seq_no: "编号"
+        amount: "金额"    
+    errors:
+      template:
+        header:
+          one:   "不能写入账本，因为有1个错误"
+          other: "不能写入账本，因为有{{count}}个错误"
+        body:    "可能与以下内容有关:"
+      messages:
+        not_a_number: "必须是数字"
+        not_an_integer: "必须是整数"
