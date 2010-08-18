@@ -2,7 +2,7 @@
   <%= f.error_messages %>
   <p>
     <%= f.label t('t_seq_no') %><br />
-    <%= f.text_field :seq_no %>
+    <%= f.text_field_hl :seq_no %>
   </p>
   <p>
     <%= f.label t('t_date') %><br />
@@ -14,7 +14,7 @@
   </p>     
   <p>
     <%= f.label t('t_amount') %><br />
-    <%= f.text_field :amount %>
+    <%= f.text_field_hl :amount %>
   </p>
   <p>
     <%= f.submit t(button_label) %>

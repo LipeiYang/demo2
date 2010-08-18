@@ -2,7 +2,7 @@
   <%= f.error_messages %>
   <p>
     <%= f.label t('t_seq_no') %><br />
-    <%= f.text_field :seq_no %>
+    <%= f.text_field_hl :seq_no %>
   </p>
   <p>
     <%= f.label t('t_date') %><br />
@@ -10,15 +10,15 @@
   </p>
   <p>
     <%= f.label t('t_product') %><br />
-    <%= collection_select(:purchase, :product_id, Product.all, :id, :name) %>
+    <%= collection_select(:purchase, :product_id, Product.all(:order=>"name"), :id, :name) %>
   </p>
   <p>
     <%= f.label t('t_volume') %><br />
-    <%= f.text_field :volume %>
+    <%= f.text_field_hl :volume %>
   </p>
   <p>
     <%= f.label t('t_price') %><br />
-    <%= f.text_field :price %>
+    <%= f.text_field_hl :price %>
   </p>
   <p>
     <%= f.submit t(button_label) %>

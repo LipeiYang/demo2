@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100801160437) do
+ActiveRecord::Schema.define(:version => 20100814143227) do
 
   create_table "customers", :force => true do |t|
     t.string    "name"
@@ -38,22 +38,22 @@ ActiveRecord::Schema.define(:version => 20100801160437) do
   end
 
   create_table "purchases", :force => true do |t|
-    t.date      "date"
-    t.integer   "product_id"
-    t.float     "price"
-    t.float     "volume"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.integer   "seq_no"
+    t.date     "date"
+    t.integer  "product_id"
+    t.float    "price",      :default => 0.0
+    t.float    "volume",     :default => 0.0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "seq_no"
   end
 
   create_table "receivables", :force => true do |t|
-    t.integer  "seq_no"
-    t.date     "date"
-    t.integer  "customer_id"
-    t.float    "amount",      :default => 0.0
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer   "seq_no"
+    t.date      "date"
+    t.integer   "customer_id"
+    t.float     "amount",      :default => 0.0
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
 end
