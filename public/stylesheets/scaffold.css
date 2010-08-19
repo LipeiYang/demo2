@@ -21,25 +21,29 @@ th {
 
 table
 {
-border-collapse:collapse;
+  border-collapse:collapse;
 }
 td, th 
 {
-border:1px solid #98bf21;
-padding:3px 7px 2px 7px;
+  border:1px solid #98bf21;
+  padding:3px 7px 2px 7px;
 }
 th 
 {
-width: 85px;
-text-align:left;
-padding-top:5px;
-padding-bottom:4px;
-background-color:#A7C942;
+  width: 85px;
+  text-align:left;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#A7C942;
+}
+td.right
+{
+  text-align:right;
 }
 tr.alt
 {
-color:#000000;
-background-color:#EAF2D3;
+  color:#000000;
+  background-color:#EAF2D3;
 }
 
 body, p, ol, ul, td {

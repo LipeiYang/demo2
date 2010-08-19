@@ -20,10 +20,10 @@
     <td><%=h order.date %></td>
     <td><%=h order.customer.name %></td>
     <td><%=h order.product.name %></td>
-    <td><%=h order.volume %></td>
-    <td><%=h order.price %></td>
-    <td><%=h order.manfee %></td>
-    <td><%=h order.totale %></td>
+    <td class="right"><%=f order.volume %></td>
+    <td class="right"><%=f order.price %></td>
+    <td class="right"><%=f order.manfee %></td>
+    <td class="right"><%=f order.totale %></td>
     <td><%=h t("t_#{order.is_paied}") %></td>
     <td><%= link_to t('Edit'), edit_order_path(order) %></td>
     <td><%= link_to t('Destroy'), order, :confirm => t('sure?'), :method => :delete %></td>
@@ -33,7 +33,7 @@
 
 <br />
 
-<h3>总材料费：<%=h total_material_fee %> </h3>
+<h3>总材料费：<%=f total_material_fee %> </h3>
   <table>
     <tr>
       <th>产品</th>
@@ -45,32 +45,19 @@
     <% product_position_list.each do |o| %>
       <tr>
         <td><%=h o[0] %></td>
-        <td><%=h o[1][:total_volume] %></td>
-        <td><%=h o[1][:total_mat_fee] %></td>
-        <td><%=h o[1][:total_cost] %></td>
-        <td><%=h o[1][:total_profit] %></td>
+        <td class="right"><%=f o[1][:total_volume] %></td>
+        <td class="right"><%=f o[1][:total_mat_fee] %></td>
+        <td class="right"><%=f o[1][:total_cost] %></td>
+        <td class="right"><%=f o[1][:total_profit] %></td>
       </tr>
     <% end %>
   </table>                                  
-<h3>总材料成本：<%=h total_material_cost %> </h3>
-<h3>总加工费：<%=h total_manfee %> </h3>
-<h3>总收益：<%=h total_revenue %> </h3>
-<h3>总利润：<%=h total_profit %> </h3>
-<h3>已付金额：<%=h total_paied %><br />
-<h3>未付金额：<%=h total_unpaied %> </h3>
-  <!-- <table>
-    <tr>
-      <th>�7</th>
-      <th>ѝ</th>
-    </tr>
-    <% customer_unpaied_list.each do |o| %>
-      <tr>
-        <td><%=h o[0] %></td>
-        <td><%=h o[1] %></td>
-      </tr>
-    <% end %>
-  </table>        
-<br /> -->
+<h3>总材料成本：<%=f total_material_cost %> </h3>
+<h3>总加工费：<%=f total_manfee %> </h3>
+<h3>总收益：<%=f total_revenue %> </h3>
+<h3>总利润：<%=f total_profit %> </h3>
+<h3>已付金额：<%=f total_paied %><br />
+<h3>未付金额：<%=f total_unpaied %> </h3>
   <table>
     <tr>
       <th>客户</th>
@@ -82,11 +69,11 @@
     <% customer_position_list.each do |o| %>
       <tr>
         <td><%=h o[0] %></td>
-        <td><%=h o[1][:total_mat_fee] %></td>
-        <td><%=h o[1][:total_mat_profit] %></td>
-        <td><%=h o[1][:total_man_fee] %></td>
-        <td><%=h o[1][:total_profit] %></td>
+        <td class="right"><%=f o[1][:total_mat_fee] %></td>
+        <td class="right"><%=f o[1][:total_mat_profit] %></td>
+        <td class="right"><%=f o[1][:total_man_fee] %></td>
+        <td class="right"><%=f o[1][:total_profit] %></td>
       </tr>
     <% end %>
   </table>                                  
-<h3>总金额：<%=h total %> </h3>
+<h3>总金额：<%=f total %> </h3>
