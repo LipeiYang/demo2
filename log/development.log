@@ -3427,3 +3427,2031 @@ Rendering receivables/new
 Rendered receivables/_receivable_update_template (31.0ms)
 Rendered layouts/_menu (0.0ms)
 Completed in 47ms (View: 32, DB: 15) | 200 OK [http://localhost/receivables]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:45:04) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 484ms (View: 375, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:50:21) [GET]
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 156ms (View: 141, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:53:11) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 188ms (View: 172, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:53:18) [GET]
+  [4;35;1mCustomer Load (16.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 110ms (View: 94, DB: 16) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:54:44) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:57:59) [GET]
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 234ms (View: 203, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:58:25) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#new (for 127.0.0.1 at 2010-08-19 21:58:30) [GET]
+Rendering template within layouts/customers
+Rendering customers/new
+Rendered customers/_customer_update_template (31.0ms)
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/customers/new]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:58:37) [GET]
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 234ms (View: 203, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:59:39) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#new (for 127.0.0.1 at 2010-08-19 21:59:41) [GET]
+Rendering template within layouts/customers
+Rendering customers/new
+Rendered customers/_customer_update_template (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/customers/new]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:59:43) [GET]
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 171ms (View: 156, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#new (for 127.0.0.1 at 2010-08-19 21:59:47) [GET]
+Rendering template within layouts/customers
+Rendering customers/new
+Rendered customers/_customer_update_template (16.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/customers/new]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:59:51) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#edit (for 127.0.0.1 at 2010-08-19 21:59:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/edit
+Rendered customers/_customer_update_template (15.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/customers/1/edit]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 21:59:56) [GET]
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 125ms (View: 109, DB: 16) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#edit (for 127.0.0.1 at 2010-08-19 22:01:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/edit
+Rendered customers/_customer_update_template (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/customers/1/edit]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 22:01:06) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 22:02:08) [GET]
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#edit (for 127.0.0.1 at 2010-08-19 22:02:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/edit
+Rendered customers/_customer_update_template (15.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/customers/1/edit]
+
+
+Processing CustomersController#update (for 127.0.0.1 at 2010-08-19 22:02:13) [PUT]
+  Parameters: {"commit"=>"更新", "authenticity_token"=>"ti5cSNBUzqVpIZvnZ3TFpanWccxgoiDVtxOERah6cmI=", "id"=>"1", "customer"=>{"name"=>"未定"}}
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Redirected to http://localhost:3000/customers/1
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/customers/1]
+
+
+Processing CustomersController#show (for 127.0.0.1 at 2010-08-19 22:02:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/customers/1]
+
+
+Processing CustomersController#edit (for 127.0.0.1 at 2010-08-19 22:02:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/edit
+Rendered customers/_customer_update_template (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/customers/1/edit]
+
+
+Processing CustomersController#update (for 127.0.0.1 at 2010-08-19 22:02:44) [PUT]
+  Parameters: {"commit"=>"更新", "authenticity_token"=>"ti5cSNBUzqVpIZvnZ3TFpanWccxgoiDVtxOERah6cmI=", "id"=>"1", "customer"=>{"name"=>"未定"}}
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Redirected to http://localhost:3000/customers/1
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/customers/1]
+
+
+Processing CustomersController#show (for 127.0.0.1 at 2010-08-19 22:02:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+Rendering template within layouts/customers
+Rendering customers/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/customers/1]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 22:02:47) [GET]
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Completed in 125ms (View: 109, DB: 16) | 200 OK [http://localhost/customers]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 22:08:29) [GET]
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Rendered layouts/_menu (16.0ms)
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing ReceivablesController#index (for 127.0.0.1 at 2010-08-19 22:08:31) [GET]
+  [4;36;1mReceivable Load (0.0ms)[0m   [0;1mSELECT * FROM "receivables" ORDER BY date DESC, seq_no DESC[0m
+  [4;35;1mOrder Load (47.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."is_paied" = 'no') [0m
+Rendering template within layouts/receivables
+Rendering receivables/index
+  [4;36;1mCustomer Load (15.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (16.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 17) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 10) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 29) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 30) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 578ms (View: 421, DB: 94) | 200 OK [http://localhost/receivables]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 22:08:33) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Rendered layouts/_menu (0.0ms)
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing ReceivablesController#index (for 127.0.0.1 at 2010-08-19 22:08:35) [GET]
+  [4;35;1mReceivable Load (0.0ms)[0m   [0mSELECT * FROM "receivables" ORDER BY date DESC, seq_no DESC[0m
+  [4;36;1mOrder Load (31.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."is_paied" = 'no') [0m
+Rendering template within layouts/receivables
+Rendering receivables/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 17) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 13) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 10) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 29) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 30) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 547ms (View: 484, DB: 31) | 200 OK [http://localhost/receivables]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-19 22:08:37) [GET]
+  [4;35;1mPurchase Load (0.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 234ms (View: 218, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-19 22:08:38) [GET]
+Redirected to http://localhost:3000/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/orders]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-19 22:08:39) [GET]
+Rendering sessions/new
+Completed in 157ms (View: 141, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-19 22:08:49) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"ti5cSNBUzqVpIZvnZ3TFpanWccxgoiDVtxOERah6cmI=", "password"=>"158158"}
+Redirected to http://localhost:3000/orders
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-19 22:08:51) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-18' and '2010-08-19') ORDER BY date DESC, seq_no DESC[0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-19 22:08:56) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 312ms (View: 280, DB: 16) | 200 OK [http://localhost/purchases]
+
+
+Processing ReceivablesController#index (for 127.0.0.1 at 2010-08-19 22:08:57) [GET]
+  [4;36;1mReceivable Load (0.0ms)[0m   [0;1mSELECT * FROM "receivables" ORDER BY date DESC, seq_no DESC[0m
+  [4;35;1mOrder Load (32.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."is_paied" = 'no') [0m
+Rendering template within layouts/receivables
+Rendering receivables/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 17) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 10) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 29) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 30) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 485ms (View: 392, DB: 47) | 200 OK [http://localhost/receivables]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 22:08:59) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Rendered layouts/_menu (0.0ms)
+Completed in 188ms (View: 172, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing ReceivablesController#index (for 127.0.0.1 at 2010-08-19 22:09:09) [GET]
+  [4;35;1mReceivable Load (0.0ms)[0m   [0mSELECT * FROM "receivables" ORDER BY date DESC, seq_no DESC[0m
+  [4;36;1mOrder Load (32.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."is_paied" = 'no') [0m
+Rendering template within layouts/receivables
+Rendering receivables/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 17) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 13) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 10) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 28) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 29) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 30) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 422ms (View: 313, DB: 63) | 200 OK [http://localhost/receivables]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-19 22:09:11) [GET]
+  [4;35;1mPurchase Load (16.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 312ms (View: 296, DB: 16) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-19 22:09:12) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-18' and '2010-08-19') ORDER BY date DESC, seq_no DESC[0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 62, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-19 22:09:14) [GET]
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 297ms (View: 281, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing ReceivablesController#index (for 127.0.0.1 at 2010-08-19 22:09:15) [GET]
+  [4;36;1mReceivable Load (0.0ms)[0m   [0;1mSELECT * FROM "receivables" ORDER BY date DESC, seq_no DESC[0m
+  [4;35;1mOrder Load (32.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."is_paied" = 'no') [0m
+Rendering template within layouts/receivables
+Rendering receivables/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 17) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 10) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 28) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 5) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 20) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 29) [0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 30) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 31) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 27) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 8) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 438ms (View: 360, DB: 32) | 200 OK [http://localhost/receivables]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-19 22:09:18) [GET]
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/customers
+Rendering customers/index
+Rendered layouts/_menu (0.0ms)
+Completed in 188ms (View: 188, DB: 0) | 200 OK [http://localhost/customers]

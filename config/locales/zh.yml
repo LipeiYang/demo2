@@ -7,16 +7,18 @@ zh:
   Listing customers: "客户列表"
   Listing purchases: "进货清单"
   Listing receivables: "收款清单"
-  Show: "查看"
-  Edit: "修改"
-  Destroy: "删除"
   New order: "添加订单"
   New purchase: "添加进货"
   New receivable: "添加收款"
-  Update: "更新"
+  New customer: "添加客户"
   Editing order: "修改订单"
   Editing purchase: "修改进货单"
   Editing receivable: "修改收款单"
+  Editing customer: "修改客户"
+  Show: "查看"
+  Edit: "修改"
+  Destroy: "删除"
+  Update: "更新"
   Back: "返回"
   Logout: "退出"
   Login: "登录"
@@ -59,7 +61,9 @@ zh:
         price: "价格（元）"
       receivable:
         seq_no: "编号"
-        amount: "金额"    
+        amount: "金额"
+      customer:
+        name: "姓名"
     errors:
       template:
         header:

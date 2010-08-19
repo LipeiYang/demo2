@@ -1,20 +1,20 @@
-<h1>Listing customers</h1>
+<h1><%= t('Listing customers') %></h1>
+
+<h3><%= link_to t('New customer'), new_customer_path %></h3>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th><%= Customer.human_attribute_name(:name) %></th>
   </tr>
 
 <% @customers.each do |customer| %>
   <tr>
     <td><%=h customer.name %></td>
-    <!-- <td><%= link_to 'Show', customer %></td> -->
-    <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+    <td><%= link_to t('Edit'), edit_customer_path(customer) %></td>
     <!-- <td><%= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete %></td> -->
   </tr>
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New customer', new_customer_path %>
+
