@@ -1,0 +1,13 @@
+<p>
+  <b>Seq no:</b>
+  <%=h @supplier.seq_no %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @supplier.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_supplier_path(@supplier) %> |
+<%= link_to 'Back', suppliers_path %>

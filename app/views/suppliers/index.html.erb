@@ -1,0 +1,20 @@
+<h1><%= t('Listing suppliers') %></h1>
+
+<h3><%= link_to t('New supplier'), new_supplier_path %></h3>
+
+<table>
+  <tr>
+    <th><%= Supplier.human_attribute_name(:seq_no) %></th>
+    <th><%= Supplier.human_attribute_name(:name) %></th>
+  </tr>
+
+<% @suppliers.each do |supplier| %>
+  <tr>
+    <td><%=h supplier.seq_no %></td>
+    <td><%=h supplier.name %></td>
+    <td><%= link_to t('Edit'), edit_supplier_path(supplier) %></td>
+    <!-- <td><%= link_to 'Destroy', supplier, :confirm => 'Are you sure?', :method => :delete %></td> -->
+  </tr>
+<% end %>
+</table>
+

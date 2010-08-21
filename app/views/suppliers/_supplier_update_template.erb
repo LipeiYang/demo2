@@ -1,0 +1,15 @@
+<% form_for(@supplier) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :seq_no %><br />
+    <%= f.text_field :seq_no %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit t(button_label) %>
+  </p>
+<% end %>

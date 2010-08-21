@@ -1,20 +1,5 @@
-<h1>Editing product</h1>
+<h1><%= t('Editing product') %></h1>
 
-<% form_for(@product) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => "product_update_template", :locals =>{ :button_label => "Update"} %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+<%= link_to t('Back'), products_path %>

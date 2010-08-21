@@ -28,4 +28,12 @@ class ApplicationController < ActionController::Base
       false  
     end  
   end 
+  
+  def get_next_id(m)
+    unless m.last.blank?
+      m.last.id+1
+    else
+      1
+    end
+  end
 end

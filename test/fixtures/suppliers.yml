@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  seq_no: 1
+  name: MyString
+
+two:
+  seq_no: 1
+  name: MyString

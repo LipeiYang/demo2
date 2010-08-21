@@ -3,18 +3,24 @@
 
 zh:
   hello: "你好"
-  listing_orders: "交易清单"
-  Listing customers: "客户列表"
+  Listing orders: "交易清单"
   Listing purchases: "进货清单"
   Listing receivables: "收款清单"
+  Listing customers: "客户列表"
+  Listing suppliers: "供应商列表"
+  Listing products: "产品列表"
   New order: "添加订单"
   New purchase: "添加进货"
   New receivable: "添加收款"
   New customer: "添加客户"
+  New supplier: "添加供应商"
+  New product: "添加产品"
   Editing order: "修改订单"
   Editing purchase: "修改进货单"
   Editing receivable: "修改收款单"
   Editing customer: "修改客户"
+  Editing supplier: "修改供应商"
+  Editing product: "修改产品"
   Show: "查看"
   Edit: "修改"
   Destroy: "删除"
@@ -49,6 +55,7 @@ zh:
       order: "交易单"
       purchase: "进货单"
       receivable: "收款单"
+      supplier: "供应商"
     attributes:
       order:
         seq_no: "编号"
@@ -64,12 +71,18 @@ zh:
         amount: "金额"
       customer:
         name: "姓名"
+      supplier:
+        seq_no: "编号"
+        name: "姓名"
+      product:
+        name: "名称"
+        price: "成本价（元）"
     errors:
       template:
         header:
           one:   "不能写入账本，因为有1个错误"
           other: "不能写入账本，因为有{{count}}个错误"
-        body:    "可能与以下内容有关:"
+        body:    "可能关于以下内容:"
       messages:
         not_a_number: "必须是数字"
         not_an_integer: "必须是整数"

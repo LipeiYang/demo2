@@ -3,7 +3,7 @@
 
 en:
   hello: "Hello world"
-  listing_orders: "Listing orders"
+  Listing orders: "Listing orders"
   Listing customers: "Listing customers"
   Listing purchases: "Listing purchases"
   Listing receivables: "Listing receivables"
