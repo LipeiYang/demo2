@@ -5,9 +5,13 @@
 
 <p>
   <b><%= Product.human_attribute_name(:price) %>:</b>
-  <%=h @product.price %>
+  <%=f @product.price %>
 </p>
 
+<p>
+  <b><%= Product.human_attribute_name(:weighted_cost) %>:</b>
+  <%=f @product.weighted_cost %>
+</p>
 
 <%= link_to t('Edit'), edit_product_path(@product) %> |
 <%= link_to t('Back'), products_path %>

@@ -76,7 +76,8 @@ zh:
         name: "姓名"
       product:
         name: "名称"
-        price: "成本价（元）"
+        price: "成本价"
+        weighted_cost: "参考成本"
     errors:
       template:
         header:
