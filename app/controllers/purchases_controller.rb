@@ -25,7 +25,7 @@ class PurchasesController < ApplicationController
   # GET /purchases/new.xml
   def new
     @purchase = Purchase.new
-    @purchase.seq_no = Purchase.last.id+1
+    @purchase.seq_no = get_next_id(Purchase)
 
     respond_to do |format|
       format.html # new.html.erb

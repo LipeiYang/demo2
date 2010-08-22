@@ -8,8 +8,8 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
-  before_filter :set_locale
-  
+  before_filter :set_locale, :authorize
+
   def set_locale
     I18n.locale = params[:locale]
   end
@@ -30,10 +30,6 @@ class ApplicationController < ActionController::Base
   end 
   
   def get_next_id(m)
-    unless m.last.blank?
-      m.last.id+1
-    else
-      1
-    end
+    m.last.blank? ? 1 : m.last.id+1
   end
 end

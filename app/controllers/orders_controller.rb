@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
   
-  before_filter :authorize
+  # before_filter :authorize
+  
   # GET /orders
   # GET /orders.xml
   def index
@@ -51,7 +52,7 @@ class OrdersController < ApplicationController
   # GET /orders/new.xml
   def new
     @order = Order.new
-    @order.seq_no = Order.last.id+1
+    @order.seq_no = get_next_id(Order)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @order }

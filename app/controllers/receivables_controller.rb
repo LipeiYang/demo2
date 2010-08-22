@@ -26,12 +26,7 @@ class ReceivablesController < ApplicationController
   # GET /receivables/new.xml
   def new
     @receivable = Receivable.new
-    unless Receivable.last.blank?
-      @receivable.seq_no = Receivable.last.id+1
-    else
-      @receivable.seq_no = 1
-    end
-
+    @receivable.seq_no = get_next_id(Receivable)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @receivable }

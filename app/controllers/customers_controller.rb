@@ -2,7 +2,7 @@ class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.xml
   def index
-    @customers = Customer.all
+    @customers = Customer.all :order => 'name'
 
     respond_to do |format|
       format.html # index.html.erb

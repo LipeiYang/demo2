@@ -87,3 +87,4 @@ zh:
       messages:
         not_a_number: "必须是数字"
         not_an_integer: "必须是整数"
+        blank: "必须填写"
