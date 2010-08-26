@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
     end
     
     def set_db_schema
-      SchemaUtils.add_schema_to_path(current_user.db_schema)
+      SchemaUtils.add_schema_to_path current_user.db_schema
     end
 
     def current_user_session
