@@ -1,6 +1,6 @@
 class UserSessionsController < ApplicationController
   skip_before_filter :require_user, :only => [:new, :create]
-  
+  skip_before_filter :set_db_schema
   def new
     @user_session = UserSession.new
   end

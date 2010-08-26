@@ -1,13 +1,13 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
-
+require 'schema_utils'
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   helper_method :current_user_session, :current_user
   filter_parameter_logging :password, :password_confirmation
 
-  before_filter :set_locale, :require_user
+  before_filter :set_locale, :require_user, :set_db_schema
 
   protected
     def get_next_id(m)
@@ -18,6 +18,19 @@ class ApplicationController < ActionController::Base
     def set_locale
       I18n.locale = params[:locale]
     end
+    
+    def require_user
+      unless current_user
+        store_location
+        # flash[:notice] = "You must be logged in to access this page"
+        redirect_to login_path
+        return false
+      end
+    end
+    
+    def set_db_schema
+      SchemaUtils.add_schema_to_path(current_user.db_schema)
+    end
 
     def current_user_session
       return @current_user_session if defined?(@current_user_session)
@@ -27,15 +40,6 @@ class ApplicationController < ActionController::Base
     def current_user
       return @current_user if defined?(@current_user)
       @current_user = current_user_session && current_user_session.record
-    end
-    
-    def require_user
-      unless current_user
-        store_location
-        # flash[:notice] = "You must be logged in to access this page"
-        redirect_to login_path
-        return false
-      end
     end
 
     # def require_no_user

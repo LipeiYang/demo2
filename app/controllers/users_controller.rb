@@ -1,4 +1,7 @@
+require 'schema_utils'
 class UsersController < ApplicationController
+  skip_before_filter :require_user
+  
   # GET /users
   # GET /users.xml
   def index
@@ -43,7 +46,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     respond_to do |format|
-      if @user.save
+      if SchemaUtils.create_and_migrate_schema(@user.db_schema) && @user.save
         format.html { redirect_to(@user, :notice => 'User was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
