@@ -4,29 +4,11 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  helper_method :current_user_session, :current_user
+  filter_parameter_logging :password, :password_confirmation
 
-  # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
-  
-  before_filter :set_locale, :require_user #, :authorize
+  before_filter :set_locale, :require_user
 
-
-
-  
-
-  # helper_method :admin?    
-  # protected  
-  # def admin?
-  #   session[:password] == "158158"  
-  # end     
-  # 
-  # def authorize  
-  #   unless admin?  
-  #     flash[:error] = "Unauthorized access"
-  #     redirect_to login_path  
-  #     false  
-  #   end  
-  # end 
   protected
     def get_next_id(m)
       m.last.blank? ? 1 : m.last.id+1
@@ -37,10 +19,6 @@ class ApplicationController < ActionController::Base
       I18n.locale = params[:locale]
     end
 
-  helper_method :current_user_session, :current_user
-  filter_parameter_logging :password, :password_confirmation
-  
-  private
     def current_user_session
       return @current_user_session if defined?(@current_user_session)
       @current_user_session = UserSession.find
