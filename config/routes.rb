@@ -1,21 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.login 'login', :controller => 'user_sessions', :action => 'new'  
-  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'  
-  map.resources :user_sessions
-  map.resources :users
-
-  map.resources :users
 
   map.resources :suppliers
 
   map.resources :receivables
 
   map.resources :purchases
-
-  
-  map.home '', :controller => 'orders', :action => 'index'
-  # map.login 'login', :controller => 'sessions', :action => 'new'
-  # map.logout 'logout', :controller => 'sessions', :action => 'destroy'
   
   map.resource :sessions
   
@@ -24,6 +13,15 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :customers
 
   map.resources :products
+  
+  map.resources :user_sessions
+
+  map.resources :users
+  
+  map.login 'login', :controller => 'user_sessions', :action => 'new'  
+  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'  
+  
+  map.home '', :controller => 'orders', :action => 'index'
 
   # The priority is based upon order of creation: first created -> highest priority.
 
