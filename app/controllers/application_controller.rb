@@ -10,6 +10,8 @@ class ApplicationController < ActionController::Base
   
   before_filter :set_locale, :authorize
 
+
+
   def set_locale
     I18n.locale = params[:locale]
   end
