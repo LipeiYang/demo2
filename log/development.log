@@ -27832,3 +27832,2249 @@ Completed in 0ms (DB: 0) | 302 Found [http://localhost/customers]
 Processing SessionsController#new (for 127.0.0.1 at 2010-08-22 15:12:55) [GET]
 Rendering sessions/new
 Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mOrder Load (94.0ms)[0m   [0;1mSELECT * FROM "orders" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "confirmation_token" varchar(255), "confirmed_at" datetime, "confirmation_sent_at" datetime, "reset_password_token" varchar(255), "remember_token" varchar(255), "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_confirmation_token')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100824165145')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("receivables")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("suppliers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_confirmation_token')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 00:59:06) [GET]
+
+ActionController::RoutingError (No route matches "/sign_up" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 00:59:26) [GET]
+
+ActionController::RoutingError (No route matches "/sign_in" with {:method=>:get}):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 00:59:55) [GET]
+Redirected to http://localhost:3000/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 235ms (DB: 0) | 302 Found [http://localhost/users/sign_up]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 00:59:57) [GET]
+Rendering sessions/new
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 01:00:32) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-25 01:01:54) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "password"=>"123", "email"=>"123"}, "commit"=>"Sign up", "authenticity_token"=>"h+O1yc87GMWgO4w7m11SqSTT0VfWShUJAo5rt2mLcFI="}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = '123') LIMIT 1[0m
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-25 01:02:14) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"yyyyyy", "password"=>"yyyyyy", "email"=>"123@123.com"}, "commit"=>"Sign up", "authenticity_token"=>"h+O1yc87GMWgO4w7m11SqSTT0VfWShUJAo5rt2mLcFI="}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = '123@123.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "confirmed_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "confirmation_sent_at", "sign_in_count", "current_sign_in_ip", "current_sign_in_at", "remember_token", "confirmation_token", "reset_password_token", "email", "remember_created_at", "created_at") VALUES('dc1128046ea4a62a47a80bdb3e1bc9310a6648c8', NULL, NULL, '2010-08-24 17:02:14', NULL, 'Kv-XNu8aCSsfAURH4dHv', NULL, 0, NULL, NULL, NULL, NULL, NULL, '123@123.com', NULL, '2010-08-24 17:02:14')[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "sign_in_count" = 1, "current_sign_in_at" = '2010-08-24 17:02:14', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-08-24 17:02:14', "updated_at" = '2010-08-24 17:02:14', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 203ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 01:02:15) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (187.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 344ms (View: 266, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 01:02:33) [GET]
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 01:02:38) [GET]
+Rendering sessions/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 01:03:13) [GET]
+Rendering sessions/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 01:04:32) [GET]
+Rendering sessions/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 01:05:35) [GET]
+Rendering sessions/new
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `resource_name' for #<ActionView::Base:0x48d11a8>) on line #3 of c:/Ruby/lib/ruby/gems/1.8/gems/devise-1.0.8/app/views/sessions/new.html.erb:
+1: <h2>Sign in</h2>
+2: 
+3: <% form_for resource_name, resource, :url => session_path(resource_name) do |f| -%>
+4:   <p><%= f.label :email %></p>
+5:   <p><%= f.text_field :email %></p>
+6: 
+
+    devise (1.0.8) app/views/sessions/new.html.erb:3
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 01:08:43) [GET]
+
+NameError (uninitialized constant HomeController):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 01:09:16) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `logout_path' for #<ActionView::Base:0x49167f8>) on line #11 of app/views/layouts/_menu.erb:
+8: <%= link_to t('Listing customers'), customers_path %> |
+9: <%= link_to t('Listing suppliers'), suppliers_path %> |
+10: <%= link_to t('Listing products'), products_path %> |
+11: <%= link_to t('Logout'), logout_path %>
+
+    app/views/layouts/_menu.erb:11
+    app/views/layouts/orders.html.erb:12
+    app/controllers/orders_controller.rb:34:in `index'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:27:41) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (16.0ms)
+Completed in 359ms (View: 78, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 22:28:10) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing PasswordsController#new (for 127.0.0.1 at 2010-08-25 22:28:15) [GET]
+Rendering passwords/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/password/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:28:18) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100824165145'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("receivables")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("suppliers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100824165145')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("receivables")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("suppliers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100824165145'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("receivables")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("suppliers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "name" varchar(255), "telephone" varchar(255), "cell_phone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100824165145')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("receivables")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("suppliers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100824165145'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("receivables")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("suppliers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "name" varchar(255), "telephone" varchar(255), "cell_phone" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100824165145')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("receivables")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("suppliers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100824165145'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("receivables")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("suppliers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "name" varchar(255), "telephone" varchar(255), "cell_phone" varchar(255), "id_no" varchar(255), "business_no" varchar(255), "location" varchar(255), "addional" varchar(255), "login_name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100824165145')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("receivables")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("suppliers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100824165145'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("receivables")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("suppliers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+Migrating to DeviseCreateUsers (20100824165145)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "password_salt" varchar(255) DEFAULT '' NOT NULL, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "name" varchar(255), "telephone" varchar(255), "cell_phone" varchar(255), "id_no" varchar(255), "business_no" varchar(255), "location" varchar(255), "addional" varchar(255), "login_name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_login_name" ON "users" ("login_name")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100824165145')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("receivables")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("suppliers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_login_name')[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 22:54:50) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 22:55:28) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 22:57:02) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#edit (for 127.0.0.1 at 2010-08-25 23:03:44) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:03:44) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `remember_me' for #<User:0x4643300>) on line #11 of app/views/sessions/new.html.erb:
+8:   <p><%= f.password_field :password %></p>
+9: 
+10:   <% if devise_mapping.rememberable? -%>
+11:     <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+12:   <% end -%>
+13: 
+14:   <p><%= f.submit "Sign in" %></p>
+
+    app/views/sessions/new.html.erb:11
+    app/views/sessions/new.html.erb:3
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RegistrationsController#edit (for 127.0.0.1 at 2010-08-25 23:04:20) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:04:20) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering sessions/new
+
+ActionView::TemplateError (undefined method `remember_me' for #<User:0x47e4dbc>) on line #11 of app/views/sessions/new.html.erb:
+8:   <p><%= f.password_field :password %></p>
+9: 
+10:   <% if devise_mapping.rememberable? -%>
+11:     <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+12:   <% end -%>
+13: 
+14:   <p><%= f.submit "Sign in" %></p>
+
+    app/views/sessions/new.html.erb:11
+    app/views/sessions/new.html.erb:3
+    devise (1.0.8) lib/devise/controllers/internal_helpers.rb:123:in `render_with_scope'
+    devise (1.0.8) app/controllers/sessions_controller.rb:14:in `new'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:04:56) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:07:41) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:08:07) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:10:23) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (15.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:11:04) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:16:52) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-25 23:17:40) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "login_name"=>"123", "password"=>"123"}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: login_name
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mSQLite3::SQLException: users.login_name may not be NULL: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('f2f2633c16390b54e47f1b7938b9dddda48f7b3e', NULL, NULL, NULL, '2010-08-25 15:17:40', NULL, 'azs2z3pbmPOQPTk-HyQz', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 15:17:40')[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: users.login_name may not be NULL: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('f2f2633c16390b54e47f1b7938b9dddda48f7b3e', NULL, NULL, NULL, '2010-08-25 15:17:40', NULL, 'azs2z3pbmPOQPTk-HyQz', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 15:17:40')):
+  devise (1.0.8) app/controllers/registrations_controller.rb:16:in `create'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-25 23:19:55) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "login_name"=>"123", "password"=>"123"}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('3ee7e838415b1719f461126606c5ade92a219ec1', NULL, NULL, NULL, '2010-08-25 15:19:55', NULL, 'EwYXHyLU1Z23KWdDMPjk', 0, NULL, NULL, '123', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 15:19:55')[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "sign_in_count" = 1, "current_sign_in_at" = '2010-08-25 15:19:55', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-08-25 15:19:55', "updated_at" = '2010-08-25 15:19:55', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/users/edit
+Completed in 219ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing RegistrationsController#edit (for 127.0.0.1 at 2010-08-25 23:19:55) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering registrations/edit
+Rendered shared/_devise_links (0.0ms)
+Completed in 109ms (View: 31, DB: 0) | 200 OK [http://localhost/users/edit]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:21:45) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/users/sign_in]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 23:21:45) [GET]
+
+NameError (uninitialized constant HomeController):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:24:02) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/sign_in]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 23:24:02) [GET]
+
+NameError (uninitialized constant HomeController):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:25:55) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/sign_in]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-25 23:25:55) [GET]
+
+ActionView::MissingTemplate (Missing template home/index.erb in view path app/views:c:/Ruby/lib/ruby/gems/1.8/gems/devise-1.0.8/app/views):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-25 23:26:43) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/users/sign_out]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 23:26:43) [GET]
+
+NameError (uninitialized constant HomeController):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:26:52) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:28:03) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:28:33) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:28:39) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:29:03) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:29:46) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 94ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:29:48) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:29:49) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:29:49) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:29:51) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:30:00) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:30:33) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 125ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:30:39) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:30:41) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:30:43) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:30:44) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-25 23:30:46) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login_name"=>"", "password"=>""}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('', NULL, NULL, NULL, '2010-08-25 15:30:46', NULL, '', 0, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 15:30:46')[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "sign_in_count" = 1, "current_sign_in_at" = '2010-08-25 15:30:46', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-08-25 15:30:46', "updated_at" = '2010-08-25 15:30:46', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/
+Completed in 172ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 23:30:47) [GET]
+
+NameError (uninitialized constant HomeController):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:30:57) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_authentication] rendered_or_redirected.
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/users/sign_in]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 23:30:57) [GET]
+
+NameError (uninitialized constant HomeController):
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:31:13) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (93.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `logout_path' for #<ActionView::Base:0x49ffafc>) on line #11 of app/views/layouts/_menu.erb:
+8: <%= link_to t('Listing customers'), customers_path %> |
+9: <%= link_to t('Listing suppliers'), suppliers_path %> |
+10: <%= link_to t('Listing products'), products_path %> |
+11: <%= link_to t('Logout'), logout_path %>
+
+    app/views/layouts/_menu.erb:11
+    app/views/layouts/orders.html.erb:12
+    app/controllers/orders_controller.rb:31:in `index'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:31:47) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (125.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 172ms (View: 141, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-25 23:32:20) [GET]
+
+ActionController::UnknownAction (ActionController::UnknownAction):
+  devise (1.0.8) lib/devise/controllers/internal_helpers.rb:65:in `is_devise_resource?'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:32:54) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (16.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (125.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (16.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `destroy_user_session' for #<ActionView::Base:0x46bac0c>) on line #11 of app/views/layouts/_menu.erb:
+8: <%= link_to t('Listing customers'), customers_path %> |
+9: <%= link_to t('Listing suppliers'), suppliers_path %> |
+10: <%= link_to t('Listing products'), products_path %> |
+11: <%= link_to t('Logout'), destroy_user_session %>
+
+    app/views/layouts/_menu.erb:11
+    app/views/layouts/orders.html.erb:12
+    app/controllers/orders_controller.rb:31:in `index'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:37:25) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (157.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 297ms (View: 234, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-25 23:37:28) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/users/sign_out]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:37:28) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (62.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:44:21) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (125.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 172ms (View: 156, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-25 23:44:24) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/sign_out]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:44:24) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (46.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-25 23:44:27) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/sign_out]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:44:27) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (16.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 172ms (View: 62, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-25 23:44:31) [GET]
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/sign_out]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:44:32) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:44:49) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:44:50) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:45:03) [GET]
+  Parameters: {"authenticated"=>"true"}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in?authenticated=true]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:45:11) [GET]
+  Parameters: {"authenticated"=>"true"}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in?authenticated=true]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:45:15) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:45:22) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:45:24) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:45:28) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (16.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:45:33) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:45:36) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:45:36) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:45:36) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:45:37) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:45:41) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:45:42) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-25 23:45:44) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-25 23:45:48) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login_name"=>"", "password"=>""}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;35;1mUser Create (0.0ms)[0m   [0mSQLite3::SQLException: column login_name is not unique: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('', NULL, NULL, NULL, '2010-08-25 15:45:48', NULL, '', 0, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 15:45:48')[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: column login_name is not unique: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('', NULL, NULL, NULL, '2010-08-25 15:45:48', NULL, '', 0, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 15:45:48')):
+  devise (1.0.8) app/controllers/registrations_controller.rb:16:in `create'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-25 23:46:00) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "login_name"=>"d", "password"=>""}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('', NULL, NULL, NULL, '2010-08-25 15:46:00', NULL, '', 0, NULL, NULL, 'd', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 15:46:00')[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "sign_in_count" = 1, "current_sign_in_at" = '2010-08-25 15:46:00', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-08-25 15:46:00', "updated_at" = '2010-08-25 15:46:00', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/
+Completed in 328ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:46:01) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (15.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 110ms (View: 63, DB: 15) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-25 23:46:16) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/users/sign_out]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-25 23:46:16) [GET]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 23:46:18) [GET]
+  Parameters: {"unauthenticated"=>"true"}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in?unauthenticated=true]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:46:21) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:46:24) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:46:24) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:46:25) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-25 23:57:58) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:00:23) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:00:27) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:04:58) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:01) [POST]
+  Parameters: {"user"=>{"login_name"=>"123", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:05) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:06) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 94ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:06) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:07) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:07) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:08) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:05:09) [POST]
+  Parameters: {"user"=>{"login_name"=>"", "password"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 00:16:24) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (156.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 234ms (View: 188, DB: 15) | 200 OK [http://localhost/]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-26 00:19:07) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:09) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:10) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:11) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:11) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:11) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 79ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:12) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 125ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:12) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:13) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:13) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:15) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:16) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:16) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 109ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:17) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:17) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:18) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:18) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:19) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:19) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 156ms (View: 93, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:19) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:19) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:20) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:19:20) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:06) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:07) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 125ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:08) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:08) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:11) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:11) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:12) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:12) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:13) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:24:49) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:26:25) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:33:00) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+WARNING: Can't mass-assign these protected attributes: email
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:38:16) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:43:44) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:43:50) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:43:53) [POST]
+  Parameters: {"user"=>{"password"=>"22", "email"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = '123') LIMIT 1[0m
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 297ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:44:13) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>"123"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:44:18) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:44:20) [POST]
+  Parameters: {"user"=>{"password"=>"", "email"=>""}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-08-26 00:44:27) [GET]
+Rendering registrations/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/sign_up]
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-26 00:44:35) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "login_name"=>"123", "password"=>"123"}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mSQLite3::SQLException: column login_name is not unique: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('c03c7eb7faee100fdf1fb2a17ce86bdb653c28b2', NULL, NULL, NULL, '2010-08-25 16:44:35', NULL, 'yJC1TfdvgrcSAvloSQuc', 0, NULL, NULL, '123', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 16:44:35')[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: column login_name is not unique: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('c03c7eb7faee100fdf1fb2a17ce86bdb653c28b2', NULL, NULL, NULL, '2010-08-25 16:44:35', NULL, 'yJC1TfdvgrcSAvloSQuc', 0, NULL, NULL, '123', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 16:44:35')):
+  devise (1.0.8) app/controllers/registrations_controller.rb:16:in `create'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-26 00:45:53) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"123", "login_name"=>"123", "password"=>"123"}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;35;1mUser Create (0.0ms)[0m   [0mSQLite3::SQLException: column login_name is not unique: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('bfe30507234b9d3281f8bbaab4efa65f943d630d', NULL, NULL, NULL, '2010-08-25 16:45:53', NULL, 'DMzfT8A-E9x8gZg85mlg', 0, NULL, NULL, '123', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 16:45:53')[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: column login_name is not unique: INSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('bfe30507234b9d3281f8bbaab4efa65f943d630d', NULL, NULL, NULL, '2010-08-25 16:45:53', NULL, 'DMzfT8A-E9x8gZg85mlg', 0, NULL, NULL, '123', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 16:45:53')):
+  devise (1.0.8) app/controllers/registrations_controller.rb:16:in `create'
+  warden (0.10.7) lib/warden/manager.rb:35:in `call'
+  warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+  warden (0.10.7) lib/warden/manager.rb:34:in `call'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-08-26 00:46:04) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"111", "login_name"=>"111", "password"=>"111"}, "commit"=>"Sign up", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("encrypted_password", "name", "business_no", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "sign_in_count", "current_sign_in_ip", "id_no", "login_name", "current_sign_in_at", "cell_phone", "addional", "telephone", "email", "location", "created_at") VALUES('60bfa89184a9699eb019367841afdddecdf9c449', NULL, NULL, NULL, '2010-08-25 16:46:04', NULL, 'dpZbjyfc0lbpj803r9kR', 0, NULL, NULL, '111', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-25 16:46:04')[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "sign_in_count" = 1, "current_sign_in_at" = '2010-08-25 16:46:04', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-08-25 16:46:04', "updated_at" = '2010-08-25 16:46:04', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/
+Completed in 234ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 00:46:05) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 62, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-08-26 00:48:50) [GET]
+  [4;35;1mUser Load (79.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Redirected to http://localhost:3000/
+Completed in 94ms (DB: 79) | 302 Found [http://localhost/users/sign_out]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 00:48:50) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (62.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 00:48:54) [GET]
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (63.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-24' and '2010-08-25') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 109ms (View: 93, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-26 00:48:59) [GET]
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/users/sign_in]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-08-26 00:49:04) [POST]
+  Parameters: {"user"=>{"login_name"=>"111", "password"=>"111"}, "commit"=>"Sign in", "authenticity_token"=>"NJ3J4cfr78apoYb58UaoskCR2aFdmVf2ccoiNRe8YjY="}
+Rendering sessions/new
+Rendered shared/_devise_links (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/sign_in]
+  [4;36;1mSQL (15.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("customers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("receivables")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("suppliers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_login_name')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to CreateUsers (20100709125613)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("customers")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("receivables")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("suppliers")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_login_name')[0m
