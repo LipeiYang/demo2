@@ -1,4 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+  map.login 'login', :controller => 'user_sessions', :action => 'new'  
+  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'  
+  map.resources :user_sessions
+  map.resources :users
+
+  map.resources :users
+
   map.resources :suppliers
 
   map.resources :receivables
@@ -7,8 +14,8 @@ ActionController::Routing::Routes.draw do |map|
 
   
   map.home '', :controller => 'orders', :action => 'index'
-  map.login 'login', :controller => 'sessions', :action => 'new'
-  map.logout 'logout', :controller => 'sessions', :action => 'destroy'
+  # map.login 'login', :controller => 'sessions', :action => 'new'
+  # map.logout 'logout', :controller => 'sessions', :action => 'destroy'
   
   map.resource :sessions
   

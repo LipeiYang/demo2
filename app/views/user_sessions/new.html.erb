@@ -1,0 +1,25 @@
+  
+<% form_for @user_session do |form| %>  
+<%= form.error_messages %>  
+<ol class="formList">  
+  <li>  
+    <%= form.label :username, "Username" %>  
+    <%= form.text_field :username %>  
+  </li>  
+  <li>  
+    <%= form.label :password, "Password" %>  
+    <%= form.password_field :password %>  
+  </li>  
+  <li>  
+    <%= form.submit "Submit" %>  
+  </li>  
+</ol>  
+<% end %> 
+
+
+
+
+<!-- <% form_tag sessions_path do %>  
+  <%= t('Password') %>: <%= password_field_tag :password %>  
+  <%= submit_tag t("Login") %>  
+<% end %> -->

@@ -8,30 +8,74 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
-  before_filter :set_locale, :authorize
+  before_filter :set_locale, :require_user #, :authorize
 
 
 
-  def set_locale
-    I18n.locale = params[:locale]
-  end
   
 
-  helper_method :admin?    
-  protected  
-  def admin?
-    session[:password] == "158158"  
-  end     
+  # helper_method :admin?    
+  # protected  
+  # def admin?
+  #   session[:password] == "158158"  
+  # end     
+  # 
+  # def authorize  
+  #   unless admin?  
+  #     flash[:error] = "Unauthorized access"
+  #     redirect_to login_path  
+  #     false  
+  #   end  
+  # end 
+  protected
+    def get_next_id(m)
+      m.last.blank? ? 1 : m.last.id+1
+    end
   
-  def authorize  
-    unless admin?  
-      flash[:error] = "Unauthorized access"
-      redirect_to login_path  
-      false  
-    end  
-  end 
+  private
+    def set_locale
+      I18n.locale = params[:locale]
+    end
+
+  helper_method :current_user_session, :current_user
+  filter_parameter_logging :password, :password_confirmation
   
-  def get_next_id(m)
-    m.last.blank? ? 1 : m.last.id+1
-  end
+  private
+    def current_user_session
+      return @current_user_session if defined?(@current_user_session)
+      @current_user_session = UserSession.find
+    end
+    
+    def current_user
+      return @current_user if defined?(@current_user)
+      @current_user = current_user_session && current_user_session.record
+    end
+    
+    def require_user
+      unless current_user
+        store_location
+        flash[:notice] = "You must be logged in to access this page"
+        redirect_to new_user_session_path
+        return false
+      end
+    end
+
+    def require_no_user
+      if current_user
+        store_location
+        flash[:notice] = "You must be logged out to access this page"
+        redirect_to orders_path
+        return false
+      end
+    end
+    
+    def store_location
+      session[:return_to] = request.request_uri
+    end
+    
+    def redirect_back_or_default(default)
+      redirect_to(session[:return_to] || default)
+      session[:return_to] = nil
+    end
+
 end
