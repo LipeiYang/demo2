@@ -32353,3 +32353,467 @@ Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 22:52:08) [GE
   Parameters: {"action"=>"new", "controller"=>"user_sessions"}
 Rendering user_sessions/new
 Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 22:53:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 22:54:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 22:57:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 125ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 22:57:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 22:57:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 22:58:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-26 22:59:05) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"eSJjZTGAaU+phFTpkoPXL0Oo5/+zJr1eWTdO1+jMJnQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = '057788813958') LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-26 22:59:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 156ms (View: 31, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-08-26 23:00:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"customers"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+Rendering template within layouts/customers
+Rendering customers/index
+Rendered layouts/_menu (0.0ms)
+Completed in 156ms (View: 109, DB: 0) | 200 OK [http://localhost/customers]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-26 23:00:50) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 23:00:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 297ms (View: 266, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-26 23:00:56) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"eSJjZTGAaU+phFTpkoPXL0Oo5/+zJr1eWTdO1+jMJnQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = '057788813958') LIMIT 1[0m
+Redirected to http://localhost:3000/orders
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:00:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 110ms (View: 63, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-26 23:01:00) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 23:01:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 110ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-26 23:01:06) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"eSJjZTGAaU+phFTpkoPXL0Oo5/+zJr1eWTdO1+jMJnQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = '057788813958') LIMIT 1[0m
+Redirected to http://localhost:3000/orders
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:01:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 109ms (View: 46, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-26 23:02:17) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 23:02:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 110ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-26 23:02:22) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"eSJjZTGAaU+phFTpkoPXL0Oo5/+zJr1eWTdO1+jMJnQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = '057788813958') LIMIT 1[0m
+Redirected to http://localhost:3000/orders
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:02:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (46.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 109ms (View: 62, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:02:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (125.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (16.0ms)
+Completed in 188ms (View: 156, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-26 23:02:44) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 23:02:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-26 23:02:50) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"eSJjZTGAaU+phFTpkoPXL0Oo5/+zJr1eWTdO1+jMJnQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = '057788813958') LIMIT 1[0m
+Redirected to http://localhost:3000/orders
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:02:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (203.0ms)
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 266ms (View: 203, DB: 16) | 200 OK [http://localhost/orders]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-26 23:04:47) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 23:04:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-26 23:04:51) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"eSJjZTGAaU+phFTpkoPXL0Oo5/+zJr1eWTdO1+jMJnQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = '057788813958') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/orders
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:04:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (156.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 203ms (View: 156, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-08-26 23:05:18) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/user_sessions/new
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-26 23:05:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-26 23:05:24) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"eSJjZTGAaU+phFTpkoPXL0Oo5/+zJr1eWTdO1+jMJnQ=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = '057788813958') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/orders
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:05:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (156.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 234ms (View: 156, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:05:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (46.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (16.0ms)
+Completed in 109ms (View: 63, DB: 15) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-26 23:05:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"purchases"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mPurchase Load (0.0ms)[0m   [0;1mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 734ms (View: 671, DB: 0) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:05:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 110ms (View: 63, DB: 0) | 200 OK [http://localhost/orders]
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-08-26 23:05:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"purchases"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mPurchase Load (16.0ms)[0m   [0mSELECT * FROM "purchases" ORDER BY date DESC, seq_no DESC[0m
+Rendering template within layouts/purchases
+Rendering purchases/index
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (15.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendered layouts/_menu (0.0ms)
+Completed in 625ms (View: 563, DB: 31) | 200 OK [http://localhost/purchases]
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-26 23:05:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-25' and '2010-08-26') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (0.0ms)
+Completed in 109ms (View: 63, DB: 0) | 200 OK [http://localhost/orders]

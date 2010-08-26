@@ -8,7 +8,7 @@ class UserSessionsController < ApplicationController
   def create
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
-      flash[:notice] = "Login successful!"
+      flash[:notice] = t(:hello, :name => current_user.name)
       redirect_back_or_default orders_path
     else
       render :action => :new
