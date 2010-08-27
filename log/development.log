@@ -3995,3 +3995,36 @@ Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-28 00:57:59) [GE
 Rendering user_sessions/new
   [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
 Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-28 01:25:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRuntimeError: ERROR	C42P01	Mrelation "users" does not exist	P245	F.\src\backend\catalog\namespace.c	L276	RRangeVarGetRelid: SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"users"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mRuntimeError: ERROR	C42P01	Mrelation "users" does not exist	P15	F.\src\backend\parser\parse_relation.c	L885	RparserOpenTable: SELECT * FROM "users" [0m
+
+ActiveRecord::StatementInvalid (RuntimeError: ERROR	C42P01	Mrelation "users" does not exist	P15	F.\src\backend\parser\parse_relation.c	L885	RparserOpenTable: SELECT * FROM "users" ):
+  app/controllers/users_controller.rb:8:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
