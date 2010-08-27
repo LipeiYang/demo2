@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password, :password_confirmation
 
   before_filter :set_locale, :require_user, :set_db_schema
+  after_filter :clear_db_schema
 
   protected
     def get_next_id(m)
@@ -30,6 +31,10 @@ class ApplicationController < ActionController::Base
     
     def set_db_schema
       SchemaUtils.add_schema_to_path current_user.db_schema
+    end
+
+    def clear_db_schema
+      SchemaUtils.reset_search_path
     end
 
     def current_user_session
