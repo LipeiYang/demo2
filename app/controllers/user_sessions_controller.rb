@@ -11,7 +11,7 @@ class UserSessionsController < ApplicationController
       flash[:notice] = t(:hello, :name => current_user.name)
       redirect_to orders_path
     else
-      render :action => :new
+      redirect_to login_path
     end
   end
   
