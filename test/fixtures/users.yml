@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  username: MyString
+  email: MyString
+  crypted_password: MyString
+  password_salt: MyString
+  persistence_token: MyString
+  name: MyString
+  address: MyString
+  telephone: MyString
+  cell_phone: MyString
+  id_no: MyString
+  business_no: MyString
+  company: MyString
+  addtional: MyText
+
+two:
+  username: MyString
+  email: MyString
+  crypted_password: MyString
+  password_salt: MyString
+  persistence_token: MyString
+  name: MyString
+  address: MyString
+  telephone: MyString
+  cell_phone: MyString
+  id_no: MyString
+  business_no: MyString
+  company: MyString
+  addtional: MyText

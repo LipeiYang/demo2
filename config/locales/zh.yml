@@ -2,7 +2,7 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 zh:
-  hello: "你好"
+  hello: "你好，{{name}}"
   Listing orders: "交易清单"
   Listing purchases: "进货清单"
   Listing receivables: "收款清单"
@@ -43,6 +43,7 @@ zh:
   t_amount: "金额"
   t_total: "总计"
   sure?: "确定吗？"
+  Username: "用户名"
   Password: "密码"
   t_yes: "是"
   t_no: "否"  
@@ -88,3 +89,4 @@ zh:
         not_a_number: "必须是数字"
         not_an_integer: "必须是整数"
         blank: "必须填写"
+

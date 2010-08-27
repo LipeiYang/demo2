@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  
+  before_filter :require_user
   # before_filter :authorize
   
   # GET /orders

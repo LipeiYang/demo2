@@ -1,3 +1,2 @@
 rails --version 2.3.8
-warden
-devise --version 1.0.8
+authlogic --version 2.1.6
