@@ -1623,3 +1623,491 @@ Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-27 02:03:23) [GE
   Parameters: {"action"=>"new", "controller"=>"user_sessions"}
 Rendering user_sessions/new
 Completed in 125ms (View: 0, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-27 20:17:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 453ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-27 20:18:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:18:04) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:18:13) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:19:28) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"057788813958", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-08-27 20:21:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-08-27 20:21:13) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 110ms (View: 79, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:21:15) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:22:49) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:23:22) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:23:35) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:24:36) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:24:40) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 94ms (View: 0, DB: 16) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:24:42) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 125ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:24:49) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:24:56) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+
+SyntaxError (C:/Documents and Settings/Leopard/My Documents/Aptana Studio 3 Workspace/demo2/app/models/user_session.rb:3: syntax error, unexpected tIDENTIFIER, expecting kEND):
+  app/controllers/user_sessions_controller.rb:9:in `create'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:25:07) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 93ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:26:14) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 140ms (View: 15, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:26:18) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:26:24) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:26:25) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:26:30) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (78.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'a') LIMIT 1[0m
+Rendering user_sessions/new
+Completed in 375ms (View: 0, DB: 78) | 200 OK [http://localhost/user_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:26:35) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'a') LIMIT 1[0m
+Rendering user_sessions/new
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:06) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+checking errors ...
+Rendering user_sessions/new
+Completed in 109ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:14) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+checking errors ...
+Rendering user_sessions/new
+Completed in 157ms (View: 78, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:16) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+checking errors ...
+Rendering user_sessions/new
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:32) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:33) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:34) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 78ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:35) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:27:35) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:28:08) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:31:31) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:32:11) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:33:12) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+
+ArgumentError (syntax error on line 109, col 14: `        login: login'):
+  c:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+  c:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+  authlogic (2.1.6) lib/authlogic/i18n/translator.rb:8:in `translate'
+  authlogic (2.1.6) lib/authlogic/i18n.rb:78:in `t'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/login.rb:65:in `validates_format_of_login_field_options'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/login.rb:133:in `included'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/login.rb:130:in `class_eval'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/login.rb:130:in `included'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/base.rb:34:in `include'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/base.rb:34:in `acts_as_authentic'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/base.rb:34:in `each'
+  authlogic (2.1.6) lib/authlogic/acts_as_authentic/base.rb:34:in `acts_as_authentic'
+  app/models/user.rb:2
+  authlogic (2.1.6) lib/authlogic/session/klass.rb:33:in `klass'
+  authlogic (2.1.6) lib/authlogic/session/password.rb:90:in `login_field'
+  authlogic (2.1.6) lib/authlogic/session/password.rb:213:in `login_field'
+  authlogic (2.1.6) lib/authlogic/session/password.rb:118:in `initialize'
+  authlogic (2.1.6) lib/authlogic/session/activation.rb:48:in `initialize'
+  authlogic (2.1.6) lib/authlogic/session/klass.rb:64:in `initialize'
+  authlogic (2.1.6) lib/authlogic/session/scopes.rb:79:in `initialize'
+  app/controllers/user_sessions_controller.rb:9:in `new'
+  app/controllers/user_sessions_controller.rb:9:in `create'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:34:19) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:38:50) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:38:52) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:38:53) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 63ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:38:54) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:38:54) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:38:54) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-08-27 20:38:56) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ONM9tIpjgfQwC9HaMfxkU9XxKwOQp1h5ZjMcaT0NZRk=", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/user_sessions]

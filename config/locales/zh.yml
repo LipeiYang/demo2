@@ -90,19 +90,19 @@ zh:
         not_an_integer: "必须是整数"
         blank: "必须填写"
 
-  authlogic:
-    error_messages:
-      # login_blank: can not be blank
+  # authlogic:
+  #   error_messages:
+  #       # login_blank: can not be blank
       # login_not_found: is not valid
       # login_invalid: should use only letters, numbers, spaces, and .-_@ please.
       # consecutive_failed_logins_limit_exceeded: Consecutive failed logins limit exceeded, account is disabled.
       # email_invalid: should look like an email address.
       password_blank: "密码不能为空"
-      # password_invalid: is not valid
-      # not_active: Your account is not active
-      # not_confirmed: Your account is not confirmed
-      # not_approved: Your account is not approved
-      # no_authentication_details: You did not provide any details for authentication.
+    #   password_invalid: is not valid
+    #   not_active: Your account is not active
+    #   not_confirmed: Your account is not confirmed
+    #   not_approved: Your account is not approved
+    #   no_authentication_details: You did not provide any details for authentication.
     # models:
     #   user_session: UserSession (or whatever name you are using)
     # attributes:
@@ -110,4 +110,4 @@ zh:
     #     login: login
     #     email: email
     #     password: password
-    #     remember_me: remember m
+    #     remember_me: remember me

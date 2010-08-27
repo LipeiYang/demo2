@@ -1,4 +1,3 @@
 class UserSession < Authlogic::Session::Base
-  # def valid?
-  # end
+  generalize_credentials_error_messages true
 end
