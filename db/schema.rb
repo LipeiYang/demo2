@@ -9,68 +9,68 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100826132305) do
+ActiveRecord::Schema.define(:version => 20100828083939) do
 
   create_table "customers", :force => true do |t|
-    t.string    "name"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "orders", :force => true do |t|
-    t.date      "date"
-    t.float     "price",       :default => 0.0
-    t.float     "volume",      :default => 0.0
-    t.float     "manfee",      :default => 0.0
-    t.integer   "customer_id"
-    t.integer   "product_id"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "is_paied"
-    t.integer   "seq_no"
+    t.date     "date"
+    t.float    "price",       :default => 0.0
+    t.float    "volume",      :default => 0.0
+    t.float    "manfee",      :default => 0.0
+    t.integer  "customer_id"
+    t.integer  "product_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "is_paied"
+    t.integer  "seq_no"
   end
 
   create_table "products", :force => true do |t|
-    t.string    "name"
-    t.float     "price"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.string   "name"
+    t.float    "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "purchases", :force => true do |t|
-    t.date      "date"
-    t.integer   "product_id"
-    t.float     "price",      :default => 0.0
-    t.float     "volume",     :default => 0.0
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.integer   "seq_no"
+    t.date     "date"
+    t.integer  "product_id"
+    t.float    "price",      :default => 0.0
+    t.float    "volume",     :default => 0.0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "seq_no"
   end
 
   create_table "receivables", :force => true do |t|
-    t.integer   "seq_no"
-    t.date      "date"
-    t.integer   "customer_id"
-    t.float     "amount",      :default => 0.0
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.integer  "seq_no"
+    t.date     "date"
+    t.integer  "customer_id"
+    t.float    "amount",      :default => 0.0
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "suppliers", :force => true do |t|
-    t.integer   "seq_no"
-    t.string    "name",       :null => false
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
+    t.integer  "seq_no"
+    t.string   "name",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
     t.string   "username"
+    t.string   "email"
     t.string   "crypted_password"
     t.string   "password_salt"
     t.string   "persistence_token"
     t.string   "name"
     t.string   "address"
-    t.string   "email"
     t.string   "telephone"
     t.string   "cell_phone"
     t.string   "id_no"
@@ -79,6 +79,12 @@ ActiveRecord::Schema.define(:version => 20100826132305) do
     t.text     "addtional"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "login_count",       :default => 0, :null => false
+    t.datetime "last_request_at"
+    t.datetime "last_login_at"
+    t.datetime "current_login_at"
+    t.string   "last_login_ip"
+    t.string   "current_login_ip"
   end
 
 end
