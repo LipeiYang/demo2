@@ -55,7 +55,9 @@
 <h3>总材料成本：<%=f total_material_cost %> </h3>
 <h3>总加工费：<%=f total_manfee %> </h3>
 <h3>总收益：<%=f total_revenue %> </h3>
-<h3>总利润：<%=f total_profit %> </h3>
+<% if session[:product_id]==0 && session[:customer_id]==0 %>
+  <h3>总利润：<%=f total_profit %> </h3>
+<% end %>
 <h3>已付金额：<%=f total_paied %><br />
 <h3>未付金额：<%=f total_unpaied %> </h3>
   <table>
