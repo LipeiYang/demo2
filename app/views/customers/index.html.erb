@@ -4,11 +4,13 @@
 
 <table>
   <tr>
+    <th><%= Customer.human_attribute_name(:seq_no) %></th>
     <th><%= Customer.human_attribute_name(:name) %></th>
   </tr>
 
 <% @customers.each do |customer| %>
   <tr>
+    <td><%=h customer.seq_no %></td>
     <td><%=h customer.name %></td>
     <td><%= link_to t('Edit'), edit_customer_path(customer) %></td>
     <!-- <td><%= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete %></td> -->

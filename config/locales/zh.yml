@@ -71,6 +71,7 @@ zh:
         seq_no: "编号"
         amount: "金额"
       customer:
+        seq_no: "编号"
         name: "姓名"
       supplier:
         seq_no: "编号"

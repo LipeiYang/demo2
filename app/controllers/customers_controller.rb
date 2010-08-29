@@ -25,7 +25,7 @@ class CustomersController < ApplicationController
   # GET /customers/new.xml
   def new
     @customer = Customer.new
-
+    @customer.seq_no = get_next_id(Customer)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @customer }
