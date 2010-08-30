@@ -9,10 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100828083939) do
+ActiveRecord::Schema.define(:version => 20100830155619) do
+
+  create_table "cost_items", :force => true do |t|
+    t.integer  "seq_no"
+    t.string   "name"
+    t.float    "price"
+    t.integer  "period"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "customers", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "seq_no"
+  end
+
+  create_table "invests", :force => true do |t|
+    t.integer  "seq_no"
+    t.date     "date"
+    t.integer  "cost_item_id"
+    t.float    "amount"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,6 +47,15 @@ ActiveRecord::Schema.define(:version => 20100828083939) do
     t.datetime "updated_at"
     t.string   "is_paied"
     t.integer  "seq_no"
+  end
+
+  create_table "payables", :force => true do |t|
+    t.integer  "seq_no"
+    t.date     "date"
+    t.integer  "supplier_id"
+    t.float    "amount"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "products", :force => true do |t|

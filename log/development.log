@@ -15118,3 +15118,31 @@ Rendering purchases/index
 Rendered layouts/_menu (15.0ms)
   [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
 Completed in 797ms (View: 578, DB: 31) | 200 OK [http://localhost/purchases]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateHistoryPoints (20100703101301)
+Migrating to CreateProducts (20100705150624)
+Migrating to CreateCustomers (20100705151124)
+Migrating to CreateOrders (20100705151548)
+Migrating to Order (20100707144524)
+Migrating to AddIsPaiedToOrders (20100707144821)
+Migrating to RemoveHistoryPoint (20100710084758)
+Migrating to RemoveUser (20100710085040)
+Migrating to SetDefaultValueForOrders (20100711152631)
+Migrating to AddSeqNoToOrder (20100715141845)
+Migrating to CreatePurchases (20100719163739)
+Migrating to AddSeqNoToPurchases (20100801142229)
+Migrating to CreateReceivables (20100801160437)
+Migrating to SetDefaultToPurchases (20100814143227)
+Migrating to ModifyAmountTypeOfReceivable (20100819142530)
+Migrating to CreateSuppliers (20100820173049)
+Migrating to CreateUsers (20100826132305)
+Migrating to ModifyUser (20100828083939)
+Migrating to AddSeqToCustomer (20100829143658)
+Migrating to CreateCostItems (20100830122447)
+Migrating to CreateInvests (20100830144905)
+Migrating to CreatePayables (20100830155619)
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
