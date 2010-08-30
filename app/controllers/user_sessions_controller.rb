@@ -10,7 +10,7 @@ class UserSessionsController < ApplicationController
   def create
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
-      flash[:notice] = t(:hello, :name => current_user.name)
+      # flash[:notice] = t(:hello, :name => current_user.name)
       redirect_to orders_path
     else
       redirect_to login_path
@@ -19,7 +19,7 @@ class UserSessionsController < ApplicationController
   
   def destroy
     current_user_session.destroy
-    flash[:notice] = "Logout successful!"
+    # flash[:notice] = "Logout successful!"
     redirect_to login_path
   end
 end
