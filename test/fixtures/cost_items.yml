@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  seq_no: 1
+  name: MyString
+  price: 1.5
+  period: 1
+
+two:
+  seq_no: 1
+  name: MyString
+  price: 1.5
+  period: 1

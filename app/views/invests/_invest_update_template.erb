@@ -1,0 +1,23 @@
+<% form_for(@invest) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :seq_no %><br />
+    <%= f.text_field :seq_no %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label CostItem.human_name %><br />
+    <%= f.collection_select :cost_item_id, CostItem.all(:order=>"name"), :id, :name %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.submit t(button_label) %>
+  </p>
+<% end %>

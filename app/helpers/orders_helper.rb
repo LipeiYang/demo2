@@ -1,7 +1,11 @@
 module OrdersHelper
 
   def total_profit
-    total_revenue-(@end_date-@start_date+1)*370
+    total_revenue-(@end_date-@start_date+1)*everyday_cost
+  end
+
+  def everyday_cost
+    CostItem.all.sum(&:day_cost)
   end
 
   def total_revenue
@@ -21,21 +25,11 @@ module OrdersHelper
   end
   
   def total_paied
-    @orders.inject(0) { |sum,order| if order.is_paied.eql?('yes')
-                                      sum += order.totale 
-                                    else 
-                                      sum += 0 
-                                    end 
-                                  }
+    @orders.inject(0) { |sum,order| order.is_paied.eql?('yes') ? sum += order.totale : sum += 0 }
   end
   
   def total_unpaied
-    @orders.inject(0) { |sum,order| if order.is_paied.eql?('no')
-                                      sum += order.totale 
-                                    else 
-                                      sum += 0 
-                                    end 
-                                  }
+    @orders.inject(0) { |sum,order| order.is_paied.eql?('no') ? sum += order.totale : sum += 0 }
   end
   
   def total
