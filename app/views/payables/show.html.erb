@@ -1,0 +1,23 @@
+<p>
+  <b><%= Payable.human_attribute_name(:seq_no) %>:</b>
+  <%=h @payable.seq_no %>
+</p>
+
+<p>
+  <b><%= Payable.human_attribute_name(:date) %>:</b>
+  <%=h @payable.date %>
+</p>
+
+<p>
+  <b><%= Supplier.human_name %>:</b>
+  <%=h @payable.supplier.name %>
+</p>
+
+<p>
+  <b><%= Payable.human_attribute_name(:amount) %>:</b>
+  <%=h @payable.amount %>
+</p>
+
+
+<%= link_to t('Edit'), edit_payable_path(@payable) %> |
+<%= link_to t('Back'), payables_path %>

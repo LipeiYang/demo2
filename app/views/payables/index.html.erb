@@ -1,0 +1,24 @@
+<h1><%= t('Listing payables') %></h1>
+
+<h3><%= link_to t('New payable'), new_payable_path %></h3>
+
+<table>
+  <tr>
+    <th><%= Payable.human_attribute_name(:seq_no) %></th>
+    <th><%= Payable.human_attribute_name(:date) %></th>
+    <th><%= Supplier.human_name %></th>
+    <th><%= Payable.human_attribute_name(:amount) %></th>
+  </tr>
+
+<% @payables.each do |payable| %>
+  <tr>
+    <td><%=h payable.seq_no %></td>
+    <td><%=h payable.date %></td>
+    <td><%=h payable.supplier.name %></td>
+    <td class="right"><%=f payable.amount %></td>
+    <td><%= link_to t('Edit'), edit_payable_path(payable) %></td>
+    <!-- <td><%= link_to 'Destroy', payable, :confirm => 'Are you sure?', :method => :delete %></td> -->
+  </tr>
+<% end %>
+</table>
+
