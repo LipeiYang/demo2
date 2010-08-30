@@ -17,7 +17,7 @@
     <td><%=h payable.supplier.name %></td>
     <td class="right"><%=f payable.amount %></td>
     <td><%= link_to t('Edit'), edit_payable_path(payable) %></td>
-    <!-- <td><%= link_to 'Destroy', payable, :confirm => 'Are you sure?', :method => :delete %></td> -->
+    <td><%= link_to t('Destroy'), payable, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
