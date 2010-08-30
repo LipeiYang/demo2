@@ -16344,3 +16344,22 @@ Rendering payables/index
 Rendered layouts/_menu (0.0ms)
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
 Completed in 172ms (View: 110, DB: 0) | 200 OK [http://localhost/payables]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CostItemsController#index (for 127.0.0.1 at 2010-08-31 01:33:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cost_items"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-08-30 17:33:03.546000', "updated_at" = '2010-08-30 17:33:03.546000' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO leaf_057788813958, "$user",public[0m
+  [4;36;1mCostItem Load (0.0ms)[0m   [0;1mSELECT * FROM "cost_items" [0m
+Rendering template within layouts/cost_items
+Rendering cost_items/index
+Rendered layouts/_menu (0.0ms)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 78ms (View: 15, DB: 0) | 200 OK [http://localhost/cost_items]
