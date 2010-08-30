@@ -1,0 +1,23 @@
+<p>
+  <b><%= Invest.human_attribute_name(:seq_no) %>:</b>
+  <%=h @invest.seq_no %>
+</p>
+
+<p>
+  <b><%= Invest.human_attribute_name(:date) %>:</b>
+  <%=h @invest.date %>
+</p>
+
+<p>
+  <b><%= CostItem.human_name %>:</b>
+  <%=h @invest.cost_item.name %>
+</p>
+
+<p>
+  <b><%= Invest.human_attribute_name(:amount) %>:</b>
+  <%=h @invest.amount %>
+</p>
+
+
+<%= link_to t('Edit'), edit_invest_path(@invest) %> |
+<%= link_to t('Back'), invests_path %>

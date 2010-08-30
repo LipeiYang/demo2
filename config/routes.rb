@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :payables
+
+  map.resources :invests
+
+  map.resources :cost_items
+
 
   map.resources :suppliers
 

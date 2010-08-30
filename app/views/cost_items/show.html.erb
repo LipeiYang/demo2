@@ -1,0 +1,22 @@
+<p>
+  <b><%= CostItem.human_attribute_name(:seq_no) %>:</b>
+  <%=h @cost_item.seq_no %>
+</p>
+
+<p>
+  <b><%= CostItem.human_attribute_name(:name) %>:</b>
+  <%=h @cost_item.name %>
+</p>
+
+<p>
+  <b><%=h CostItem.human_attribute_name(:period) %>
+  <%=h day_to_period[@cost_item.period] %></b>
+</p>
+
+<p>
+  <b><%= CostItem.human_attribute_name(:price) %>:</b>
+  <%=h @cost_item.price %>
+</p>
+
+<%= link_to t('Edit'), edit_cost_item_path(@cost_item) %> |
+<%= link_to t('Back'), cost_items_path %>

@@ -1,0 +1,24 @@
+<h1><%= t('Listing invests') %></h1>
+
+<h3><%= link_to t('New invest'), new_invest_path %></h3>
+
+<table>
+  <tr>
+    <th><%= Invest.human_attribute_name(:seq_no) %></th>
+    <th><%= Invest.human_attribute_name(:date) %></th>
+    <th><%= CostItem.human_name %></th>
+    <th><%= Invest.human_attribute_name(:amount) %></th>
+  </tr>
+
+<% @invests.each do |invest| %>
+  <tr>
+    <td><%=h invest.seq_no %></td>
+    <td><%=h invest.date %></td>
+    <td><%=h invest.cost_item.name %></td>
+    <td class="right"><%=f invest.amount %></td>
+    <td><%= link_to 'Edit', edit_invest_path(invest) %></td>
+    <!-- <td><%= link_to 'Destroy', invest, :confirm => 'Are you sure?', :method => :delete %></td> -->
+  </tr>
+<% end %>
+</table>
+

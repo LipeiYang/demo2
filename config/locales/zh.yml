@@ -9,18 +9,27 @@ zh:
   Listing customers: "客户列表"
   Listing suppliers: "供应商列表"
   Listing products: "产品列表"
+  Listing cost_items: "成本项列表"
+  Listing invests: "投入清单"
+  Listing payables: "付款清单"
   New order: "添加订单"
   New purchase: "添加进货"
   New receivable: "添加收款"
   New customer: "添加客户"
   New supplier: "添加供应商"
   New product: "添加产品"
+  New cost_item: "添加成本项"
+  New invest: "添加投入"
+  New payable: "添加付款"
   Editing order: "修改订单"
-  Editing purchase: "修改进货单"
-  Editing receivable: "修改收款单"
+  Editing purchase: "修改进货"
+  Editing receivable: "修改收款"
   Editing customer: "修改客户"
   Editing supplier: "修改供应商"
   Editing product: "修改产品"
+  Editing cost_item: "修改成本项"
+  Editing invest: "修改投入"
+  Editing payable: "修改付款"
   Show: "查看"
   Edit: "修改"
   Destroy: "删除"
@@ -43,20 +52,30 @@ zh:
   t_amount: "金额"
   t_total: "总计"
   sure?: "确定吗？"
-  Username: "用户名"
+  Username: "用户"
   Password: "密码"
   t_yes: "是"
   t_no: "否"  
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]
-  
+
+  year:   "年"
+  month:  "月"
+  day:    "天"
+  hour:   "时"
+  minute: "分"
+  second: "秒"
+        
   activerecord:
     models:
       order: "交易单"
       purchase: "进货单"
       receivable: "收款单"
       supplier: "供应商"
+      invest: "投入单"
+      cost_item: "成本项"
+      payable: "付款单"
     attributes:
       order:
         seq_no: "编号"
@@ -71,6 +90,7 @@ zh:
         seq_no: "编号"
         amount: "金额"
       customer:
+        seq_no: "编号"
         name: "姓名"
       supplier:
         seq_no: "编号"
@@ -79,6 +99,19 @@ zh:
         name: "名称"
         price: "成本价"
         weighted_cost: "参考成本"
+      cost_item:
+        seq_no: "编号"
+        name: "名称"
+        price: "价格（元）"
+        period: "每"
+      invest:
+        seq_no: "编号"
+        date: "日期"
+        amount: "金额"
+      payable:
+        seq_no: "编号"
+        date: "日期"
+        amount: "金额"        
     errors:
       template:
         header:
