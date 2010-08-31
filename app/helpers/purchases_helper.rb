@@ -1,6 +1,6 @@
 module PurchasesHelper
   
-  def total_material_fee
+  def total_purchase_fee
     @purchases.inject(0) { |sum, purchase| sum += purchase.total } 
   end
   
