@@ -1,25 +1,34 @@
 <p>
-  <b><%= t('t_seq_no') %>:</b>
+  <b><%= Purchase.human_attribute_name :seq_no %>:</b>
   <%=h @purchase.seq_no %>
 </p>
 <p>
-  <b><%= t('t_date') %>:</b>
+  <b><%= Purchase.human_attribute_name :date %>:</b>
   <%=h @purchase.date %>
 </p>
 
 <p>
-  <b><%= t('t_product') %>:</b>
+  <b><%= Supplier.human_name %>:</b>
+  <%=h @purchase.supplier.name %>
+</p>
+
+<p>
+  <b><%= Product.human_name %>:</b>
   <%=h @purchase.product.name %>
 </p>
 
 <p>
-  <b><%= t('t_volume') %>:</b>
+  <b><%= Purchase.human_attribute_name :volume %>:</b>
   <%=h @purchase.volume %>
 </p>
 
 <p>
-  <b><%= t('t_price') %>:</b>
+  <b><%= Purchase.human_attribute_name :price %>:</b>
   <%=h @purchase.price %>
+</p>
+<p>
+  <b><%= Purchase.human_attribute_name :is_paied %>:</b>
+  <%=h t("t_#{@purchase.is_paied}") %>
 </p>
 
 <%= link_to t('Edit'), edit_purchase_path(@purchase) %> |

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100830155619) do
+ActiveRecord::Schema.define(:version => 20100831154909) do
 
   create_table "cost_items", :force => true do |t|
     t.integer  "seq_no"
@@ -68,11 +68,13 @@ ActiveRecord::Schema.define(:version => 20100830155619) do
   create_table "purchases", :force => true do |t|
     t.date     "date"
     t.integer  "product_id"
-    t.float    "price",      :default => 0.0
-    t.float    "volume",     :default => 0.0
+    t.float    "price",       :default => 0.0
+    t.float    "volume",      :default => 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "seq_no"
+    t.integer  "supplier_id"
+    t.string   "is_paied"
   end
 
   create_table "receivables", :force => true do |t|

@@ -2,22 +2,26 @@
 <h3><%= link_to t('New purchase'), new_purchase_path %></h3>
 <table>
   <tr>
-    <th><%= t('t_seq_no') %></th>
-    <th><%= t('t_date') %></th>
-    <th><%= t('t_product') %></th>
-    <th><%= t('t_volume') %></th>
-    <th><%= t('t_price') %></th>
+    <th><%= Purchase.human_attribute_name :seq_no %></th>
+    <th><%= Purchase.human_attribute_name :date %></th>
+    <th><%= Supplier.human_name %></th>
+    <th><%= Product.human_name %></th>
+    <th><%= Purchase.human_attribute_name :volume %></th>
+    <th><%= Purchase.human_attribute_name :price %></th>
     <th><%= t('t_total') %></th>
+    <th><%= Purchase.human_attribute_name :is_paied %></th>
   </tr>
 
 <% @purchases.each do |purchase| %>
   <tr>
     <td><%=h purchase.seq_no %></td>
     <td><%=h purchase.date %></td>
+    <td><%=h purchase.supplier.name %></td>
     <td><%=h purchase.product.name %></td>
     <td class="right"><%=f purchase.volume %></td>
     <td class="right"><%=f purchase.price %></td>
     <td class="right"><%=f purchase.total %></td>
+    <td><%=h t("t_#{purchase.is_paied}") %></td>
     <td><%= link_to t('Edit'), edit_purchase_path(purchase) %></td>
     <td><%= link_to t('Destroy'), purchase, :confirm => t('sure?'), :method => :delete %></td>
   </tr>
@@ -26,12 +30,18 @@
 
 <br />
 
-<h3>总材料费：<%=f @purchases.inject(0) { |sum,purchase| sum += purchase.total }%> </h3>
+<h3>总材料费：<%=f total_material_fee %> </h3>
   <table>
+    <tr>
+      <th>产品</th>
+      <th>数量（公斤）</th>
+      <th>合计</th>
+    </tr>
     <% product_purchase_list.each do |o| %>
       <tr>
         <td><%=h o[0] %></td>
-        <td class="right"><%=f o[1] %></td>
+        <td class="right"><%=f o[1][:total_volume] %></td>
+        <td class="right"><%=f o[1][:total_amount] %></td>
       </tr>
     <% end %>
   </table>                                  
