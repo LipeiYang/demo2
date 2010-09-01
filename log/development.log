@@ -24500,3 +24500,206 @@ Rendered layouts/_menu (16.0ms)
 Rendered layouts/_comm_layout (16.0ms)
   [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
 Completed in 266ms (View: 173, DB: 62) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-01 01:26:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-09-01 01:26:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 62ms (View: 15, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-09-01 01:26:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-09-01 01:26:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_user_update_template (16.0ms)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-01 01:26:38) [POST]
+  Parameters: {"user"=>{"company"=>"", "business_no"=>"", "name"=>"", "password_confirmation"=>"[FILTERED]", "addtional"=>"", "username"=>"000000", "id_no"=>"", "cell_phone"=>"", "telephone"=>"", "address"=>"", "password"=>"[FILTERED]", "email"=>""}, "commit"=>"确定", "action"=>"create", "authenticity_token"=>"bV+6Al76iW3G1MK5HjTehs5pSFlHonjO47fhbcF9sC8=", "controller"=>"users"}
+  [4;35;1mSQL (0.0ms)[0m   [0mselect * from pg_namespace where nspname != 'information_schema' AND nspname NOT LIKE 'pg%'[0m
+leaf_000000 exists already with these tables ["cost_items", "customers", "invests", "orders", "payables", "products", "receivables", "schema_migrations", "suppliers", "users", "purchases"]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO leaf_000000[0m
+About to load the schema C:/Documents and Settings/Leopard/My Documents/Aptana Studio 3 Workspace/demo2/db/schema.rb
+  [4;35;1mSQL (140.0ms)[0m   [0mDROP TABLE "cost_items"[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE "cost_items" ("id" serial primary key, "seq_no" integer, "name" character varying(255), "price" float, "period" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mDROP TABLE "customers"[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp, "seq_no" integer) [0m
+  [4;35;1mSQL (15.0ms)[0m   [0mDROP TABLE "invests"[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "invests" ("id" serial primary key, "seq_no" integer, "date" date, "cost_item_id" integer, "amount" float, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mDROP TABLE "orders"[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCREATE TABLE "orders" ("id" serial primary key, "date" date, "price" float DEFAULT 0.0, "volume" float DEFAULT 0.0, "manfee" float DEFAULT 0.0, "customer_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp, "is_paied" character varying(255), "seq_no" integer) [0m
+  [4;35;1mSQL (15.0ms)[0m   [0mDROP TABLE "payables"[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "payables" ("id" serial primary key, "seq_no" integer, "date" date, "supplier_id" integer, "amount" float, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "products"[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "price" float, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mDROP TABLE "purchases"[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "product_id" integer, "price" float DEFAULT 0.0, "volume" float DEFAULT 0.0, "created_at" timestamp, "updated_at" timestamp, "seq_no" integer, "supplier_id" integer, "is_paied" character varying(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "receivables"[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCREATE TABLE "receivables" ("id" serial primary key, "seq_no" integer, "date" date, "customer_id" integer, "amount" float DEFAULT 0.0, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mDROP TABLE "suppliers"[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "suppliers" ("id" serial primary key, "seq_no" integer, "name" character varying(255) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (15.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE "users" ("id" serial primary key, "username" character varying(255), "email" character varying(255), "crypted_password" character varying(255), "password_salt" character varying(255), "persistence_token" character varying(255), "name" character varying(255), "address" character varying(255), "telephone" character varying(255), "cell_phone" character varying(255), "id_no" character varying(255), "business_no" character varying(255), "company" character varying(255), "addtional" text, "created_at" timestamp, "updated_at" timestamp, "login_count" integer DEFAULT 0 NOT NULL, "last_request_at" timestamp, "last_login_at" timestamp, "current_login_at" timestamp, "last_login_ip" character varying(255), "current_login_ip" character varying(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+About to set search path back to "$user",public.
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = '000000') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'c30017da75d8e6489a3117108359f2de8f1ccdbbdb53e071a69ba5f5cac19c76cd66a8f9b4b99dcb97e39506a7d0845d4c8f85ae76f60abb902824e250d33eb4') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_user_update_template (16.0ms)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 1532ms (View: 32, DB: 999) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-09-01 01:27:25) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-09-01 01:27:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 46ms (View: 0, DB: 32) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-01 21:48:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 390ms (DB: 0) | 302 Found [http://localhost/orders]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-09-01 21:48:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-09-01 21:49:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (47.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 125ms (View: 63, DB: 47) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-09-01 21:50:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-09-01 21:50:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 78ms (View: 16, DB: 15) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-09-01 21:50:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/users
+Rendering users/show
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-09-01 21:50:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
