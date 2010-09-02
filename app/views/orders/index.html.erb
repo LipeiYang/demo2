@@ -31,51 +31,47 @@
 <% end %>
 </table>
 
-<br />
+<br/>
 
-<h3>总材料费：<%=f total_material_fee %> </h3>
-  <table>
+<table>
+  <tr>
+    <th>产品</th>
+    <th>数量（公斤）</th>
+    <th>合计</th>
+    <th>成本</th>
+    <th>利润</th>
+  </tr>
+  <% product_position_list.each do |o| %>
     <tr>
-      <th>产品</th>
-      <th>数量（公斤）</th>
-      <th>合计</th>
-      <th>成本</th>
-      <th>利润</th>
+      <td><%=h o[0] %></td>
+      <td class="right"><%=f o[1][:total_volume] %></td>
+      <td class="right"><%=f o[1][:total_mat_fee] %></td>
+      <td class="right"><%=f o[1][:total_cost] %></td>
+      <td class="right"><%=f o[1][:total_profit] %></td>
     </tr>
-    <% product_position_list.each do |o| %>
-      <tr>
-        <td><%=h o[0] %></td>
-        <td class="right"><%=f o[1][:total_volume] %></td>
-        <td class="right"><%=f o[1][:total_mat_fee] %></td>
-        <td class="right"><%=f o[1][:total_cost] %></td>
-        <td class="right"><%=f o[1][:total_profit] %></td>
-      </tr>
-    <% end %>
-  </table>                                  
-<h3>总材料成本：<%=f total_material_cost %> </h3>
-<h3>总加工费：<%=f total_manfee %> </h3>
-<h3>总收益：<%=f total_revenue %> </h3>
+  <% end %>
+</table>               
+<br/>                   
+<table>
+  <tr>
+    <th>客户</th>
+    <th>材料</th>
+    <th>材料利润</th>
+    <th>加工费</th>
+    <th>总收益</th>
+  </tr>
+  <% customer_position_list.each do |o| %>
+    <tr>
+      <td><%=h o[0] %></td>
+      <td class="right"><%=f o[1][:total_mat_fee] %></td>
+      <td class="right"><%=f o[1][:total_mat_profit] %></td>
+      <td class="right"><%=f o[1][:total_man_fee] %></td>
+      <td class="right"><%=f o[1][:total_profit] %></td>
+    </tr>
+  <% end %>
+</table>                                  
+<h3>总材料费：<%=f total_material_fee %> | 总材料成本：<%=f total_material_cost %> | 总材料收益：<%=f total_material_fee - total_material_cost %> | 总加工费：<%=f total_manfee %> | 总收益：<%=f total_revenue %> </h3>
+<h3>已付金额：<%=f total_paied %> | 未付金额：<%=f total_unpaied %> | 总金额：<%=f total %> </h3>
 <% if session[:product_id]==0 && session[:customer_id]==0 %>
   <h3>总利润：<%=f total_profit %> </h3>
 <% end %>
-<h3>已付金额：<%=f total_paied %><br />
-<h3>未付金额：<%=f total_unpaied %> </h3>
-  <table>
-    <tr>
-      <th>客户</th>
-      <th>材料</th>
-      <th>材料利润</th>
-      <th>加工费</th>
-      <th>总收益</th>
-    </tr>
-    <% customer_position_list.each do |o| %>
-      <tr>
-        <td><%=h o[0] %></td>
-        <td class="right"><%=f o[1][:total_mat_fee] %></td>
-        <td class="right"><%=f o[1][:total_mat_profit] %></td>
-        <td class="right"><%=f o[1][:total_man_fee] %></td>
-        <td class="right"><%=f o[1][:total_profit] %></td>
-      </tr>
-    <% end %>
-  </table>                                  
-<h3>总金额：<%=f total %> </h3>
