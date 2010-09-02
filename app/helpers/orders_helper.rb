@@ -72,4 +72,8 @@ module OrdersHelper
     end
     rlt.sort_by{|a| -a[1][:total_profit]}
   end
+  
+  def alert?(order)
+    order.customer.id==1&&order.is_paied=='no'
+  end
 end

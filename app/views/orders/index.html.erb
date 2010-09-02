@@ -15,7 +15,11 @@
   </tr>
 
 <% @orders.each do |order| %>
-  <tr>
+  <% if alert?(order) %>
+    <tr class="alt">
+  <% else %>
+    <tr>
+  <% end %>
     <td><%=h order.seq_no %></td>
     <td><%=h order.date %></td>
     <td><%=h order.customer.name %></td>

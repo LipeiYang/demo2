@@ -26192,3 +26192,344 @@ Rendered layouts/_menu (0.0ms)
 Rendered layouts/_comm_layout (0.0ms)
   [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
 Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/cost_items]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-09-02 21:07:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"customers"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "last_request_at" = '2010-09-02 13:07:08.843000', "updated_at" = '2010-09-02 13:07:08.843000' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO leaf_057788813958, "$user",public[0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+Rendering template within layouts/customers
+Rendering customers/index
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_comm_layout (0.0ms)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
+Completed in 250ms (View: 187, DB: 0) | 200 OK [http://localhost/customers]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-02 21:10:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (16.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-09-02 13:10:01.640000', "updated_at" = '2010-09-02 13:10:01.640000' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO leaf_057788813958, "$user",public[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-01' and '2010-08-02') ORDER BY date DESC, seq_no DESC[0m
+
+ActionView::TemplateError (undefined method `customer' for #<Class:0x47f8010>) on line #18 of app/views/orders/index.html.erb:
+15:   </tr>
+16: 
+17: <% @orders.each do |order| %>
+18:   <% if alert?(@orders) %>
+19:     <tr class="alt">
+20:   <% else %>
+21:     <tr>
+
+    c:1:in `__send__'
+    c:1:in `with_scope'
+    c:1:in `__send__'
+    c:1:in `with_scope'
+    c:1:in `__send__'
+    c:1:in `with_scope'
+    app/helpers/orders_helper.rb:77:in `alert?'
+    app/views/orders/index.html.erb:18
+    c:1:in `each'
+    c:1:in `__send__'
+    c:1:in `each'
+    app/views/orders/index.html.erb:17
+    app/controllers/orders_controller.rb:34:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-02 21:10:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-09-02 13:10:31.687000', "updated_at" = '2010-09-02 13:10:31.687000' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO leaf_057788813958, "$user",public[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-01' and '2010-08-02') ORDER BY date DESC, seq_no DESC[0m
+
+ActionView::TemplateError (undefined method `customer' for #<Class:0x47fef28>) on line #18 of app/views/orders/index.html.erb:
+15:   </tr>
+16: 
+17: <% @orders.each do |order| %>
+18:   <% if alert?(@orders) %>
+19:     <tr class="alt">
+20:   <% else %>
+21:     <tr>
+
+    c:1:in `__send__'
+    c:1:in `with_scope'
+    c:1:in `__send__'
+    c:1:in `with_scope'
+    c:1:in `__send__'
+    c:1:in `with_scope'
+    app/helpers/orders_helper.rb:77:in `alert?'
+    app/views/orders/index.html.erb:18
+    c:1:in `each'
+    c:1:in `__send__'
+    c:1:in `each'
+    app/views/orders/index.html.erb:17
+    app/controllers/orders_controller.rb:34:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-02 21:11:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-09-02 13:11:23.328000', "updated_at" = '2010-09-02 13:11:23.328000' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO leaf_057788813958, "$user",public[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (15.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (47.0ms)
+  [4;36;1mOrder Load (15.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-01' and '2010-08-02') ORDER BY date DESC, seq_no DESC[0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCostItem Load (15.0ms)[0m   [0mSELECT * FROM "cost_items" [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_comm_layout (16.0ms)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
+Completed in 531ms (View: 424, DB: 45) | 200 OK [http://localhost/orders]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-09-02 21:11:26) [GET]
+  Parameters: {"action"=>"edit", "id"=>"253", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-09-02 13:11:26.953000', "updated_at" = '2010-09-02 13:11:26.953000' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO leaf_057788813958, "$user",public[0m
+  [4;36;1mOrder Load (16.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE ("orders"."id" = 253) [0m
+Rendering template within layouts/orders
+Rendering orders/edit
+  [4;35;1mCustomer Load (16.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_order_update_template (156.0ms)
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_comm_layout (0.0ms)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 235ms (View: 140, DB: 32) | 200 OK [http://localhost/orders/253/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#update (for 127.0.0.1 at 2010-09-02 21:11:29) [PUT]
+  Parameters: {"commit"=>"更新", "order"=>{"manfee"=>"64", "date(1i)"=>"2010", "seq_no"=>"253", "price"=>"5.2", "date(2i)"=>"8", "date(3i)"=>"2", "product_id"=>"2", "is_paied"=>"no", "customer_id"=>"1", "volume"=>"59.6"}, "action"=>"update", "_method"=>"put", "authenticity_token"=>"t9Fi5FRihwz6ccVuxeY5Oz3YG5Tcjtzwv6UK11ejDMk=", "id"=>"253", "controller"=>"orders"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "last_request_at" = '2010-09-02 13:11:29.187000', "updated_at" = '2010-09-02 13:11:29.187000' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO leaf_057788813958, "$user",public[0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 253) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Update (47.0ms)[0m   [0mUPDATE "orders" SET "is_paied" = 'no', "updated_at" = '2010-09-02 13:11:29.203000' WHERE "id" = 253[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/orders/253
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 125ms (DB: 63) | 302 Found [http://localhost/orders/253]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#show (for 127.0.0.1 at 2010-09-02 21:11:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"253", "controller"=>"orders"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "last_request_at" = '2010-09-02 13:11:29.468000', "updated_at" = '2010-09-02 13:11:29.468000' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO leaf_057788813958, "$user",public[0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM "orders" WHERE ("orders"."id" = 253) [0m
+Rendering template within layouts/orders
+Rendering orders/show
+  [4;36;1mCustomer Load (16.0ms)[0m   [0;1mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_comm_layout (0.0ms)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
+Completed in 109ms (View: 15, DB: 31) | 200 OK [http://localhost/orders/253]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-02 21:11:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-09-02 13:11:31.328000', "updated_at" = '2010-09-02 13:11:31.328000' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO leaf_057788813958, "$user",public[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;36;1mCustomer Load (0.0ms)[0m   [0;1mSELECT * FROM "customers" ORDER BY name[0m
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (63.0ms)
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM "orders" WHERE (date between '2010-08-01' and '2010-08-02') ORDER BY date DESC, seq_no DESC[0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 19) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 7) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 5) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 11) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 6) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 26) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 19) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 32) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+  [4;35;1mCustomer Load (0.0ms)[0m   [0mSELECT * FROM "customers" WHERE ("customers"."id" = 25) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mCostItem Load (0.0ms)[0m   [0mSELECT * FROM "cost_items" [0m
+Rendered layouts/_menu (0.0ms)
+Rendered layouts/_comm_layout (16.0ms)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
+Completed in 500ms (View: 422, DB: 16) | 200 OK [http://localhost/orders]
