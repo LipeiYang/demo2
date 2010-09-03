@@ -83,16 +83,21 @@ zh:
       order:
         seq_no: "编号"
         volume: "数量（公斤）"    
+        customer: "客户"
+        product: "产品"
         price: "价格（元）"
         manfee: "加工费（元）"
       purchase:
         seq_no: "编号"
         date: "日期"
+        supplier: "供应商"
+        product: "产品"
         volume: "数量（公斤）"    
         price: "价格（元）"
         is_paied: "已付"
       receivable:
         seq_no: "编号"
+        customer: "客户"
         amount: "金额"
       customer:
         seq_no: "编号"
@@ -112,10 +117,12 @@ zh:
       invest:
         seq_no: "编号"
         date: "日期"
+        cost_item: "成本项"
         amount: "金额"
       payable:
         seq_no: "编号"
         date: "日期"
+        supplier: "供应商"
         amount: "金额"        
     errors:
       template:

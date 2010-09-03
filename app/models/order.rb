@@ -3,8 +3,9 @@ class Order < ActiveRecord::Base
   belongs_to :product
   
   validates_numericality_of :seq_no, :only_integer => true, :message=>:not_an_integer
+  validates_presence_of :customer, :product
   validates_numericality_of :volume, :price, :manfee
-
+  
   named_scope :for_date_range, lambda { |start_date, end_date| {:conditions => ["date between ? and ?", start_date, end_date]} }
   named_scope :for_product, lambda { |qry_ord| {:conditions => ["product_id = ?", qry_ord.product_id]} }
   named_scope :for_customer, lambda { |qry_ord| {:conditions => ["customer_id = ?", qry_ord.customer_id]} }
