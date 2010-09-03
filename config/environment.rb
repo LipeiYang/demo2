@@ -40,5 +40,5 @@ Rails::Initializer.run do |config|
   config.i18n.default_locale = :zh
   
   config.gem "authlogic"
-  # config.gem "declarative_authorization"
+  config.gem "declarative_authorization"
 end
