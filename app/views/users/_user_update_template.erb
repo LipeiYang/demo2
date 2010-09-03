@@ -50,6 +50,12 @@
     <%= f.text_area :addtional %>
   </p>
   <p>
+    <% Role.all.each do |role| %>
+      <%= f.label role.name %>
+      <%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %><br />
+    <% end%>
+  </p>  
+  <p>
     <%= f.submit t(button_label) %>
   </p>
 <% end %>
