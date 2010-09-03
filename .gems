@@ -1,3 +1,4 @@
 rails --version 2.3.8
 authlogic --version 2.1.6
-declarative_authorization
+gemcutter --version 0.6.1
+declarative_authorization --version 0.5
