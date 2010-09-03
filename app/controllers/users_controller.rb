@@ -1,11 +1,11 @@
 require 'schema_utils'
 class UsersController < ApplicationController
-  skip_before_filter :require_user, :set_db_schema
-  
+  skip_before_filter :set_db_schema, :clear_db_schema
+  filter_resource_access
   # GET /users
   # GET /users.xml
   def index
-    @users = User.all
+    @users = User.all :order => 'username'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -59,6 +59,7 @@ class UsersController < ApplicationController
   # PUT /users/1
   # PUT /users/1.xml
   def update
+    params[:user][:role_ids] ||= []
     @user = User.find(params[:id])
 
     respond_to do |format|

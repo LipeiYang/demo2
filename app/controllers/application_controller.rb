@@ -7,17 +7,28 @@ class ApplicationController < ActionController::Base
   helper_method :current_user_session, :current_user
   filter_parameter_logging :password, :password_confirmation
 
-  before_filter :set_locale, :require_user, :set_db_schema
+  before_filter :set_locale, :require_user, :set_db_schema, :set_current_user
   after_filter :clear_db_schema
+
 
   protected
     def get_next_id(m)
       m.last.blank? ? 1 : m.last.id+1
     end
-  
+
+    def permission_denied
+      flash[:error] = "Sorry, you are not allowed to access that page."
+      redirect_to login_path
+    end
+    
+    
   private
     def set_locale
       I18n.locale = params[:locale]
+    end
+    
+    def set_current_user
+      Authorization.current_user = current_user
     end
     
     def require_user

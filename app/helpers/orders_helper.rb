@@ -36,26 +36,16 @@ module OrdersHelper
     @orders.inject(0) { |sum,order| sum += order.totale }
   end
   
-  def customer_unpaied_list
-    rlt = {}
-    @orders.each do |o|
-      if o.is_paied == 'no'      
-        rlt[o.customer.name]||=0
-        rlt[o.customer.name]+=o.totale
-      end
-    end
-    rlt.sort_by{|a| -a[1]}
-  end
-    
   def product_position_list
     rlt = {}
     @orders.each do |o|
       if o.material_fee > 0      
-        rlt[o.product.name]||={:total_mat_fee=>0, :total_volume=>0, :total_cost=>0, :total_profit=>0}
-        rlt[o.product.name][:total_mat_fee]+=o.material_fee
+        rlt[o.product.name]||={:total_volume=>0, :total_mat_fee=>0, :total_mat_profit=>0, :total_man_fee=>0, :total_profit=>0}
         rlt[o.product.name][:total_volume]+=o.volume
-        rlt[o.product.name][:total_cost]+=o.material_cost
-        rlt[o.product.name][:total_profit]+=o.material_fee-o.material_cost
+        rlt[o.product.name][:total_mat_fee]+=o.material_fee
+        rlt[o.product.name][:total_mat_profit]+=o.material_fee-o.material_cost
+        rlt[o.product.name][:total_man_fee]+=o.manfee
+        rlt[o.product.name][:total_profit]+=o.material_fee-o.material_cost+o.manfee
       end
     end
     rlt.sort_by{|a| -a[1][:total_profit]}
@@ -71,5 +61,9 @@ module OrdersHelper
       rlt[o.customer.name][:total_profit]+=o.totale-o.material_cost
     end
     rlt.sort_by{|a| -a[1][:total_profit]}
+  end
+  
+  def alert?(order)
+    order.customer.id==1&&order.is_paied=='no'
   end
 end
