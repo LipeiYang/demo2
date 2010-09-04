@@ -16,4 +16,8 @@ class User < ActiveRecord::Base
       role.name.underscore.to_sym  
     end  
   end
+  
+  def admin?
+    role_symbols.include?(:admin)
+  end
 end

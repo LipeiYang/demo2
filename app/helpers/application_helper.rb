@@ -6,6 +6,10 @@ module ApplicationHelper
     h number_with_precision(num, :precision => 2, :separator => ".")
   end
   
+  def ft(t)
+    t.strftime('%y-%m-%d %I:%M')
+  end
+  
   def title(page_title)  
     content_for(:title) { page_title }  
   end

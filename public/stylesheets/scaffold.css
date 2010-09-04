@@ -17,6 +17,10 @@ th
   padding-bottom:4px;
   background-color:#A7C942;
 }
+th.wid
+{
+  width: 118px;
+}
 td.right
 {
   text-align:right;
