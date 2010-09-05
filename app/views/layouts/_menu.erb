@@ -7,4 +7,7 @@
 <%= link_to t('Listing suppliers'), suppliers_path %> |
 <%= link_to t('Listing products'), products_path %> |
 <%= link_to t('Listing cost_items'), cost_items_path %> |
+<% if current_user.admin? %>
+<%= @focused_name %>
+<% end %>
 <%= link_to t('Logout'), logout_path %>

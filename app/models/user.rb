@@ -7,10 +7,6 @@ class User < ActiveRecord::Base
     # c.logged_in_timeout = 10.minutes
   end 
   
-  def db_schema
-    "leaf_#{username}"
-  end
-  
   def role_symbols  
     roles.map do |role|  
       role.name.underscore.to_sym  

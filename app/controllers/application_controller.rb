@@ -34,7 +34,6 @@ class ApplicationController < ActionController::Base
     def require_user
       unless current_user
         store_location
-        # flash[:notice] = "You must be logged in to access this page"
         redirect_to login_path
         return false
       end
@@ -43,13 +42,18 @@ class ApplicationController < ActionController::Base
     def set_db_schema
       if current_user.admin?
         session[:user] = params[:user] unless params[:user].blank?
-        session[:user] ||= current_user.name
-        SchemaUtils.add_schema_to_path "leaf_#{session[:user]}"
+        session[:user] ||= current_user.username
+        @focused_name = User.find_by_username(session[:user]).name
+        SchemaUtils.add_schema_to_path get_schema(session[:user])
       else
-        SchemaUtils.add_schema_to_path current_user.db_schema
+        SchemaUtils.add_schema_to_path get_schema(current_user.username)
       end
     end
-
+    
+    def get_schema(user_name)
+      "leaf_#{user_name}"
+    end
+    
     def clear_db_schema
       SchemaUtils.reset_search_path
     end
