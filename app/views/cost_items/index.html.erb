@@ -18,7 +18,7 @@
     <td class="right"><%=f cost_item.price %></td>
     <td><%= link_to t('Edit'), edit_cost_item_path(cost_item) %></td>
     <% if cost_item.invests.empty? %>
-      <td><%= link_to t('Destroy'), cost_item, :confirm => t('Are you sure?'), :method => :delete %></td>
+      <td><%= link_to t('Destroy'), cost_item, :confirm => t('sure?'), :method => :delete %></td>
     <% end %>
   </tr>
 <% end %>

@@ -14,7 +14,7 @@
     <td><%=h supplier.name %></td>
     <td><%= link_to t('Edit'), edit_supplier_path(supplier) %></td>
     <% if supplier.purchases.empty? %>
-      <td><%= link_to t('Destroy'), supplier, :confirm => t('Are you sure?'), :method => :delete %></td>
+      <td><%= link_to t('Destroy'), supplier, :confirm => t('sure?'), :method => :delete %></td>
     <% end %>
   </tr>
 <% end %>
