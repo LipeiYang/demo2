@@ -13,7 +13,9 @@
     <td><%=h customer.seq_no %></td>
     <td><%=h customer.name %></td>
     <td><%= link_to t('Edit'), edit_customer_path(customer) %></td>
-    <!-- <td><%= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete %></td> -->
+    <% if customer.orders.empty? %>
+      <td><%= link_to t('Destroy'), customer, :confirm => t('Are you sure?'), :method => :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

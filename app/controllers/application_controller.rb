@@ -41,7 +41,13 @@ class ApplicationController < ActionController::Base
     end
     
     def set_db_schema
-      SchemaUtils.add_schema_to_path current_user.db_schema
+      if current_user.admin?
+        session[:user] = params[:user] unless params[:user].blank?
+        session[:user] ||= current_user.name
+        SchemaUtils.add_schema_to_path "leaf_#{session[:user]}"
+      else
+        SchemaUtils.add_schema_to_path current_user.db_schema
+      end
     end
 
     def clear_db_schema

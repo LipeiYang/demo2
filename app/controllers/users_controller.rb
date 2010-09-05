@@ -1,6 +1,7 @@
 require 'schema_utils'
 class UsersController < ApplicationController
-  skip_before_filter :set_db_schema, :clear_db_schema
+  skip_before_filter :set_db_schema
+  skip_after_filter :clear_db_schema
   filter_resource_access
   # GET /users
   # GET /users.xml

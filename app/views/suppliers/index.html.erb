@@ -13,7 +13,9 @@
     <td><%=h supplier.seq_no %></td>
     <td><%=h supplier.name %></td>
     <td><%= link_to t('Edit'), edit_supplier_path(supplier) %></td>
-    <!-- <td><%= link_to 'Destroy', supplier, :confirm => 'Are you sure?', :method => :delete %></td> -->
+    <% if supplier.purchases.empty? %>
+      <td><%= link_to t('Destroy'), supplier, :confirm => t('Are you sure?'), :method => :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

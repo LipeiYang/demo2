@@ -15,7 +15,9 @@
     <td class="right"><%=f product.price %></td>
     <td class="right"><%=f product.weighted_cost %></td>
     <td><%= link_to t('Edit'), edit_product_path(product) %></td>
-    <!-- <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td> -->
+    <% if product.orders.empty? && product.purchases.empty? %>
+      <td><%= link_to t('Destroy'), product, :confirm => t('Are you sure?'), :method => :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

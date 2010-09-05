@@ -17,7 +17,9 @@
     <td><%=h day_to_period[cost_item.period] %></td>
     <td class="right"><%=f cost_item.price %></td>
     <td><%= link_to t('Edit'), edit_cost_item_path(cost_item) %></td>
-    <!-- <td><%= link_to t('Destroy'), cost_item, :confirm => 'Are you sure?', :method => :delete %></td> -->
+    <% if cost_item.invests.empty? %>
+      <td><%= link_to t('Destroy'), cost_item, :confirm => t('Are you sure?'), :method => :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
