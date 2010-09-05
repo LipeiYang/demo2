@@ -39,14 +39,12 @@ module OrdersHelper
   def product_position_list
     rlt = {}
     @orders.each do |o|
-      if o.material_fee > 0      
-        rlt[o.product.name]||={:total_volume=>0, :total_mat_fee=>0, :total_mat_profit=>0, :total_man_fee=>0, :total_profit=>0}
-        rlt[o.product.name][:total_volume]+=o.volume
-        rlt[o.product.name][:total_mat_fee]+=o.material_fee
-        rlt[o.product.name][:total_mat_profit]+=o.material_fee-o.material_cost
-        rlt[o.product.name][:total_man_fee]+=o.manfee
-        rlt[o.product.name][:total_profit]+=o.material_fee-o.material_cost+o.manfee
-      end
+      rlt[o.product.name]||={:total_volume=>0, :total_mat_fee=>0, :total_mat_profit=>0, :total_man_fee=>0, :total_profit=>0}
+      rlt[o.product.name][:total_volume]+=o.volume
+      rlt[o.product.name][:total_mat_fee]+=o.material_fee
+      rlt[o.product.name][:total_mat_profit]+=o.material_fee-o.material_cost
+      rlt[o.product.name][:total_man_fee]+=o.manfee
+      rlt[o.product.name][:total_profit]+=o.material_fee-o.material_cost+o.manfee
     end
     rlt.sort_by{|a| -a[1][:total_profit]}
   end
