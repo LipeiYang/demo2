@@ -13,7 +13,7 @@
     <td><%=h customer.seq_no %></td>
     <td><%=h customer.name %></td>
     <td><%= link_to t('Edit'), edit_customer_path(customer) %></td>
-    <% if customer.orders.empty? %>
+    <% if customer.orders.empty? && customer.receivables.empty? %>
       <td><%= link_to t('Destroy'), customer, :confirm => t('sure?'), :method => :delete %></td>
     <% end %>
   </tr>
