@@ -76,8 +76,13 @@
     </tr>
   <% end %>
 </table>
-<h3>总材料费：<%=f total_material_fee %> | 总材料收益：<%=f total_material_fee - total_material_cost %> | 总加工费：<%=f total_manfee %> | 总收益：<%=f total_revenue %> </h3>
-<h3>已付金额：<%=f total_paied %> | 未付金额：<%=f total_unpaied %> | 总金额：<%=f total %> </h3>
+<h3>总材料费：<%=f total_material_fee %> | 
+  总材料收益：<%=f total_material_fee - total_material_cost %> | 
+  总加工费：<%=f total_manfee %> | 
+  总收益：<%=f total_revenue %> </h3>
+<h3>已付金额：<%=f total_paied %> | 
+  未付金额：<%=f total_unpaied %> | 
+  总金额：<%=f total %> </h3>
 <% if session[:product_id]==0 && session[:customer_id]==0 %>
   <h3>总利润：<%=f total_profit %> </h3>
 <% end %>

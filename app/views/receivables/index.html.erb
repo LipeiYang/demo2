@@ -22,17 +22,18 @@
 
 <br />
 
-<h3>未收金额：<%=f total_unrec %> </h3>
-  <table>
+<table>
+  <tr>
+    <th>客户</th>
+    <th>未收金额</th>
+  </tr>
+  <% customer_unrec_list.each do |o| %>
     <tr>
-      <th>客户</th>
-      <th>金额</th>
+      <td><%=h o[0] %></td>
+      <td class="right"><%=f o[1] %></td>
     </tr>
-    <% customer_unrec_list.each do |o| %>
-      <tr>
-        <td><%=h o[0] %></td>
-        <td class="right"><%=f o[1] %></td>
-      </tr>
-    <% end %>
-  </table>        
+  <% end %>
+</table>
+
+<h3>总未收金额：<%=f total_unrec %> </h3>
 

@@ -30,19 +30,37 @@
 
 <br />
 
-<h3>总材料费：<%=f total_purchase_fee %> </h3>
-  <table>
+<table>
+  <tr>
+    <th><%= Supplier.human_name %></th>
+    <th><%= Purchase.human_attribute_name :is_paied %></th>
+    <th>总金额</th>
+  </tr>
+  <% supplier_purchase_list.each do |o| %>
     <tr>
-      <th>产品</th>
-      <th>数量（公斤）</th>
-      <th>合计</th>
+      <td><%=h o[0] %></td>
+      <td class="right"><%=f o[1][:paied_amount] %></td>
+      <td class="right"><%=f o[1][:total_amount] %></td>
     </tr>
-    <% product_purchase_list.each do |o| %>
-      <tr>
-        <td><%=h o[0] %></td>
-        <td class="right"><%=f o[1][:total_volume] %></td>
-        <td class="right"><%=f o[1][:total_amount] %></td>
-      </tr>
-    <% end %>
-  </table>                                  
+  <% end %>
+</table>                                  
 
+<br/> 
+
+<table>
+  <tr>
+    <th><%= Product.human_name %></th>
+    <th><%= Purchase.human_attribute_name :volume %></th>
+    <th><%= t('t_amount') %></th>
+  </tr>
+  <% product_purchase_list.each do |o| %>
+    <tr>
+      <td><%=h o[0] %></td>
+      <td class="right"><%=f o[1][:total_volume] %></td>
+      <td class="right"><%=f o[1][:total_amount] %></td>
+    </tr>
+  <% end %>
+</table>
+
+<h3>已付材料费：<%=f total_purchase_paied %> | 
+  总材料费：<%=f total_purchase_fee %> </h3>

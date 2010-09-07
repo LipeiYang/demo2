@@ -2,8 +2,9 @@ class PayablesController < ApplicationController
   # GET /payables
   # GET /payables.xml
   def index
-    @payables = Payable.all
-
+    @payables = Payable.all :order => 'date DESC, seq_no DESC'
+    @unpaid_purchases = Purchase.find_all_by_is_paied('no')
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @payables }
