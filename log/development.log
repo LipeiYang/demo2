@@ -43215,3 +43215,116 @@ Rendering users/index
   [4;35;1mRole Load (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 1)) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 3)) [0m
 Completed in 203ms (View: 15, DB: 16) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-08 00:08:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"orders"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 531ms (DB: 15) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-09-08 00:08:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-09-08 00:08:20) [POST]
+  Parameters: {"commit"=>"登录", "user_session"=>{"username"=>"lipeiyang", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"hTkbXpKDQJlh9GxUxiPo5HCoFu7wH8b/1Z2BJo3oNZQ=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (62.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'lipeiyang') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (16.0ms)[0m   [0;1mUPDATE "users" SET "login_count" = 32, "last_request_at" = '2010-09-07 16:08:20.968000', "last_login_at" = '2010-09-05 14:02:40.546000', "updated_at" = '2010-09-07 16:08:20.968000', "current_login_at" = '2010-09-07 16:08:20.968000' WHERE "id" = 3[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '3') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "last_request_at" = '2010-09-07 16:08:21.000000', "updated_at" = '2010-09-07 16:08:21.000000' WHERE "id" = 3[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRole Load (47.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 3)) [0m
+Redirected to http://localhost:3000/users
+Completed in 594ms (DB: 125) | 302 Found [http://localhost/user_sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-09-08 00:08:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '3') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-09-07 16:08:22.453000', "updated_at" = '2010-09-07 16:08:22.453000' WHERE "id" = 3[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRole Load (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 3)) [0m
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT * FROM "users" ORDER BY username[0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mRole Load (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 2)) [0m
+  [4;36;1mRole Load (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 3)) [0m
+Completed in 234ms (View: 109, DB: 31) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_encoding TO 'UTF8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing OrdersController#index (for 127.0.0.1 at 2010-09-08 00:08:29) [GET]
+  Parameters: {"user"=>"057788813958", "action"=>"index", "controller"=>"orders"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '3') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "last_request_at" = '2010-09-07 16:08:30.000000', "updated_at" = '2010-09-07 16:08:30.000000' WHERE "id" = 3[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRole Load (0.0ms)[0m   [0;1mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 3)) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = '057788813958') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO leaf_057788813958, "$user",public[0m
+Rendering template within layouts/orders
+Rendering orders/index
+  [4;35;1mCustomer Load (31.0ms)[0m   [0mSELECT * FROM "customers" ORDER BY name[0m
+  [4;36;1mProduct Load (32.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY name[0m
+Rendered orders/_date_filter_form (140.0ms)
+  [4;35;1mOrder Load (47.0ms)[0m   [0mSELECT * FROM "orders" WHERE (date between '2010-09-07' and '2010-09-08') ORDER BY date DESC, seq_no DESC[0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_comm_layout (15.0ms)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO "$user",public[0m
+Completed in 468ms (View: 202, DB: 110) | 200 OK [http://localhost/orders?user=057788813958]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_encoding TO 'UTF8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CostItemsController#index (for 127.0.0.1 at 2010-09-08 00:08:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"cost_items"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '3') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "last_request_at" = '2010-09-07 16:08:32.156000', "updated_at" = '2010-09-07 16:08:32.156000' WHERE "id" = 3[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRole Load (0.0ms)[0m   [0mSELECT "roles".* FROM "roles" INNER JOIN "assignments" ON "roles".id = "assignments".role_id WHERE (("assignments".user_id = 3)) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."username" = '057788813958') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO leaf_057788813958, "$user",public[0m
+  [4;36;1mCostItem Load (32.0ms)[0m   [0;1mSELECT * FROM "cost_items" [0m
+Rendering template within layouts/cost_items
+Rendering cost_items/index
+  [4;35;1mSQL (62.0ms)[0m   [0mSELECT count(*) AS count_all FROM "invests" WHERE ("invests".cost_item_id = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "invests" WHERE ("invests".cost_item_id = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "invests" WHERE ("invests".cost_item_id = 3) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "invests" WHERE ("invests".cost_item_id = 4) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "invests" WHERE ("invests".cost_item_id = 5) [0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "invests" WHERE ("invests".cost_item_id = 6) [0m
+Rendered layouts/_menu (15.0ms)
+Rendered layouts/_comm_layout (15.0ms)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET search_path TO "$user",public[0m
+Completed in 281ms (View: 62, DB: 126) | 200 OK [http://localhost/cost_items]

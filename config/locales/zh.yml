@@ -62,12 +62,9 @@ zh:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]
 
-  year:   "年"
-  month:  "月"
-  day:    "天"
-  hour:   "时"
-  minute: "分"
-  second: "秒"
+  per_year:   "每年"
+  per_month:  "每月"
+  per_day:    "每天"
         
   activerecord:
     models:
@@ -113,7 +110,7 @@ zh:
         seq_no: "编号"
         name: "名称"
         price: "价格（元）"
-        period: "每"
+        period: "周期"
       invest:
         seq_no: "编号"
         date: "日期"
