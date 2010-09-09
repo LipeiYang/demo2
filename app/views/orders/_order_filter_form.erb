@@ -1,0 +1,10 @@
+<% form_tag orders_path, :method => "get" do %>
+  <%= select_date @start_date, :prefix => :start %>
+  <%= label_tag t('t_to') %>
+  <%= select_date @end_date, :prefix => :end %>
+  <%= label_tag Customer.human_name %>
+  <%= collection_select(:qry_ord, :customer_id, Customer.all(:order=>"name"), :id, :name, {:include_blank => t(:All)})%>
+  <%= label_tag Product.human_name %>
+  <%= collection_select(:qry_ord, :product_id, Product.all(:order=>"name"), :id, :name, {:include_blank => t(:All)})%>
+  <%= submit_tag t("Search") %>
+<% end %>

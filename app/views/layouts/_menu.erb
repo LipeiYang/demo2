@@ -6,8 +6,11 @@
 <%= link_to Customer.human_name, customers_path %> |
 <%= link_to Supplier.human_name, suppliers_path %> |
 <%= link_to Product.human_name, products_path %> |
-<%= link_to CostItem.human_name, cost_items_path %> |
-<% if current_user.admin? %>
-<%= @focused_name %>
-<% end %>
-<%= link_to t('Logout'), logout_path %>
+<%= link_to CostItem.human_name, cost_items_path %>
+
+<span style="float:right">
+  <% if current_user.admin? %>
+    <%= @focused_name %> | 
+  <% end %>
+  <%= link_to t('Logout'), logout_path %>
+</span>
