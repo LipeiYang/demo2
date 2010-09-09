@@ -58,6 +58,7 @@ zh:
   Password: "密码"
   t_yes: "是"
   t_no: "否"  
+  All: "全部"
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]

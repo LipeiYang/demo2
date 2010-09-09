@@ -18,10 +18,6 @@ class Order < ActiveRecord::Base
     orders.by_date_seq_no
   end
   
-  def self.str_civil(year, month, day)
-    Date.civil year.to_i, month.to_i, day.to_i
-  end
-  
   def before_save
     self.manfee ||=0
     self.volume ||=0

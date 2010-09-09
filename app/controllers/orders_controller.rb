@@ -1,21 +1,14 @@
 class OrdersController < ApplicationController
+  include ControllerUtils
   # GET /orders
   # GET /orders.xml
   def index
-    if params[:start]!=nil
-      session[:start] = Order.str_civil params[:start][:year], params[:start][:month], params[:start][:day]
-    end
-    # if session[:start] == nil
-      session[:start] ||= Date.today-1.days
-    # end
+    session[:start] = get_start_date(params) unless params[:start].blank?
+    session[:start] ||= Date.today-1.days
     @start_date = session[:start]
-    if params[:end]!=nil
-        session[:end] = Order.str_civil params[:end][:year], params[:end][:month], params[:end][:day]
-    end
-    # if session[:end] == nil
-      session[:end] ||= Date.today
-    # end
-    @end_date = session[:end]    
+    session[:end] = get_end_date(params) unless params[:end].blank?
+    session[:end] ||= Date.today
+    @end_date = session[:end]
     
     unless params[:qry_ord].blank?
         session[:product_id] = params[:qry_ord][:product_id].to_i
