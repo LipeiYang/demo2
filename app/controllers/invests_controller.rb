@@ -2,7 +2,7 @@ class InvestsController < ApplicationController
   # GET /invests
   # GET /invests.xml
   def index
-    @invests = Invest.all
+    @invests = Invest.all :order => 'date DESC, seq_no DESC'
 
     respond_to do |format|
       format.html # index.html.erb

@@ -5,7 +5,7 @@ zh:
   babajiayou: "爸爸加油"
   zhangben: "账本"
   hello: "你好，{{name}}"
-  Listing orders: "交易清单"
+  Listing orders: "订单清单"
   Listing purchases: "进货清单"
   Listing receivables: "收款清单"
   Listing customers: "客户列表"
@@ -68,14 +68,14 @@ zh:
         
   activerecord:
     models:
-      order: "交易单"
-      purchase: "进货单"
-      receivable: "收款单"
+      order: "订单"
+      purchase: "进货"
+      receivable: "收款"
       customer: "客户"
       supplier: "供应商"
-      invest: "支出单"
+      invest: "支出"
       cost_item: "成本"
-      payable: "付款单"
+      payable: "付款"
       product: "产品"
     attributes:
       order:
