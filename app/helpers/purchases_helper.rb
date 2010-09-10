@@ -1,7 +1,7 @@
 module PurchasesHelper
   
   def total_purchase_paied
-    @purchases.sum { |p| p.is_paied=='yes' ? p.total : 0 }
+    @purchases.to_a.sum { |p| p.is_paied=='yes' ? p.total : 0 }
   end
   
   def total_purchase_fee

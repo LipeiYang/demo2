@@ -5,7 +5,7 @@ class PurchasesController < ApplicationController
   def index
 
     session[:purchase_start] = get_start_date(params) unless params[:start].blank?
-    session[:purchase_start] ||= Date.today-1.days
+    session[:purchase_start] ||= Date.today-7.days
     @start_date = session[:purchase_start]
     session[:purchase_end] = get_end_date(params) unless params[:end].blank?
     session[:purchase_end] ||= Date.today
@@ -15,13 +15,14 @@ class PurchasesController < ApplicationController
         session[:purchase_product_id] = params[:qry_pur][:product_id]
         session[:purchase_supplier_id] = params[:qry_pur][:supplier_id]
     end
-    session[:purchase_product_id] ||= '0'
-    session[:purchase_supplier_id] ||= '0'
+    session[:purchase_product_id] = '0' if session[:purchase_product_id].blank?
+    session[:purchase_supplier_id] = '0' if session[:purchase_supplier_id].blank?
+    
     @qry_pur = Purchase.new(:product_id=>session[:purchase_product_id], :supplier_id=>session[:purchase_supplier_id])
     
-    # @purchases = Purchase.search_purchases(@start_date, @end_date, @qry_ord)
+    @purchases = Purchase.search_purchases(@start_date, @end_date, @qry_pur)
 
-    @purchases = Purchase.all :order => 'date DESC, seq_no DESC'
+    # @purchases = Purchase.all :order => 'date DESC, seq_no DESC'
 
     respond_to do |format|
       format.html # index.html.erb
