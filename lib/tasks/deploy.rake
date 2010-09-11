@@ -2,7 +2,7 @@ namespace :deploy do
   def run(*cmd)
     system(*cmd)
     raise "Command #{cmd.inspect} failed!" unless $?.success?
-  end
+  end 
 
   def confirm(message)
     print "\n#{message}\nAre you sure? [Yn] "

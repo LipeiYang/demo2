@@ -1,3 +1,5 @@
 .project
 *.gz
 *.log
+tmp
+log
