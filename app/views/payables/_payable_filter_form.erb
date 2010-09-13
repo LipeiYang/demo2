@@ -1,0 +1,5 @@
+<% form_for(@criteria, :url => payables_path) do |f| %>
+    <%= render :partial => "layouts/form/filter/date_range", :locals =>{ :f => f } %>
+    <%= render :partial => "layouts/form/filter/supplier", :locals =>{ :f => f } %>
+    <%= render :partial => "layouts/form/filter/submit", :locals =>{ :f => f } %>
+<% end %>

@@ -1,0 +1,2 @@
+<%= label_tag Supplier.human_name %>
+<%= f.collection_select(:supplier_id, Supplier.all(:order=>"name"), :id, :name, {:include_blank => t(:All)})%>

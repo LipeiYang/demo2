@@ -13,6 +13,6 @@ module PayablesHelper
   end
   
   def total_unpay
-    @unpaid_purchases.sum {|o| o.total} - @payables.sum {|o| o.amount}
+    @unpaid_purchases.to_a.sum {|o| o.total} - @payables.to_a.sum {|o| o.amount}
   end
 end

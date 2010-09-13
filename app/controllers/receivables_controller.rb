@@ -2,7 +2,14 @@ class ReceivablesController < ApplicationController
   # GET /receivables
   # GET /receivables.xml
   def index
-    @receivables = Receivable.all :order => 'date DESC, seq_no DESC'
+    if params[:criteria_receivable].blank?
+      session[:criteria_receivable] ||= CriteriaReceivable.new
+    else
+      session[:criteria_receivable] = CriteriaReceivable.new(params[:criteria_receivable])
+    end
+    @criteria_receivable = session[:criteria_receivable]
+    @receivables = Receivable.search_receivables(@criteria_receivable)
+    
     @unpaid_orders = Order.find_all_by_is_paied('no')
     
     respond_to do |format|

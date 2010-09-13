@@ -1,7 +1,7 @@
 <% title t('Listing payables') %>
 
 <h3><%= link_to t('New payable'), new_payable_path %></h3>
-
+<%= render :partial => "payable_filter_form" %>
 <table>
   <tr>
     <th><%= Payable.human_attribute_name(:seq_no) %></th>
