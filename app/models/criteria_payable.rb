@@ -13,10 +13,10 @@ class CriteriaPayable
       @supplier_id = 0
     end
     
-    def init_params(criteria_receivable_params)
-      @start = get_start_date(criteria_receivable_params)
-      @end = get_end_date(criteria_receivable_params)
-      @supplier_id = criteria_receivable_params[:supplier_id].to_i
+    def init_params(criteria_params)
+      @start = get_start_date(criteria_params)
+      @end = get_end_date(criteria_params)
+      @supplier_id = criteria_params[:supplier_id].to_i
     end
 
 end

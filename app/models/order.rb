@@ -1,4 +1,6 @@
 class Order < ActiveRecord::Base
+  include Modules::Scopes::TermDateRange, Modules::Scopes::TermCustomer, Modules::Scopes::TermProduct, Modules::Scopes::TermPaied, Modules::Scopes::SortDateSeqNo
+  
   belongs_to :customer
   belongs_to :product
   
@@ -6,22 +8,18 @@ class Order < ActiveRecord::Base
   validates_presence_of :customer, :product
   validates_numericality_of :volume, :price, :manfee
   
-  named_scope :for_date_range, lambda { |start_date, end_date| {:conditions => ["date between ? and ?", start_date, end_date]} }
-  named_scope :for_product, lambda { |qry_ord| {:conditions => ["product_id = ?", qry_ord.product_id]} }
-  named_scope :for_customer, lambda { |qry_ord| {:conditions => ["customer_id = ?", qry_ord.customer_id]} }
-  named_scope :by_date_seq_no, :order => 'date DESC, seq_no DESC'
-  
-  def self.search_orders(start_date, end_date, qry_ord)
-    orders = Order.for_date_range(start_date, end_date)
-    orders = orders.for_product(qry_ord) unless qry_ord.product_id==0
-    orders = orders.for_customer(qry_ord) unless qry_ord.customer_id==0
-    orders.by_date_seq_no
+  def self.search_orders(criteria)
+    rlt = Order.for_date_range(criteria)
+    rlt = rlt.for_product(criteria) unless criteria.product_id==0
+    rlt = rlt.for_customer(criteria) unless criteria.customer_id==0
+    rlt = rlt.for_paied(criteria) unless criteria.is_paied==''
+    rlt.by_date_seq_no
   end
   
   def before_save
-    self.manfee ||=0
-    self.volume ||=0
-    self.price ||=0
+    self.manfee ||= 0
+    self.volume ||= 0
+    self.price ||= 0
   end
   
   def material_fee

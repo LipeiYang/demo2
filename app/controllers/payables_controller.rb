@@ -2,13 +2,13 @@ class PayablesController < ApplicationController
   # GET /payables
   # GET /payables.xml
   def index
-    if params[:criteria].blank?
+    if params[:criteria_payable].blank?
       session[:criteria_payable] ||= CriteriaPayable.new
     else
-      session[:criteria_payable] = CriteriaPayable.new(params[:criteria])
+      session[:criteria_payable] = CriteriaPayable.new(params[:criteria_payable])
     end
-    @criteria = session[:criteria_payable]
-    @payables = Payable.search_payables(@criteria)
+    @criteria_payable = session[:criteria_payable]
+    @payables = Payable.search_payables(@criteria_payable)
     
 
     # @payables = Payable.all :order => 'date DESC, seq_no DESC'

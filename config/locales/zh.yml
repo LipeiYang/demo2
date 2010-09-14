@@ -88,6 +88,7 @@ zh:
         product: "产品"
         price: "价格（元）"
         manfee: "加工费（元）"
+        is_paied: "已付"
       purchase:
         seq_no: "编号"
         date: "日期"

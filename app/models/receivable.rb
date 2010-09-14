@@ -7,9 +7,9 @@ class Receivable < ActiveRecord::Base
   validates_presence_of :customer
   validates_numericality_of :amount
   
-  def self.search_receivables(criteria_receivable)
-    rlt = Receivable.for_date_range(criteria_receivable)
-    rlt = rlt.for_customer(criteria_receivable)
+  def self.search_receivables(criteria)
+    rlt = Receivable.for_date_range(criteria)
+    rlt = rlt.for_customer(criteria) unless criteria.customer_id==0
     rlt.by_date_seq_no
   end
   

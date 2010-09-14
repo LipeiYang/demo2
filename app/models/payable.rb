@@ -9,7 +9,7 @@ class Payable < ActiveRecord::Base
 
   def self.search_payables(criteria)
     rlt = Payable.for_date_range(criteria)
-    rlt = rlt.for_supplier(criteria)
+    rlt = rlt.for_supplier(criteria) unless criteria.supplier_id==0
     rlt.by_date_seq_no
   end
   
