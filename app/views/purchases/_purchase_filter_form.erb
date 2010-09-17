@@ -1,10 +1,7 @@
-<% form_tag purchases_path, :method => "get" do %>
-  <%= select_date @start_date, :prefix => :start %>
-  <%= label_tag t('t_to') %>
-  <%= select_date @end_date, :prefix => :end %>
-  <%= label_tag Supplier.human_name %>
-  <%= collection_select(:qry_pur, :supplier_id, Supplier.all(:order=>"name"), :id, :name, {:include_blank => t(:All)})%>
-  <%= label_tag Product.human_name %>
-  <%= collection_select(:qry_pur, :product_id, Product.all(:order=>"name"), :id, :name, {:include_blank => t(:All)})%>
-  <%= submit_tag t("Search") %>
+<% form_for(@criteria_purchase, :url => purchases_path) do |f| %>
+  <%= render :partial => "layouts/form/filter/date_range", :locals =>{ :f => f } %>
+  <%= render :partial => "layouts/form/filter/supplier", :locals =>{ :f => f } %>
+  <%= render :partial => "layouts/form/filter/product", :locals =>{ :f => f } %>
+  <%= render :partial => "layouts/form/filter/paied", :locals =>{ :f => f, :criteria => @criteria_purchase } %>
+  <%= render :partial => "layouts/form/filter/submit", :locals =>{ :f => f } %>
 <% end %>

@@ -11,24 +11,6 @@ class OrdersController < ApplicationController
     @criteria_order = session[:criteria_order]
     @orders = Order.search_orders(@criteria_order)
 
-    # session[:start] = get_start_date(params) unless params[:start].blank?
-    # session[:start] ||= Date.today-1.days
-    # @start_date = session[:start]
-    # session[:end] = get_end_date(params) unless params[:end].blank?
-    # session[:end] ||= Date.today
-    # @end_date = session[:end]
-    # 
-    # unless params[:qry_ord].blank?
-    #     session[:product_id] = params[:qry_ord][:product_id].to_i
-    #     session[:customer_id] = params[:qry_ord][:customer_id].to_i
-    # end
-    # session[:product_id] ||= '0'
-    # session[:customer_id] ||= '0'
-    #   
-    # @qry_ord = Order.new(:product_id=>session[:product_id], :customer_id=>session[:customer_id])
-    # 
-    # @orders = Order.search_orders(@start_date, @end_date, @qry_ord)
-    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @orders }

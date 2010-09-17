@@ -3,26 +3,13 @@ class PurchasesController < ApplicationController
   # GET /purchases
   # GET /purchases.xml
   def index
-
-    session[:purchase_start] = get_start_date(params) unless params[:start].blank?
-    session[:purchase_start] ||= Date.today-7.days
-    @start_date = session[:purchase_start]
-    session[:purchase_end] = get_end_date(params) unless params[:end].blank?
-    session[:purchase_end] ||= Date.today
-    @end_date = session[:purchase_end]
-    
-    unless params[:qry_pur].blank?
-        session[:purchase_product_id] = params[:qry_pur][:product_id]
-        session[:purchase_supplier_id] = params[:qry_pur][:supplier_id]
+    if params[:criteria_purchase].blank?
+      session[:criteria_purchase] ||= CriteriaPurchase.new
+    else
+      session[:criteria_purchase] = CriteriaPurchase.new(params[:criteria_purchase])
     end
-    session[:purchase_product_id] = '0' if session[:purchase_product_id].blank?
-    session[:purchase_supplier_id] = '0' if session[:purchase_supplier_id].blank?
-    
-    @qry_pur = Purchase.new(:product_id=>session[:purchase_product_id], :supplier_id=>session[:purchase_supplier_id])
-    
-    @purchases = Purchase.search_purchases(@start_date, @end_date, @qry_pur)
-
-    # @purchases = Purchase.all :order => 'date DESC, seq_no DESC'
+    @criteria_purchase = session[:criteria_purchase]
+    @purchases = Purchase.search_purchases(@criteria_purchase)
 
     respond_to do |format|
       format.html # index.html.erb
