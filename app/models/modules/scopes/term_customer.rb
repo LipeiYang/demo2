@@ -1,7 +1,11 @@
 module Modules::Scopes::TermCustomer
   
   def self.included(base)
-    base.named_scope :for_customer, lambda { |o| {:conditions => ["customer_id = ?", o.customer_id]} }
+    base.named_scope :in_customer, lambda { |criteria| 
+      unless criteria.all_customers?
+        {:conditions => ["customer_id = ?", criteria.customer_id]}
+      end
+    }
   end
   
 end

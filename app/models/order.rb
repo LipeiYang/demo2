@@ -1,5 +1,9 @@
 class Order < ActiveRecord::Base
-  include Modules::Scopes::TermDateRange, Modules::Scopes::TermCustomer, Modules::Scopes::TermProduct, Modules::Scopes::TermPaied, Modules::Scopes::SortDateSeqNo
+  include Modules::Scopes::TermDateRange, 
+  Modules::Scopes::TermCustomer, 
+  Modules::Scopes::TermProduct, 
+  Modules::Scopes::TermPaied, 
+  Modules::Scopes::SortDateSeqNo
   
   belongs_to :customer
   belongs_to :product
@@ -7,13 +11,9 @@ class Order < ActiveRecord::Base
   validates_numericality_of :seq_no, :only_integer => true, :message=>:not_an_integer
   validates_presence_of :customer, :product
   validates_numericality_of :volume, :price, :manfee
-  
+
   def self.search_orders(criteria)
-    rlt = Order.for_date_range(criteria)
-    rlt = rlt.for_product(criteria) unless criteria.product_id==0
-    rlt = rlt.for_customer(criteria) unless criteria.customer_id==0
-    rlt = rlt.for_paied(criteria) unless criteria.is_paied==''
-    rlt.by_date_seq_no
+    in_date_range(criteria).in_customer(criteria).in_product(criteria).in_pay_status(criteria).by_date_seq_no
   end
   
   def before_save

@@ -1,6 +1,12 @@
 module Modules::Criteria::TermDateRange
   attr_accessor :start, :end
   
+  
+  def init_date_range(from, to)
+    @start = from
+    @end = to
+  end
+  
   def get_start_date(params)
     get_date 'start', params
   end

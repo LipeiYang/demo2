@@ -8,15 +8,13 @@ class CriteriaReceivable
   private
   
     def init_default
-      @start = Date.today-1.month
-      @end = Date.today
-      @customer_id = 0
+      init_date_range Date.today-1.month, Date.today
+      init_customer
     end
     
     def init_params(criteria_params)
-      @start = get_start_date(criteria_params)
-      @end = get_end_date(criteria_params)
-      @customer_id = criteria_params[:customer_id].to_i
+      init_date_range get_start_date(criteria_params), get_end_date(criteria_params)
+      init_customer criteria_params[:customer_id]
     end
 
 end

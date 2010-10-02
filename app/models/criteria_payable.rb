@@ -8,15 +8,13 @@ class CriteriaPayable
   private
   
     def init_default
-      @start = Date.today-1.month
-      @end = Date.today
-      @supplier_id = 0
+      init_date_range Date.today-1.month, Date.today
+      init_supplier
     end
     
     def init_params(criteria_params)
-      @start = get_start_date(criteria_params)
-      @end = get_end_date(criteria_params)
-      @supplier_id = criteria_params[:supplier_id].to_i
+      init_date_range get_start_date(criteria_params), get_end_date(criteria_params)
+      init_supplier criteria_params[:supplier_id]
     end
 
 end
