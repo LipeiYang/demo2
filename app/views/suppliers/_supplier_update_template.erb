@@ -10,6 +10,14 @@
     <%= f.text_field :name %>
   </p>
   <p>
+    <%= f.label :cutoff_date %><br />
+    <%= f.date_select :cutoff_date %>
+  </p>
+  <p>
+    <%= f.label :unpaied_amount %><br />
+    <%= f.text_field_hl :unpaied_amount %>
+  </p>
+  <p>
     <%= f.submit_once t(button_label) %>
   </p>
 <% end %>

@@ -107,6 +107,8 @@ zh:
       supplier:
         seq_no: "编号"
         name: "姓名"
+        cutoff_date: "截止日期"
+        unpaied_amount: "未付金额"
       product:
         name: "名称"
         price: "成本价"

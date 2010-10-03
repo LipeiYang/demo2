@@ -9,7 +9,7 @@ class Order < ActiveRecord::Base
   belongs_to :product
   
   validates_numericality_of :seq_no, :only_integer => true, :message=>:not_an_integer
-  validates_presence_of :customer, :product
+  validates_presence_of :customer, :product, :date
   validates_numericality_of :volume, :price, :manfee
 
   def self.search_orders(criteria)

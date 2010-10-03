@@ -6,12 +6,16 @@
   <tr>
     <th><%= Supplier.human_attribute_name(:seq_no) %></th>
     <th><%= Supplier.human_attribute_name(:name) %></th>
+    <th><%= Supplier.human_attribute_name(:cutoff_date) %></th>
+    <th><%= Supplier.human_attribute_name(:unpaied_amount) %></th>
   </tr>
 
 <% @suppliers.each do |supplier| %>
   <tr>
     <td><%=h supplier.seq_no %></td>
     <td><%=h supplier.name %></td>
+    <td><%=h supplier.cutoff_date %></td>
+    <td><%=h supplier.unpaied_amount %></td>
     <td><%= link_to t('Edit'), edit_supplier_path(supplier) %></td>
     <% if supplier.purchases.empty? && supplier.payables.empty?%>
       <td><%= link_to t('Destroy'), supplier, :confirm => t('sure?'), :method => :delete %></td>

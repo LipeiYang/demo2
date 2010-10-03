@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100902153617) do
+ActiveRecord::Schema.define(:version => 20101003064217) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
@@ -101,9 +101,11 @@ ActiveRecord::Schema.define(:version => 20100902153617) do
 
   create_table "suppliers", :force => true do |t|
     t.integer  "seq_no"
-    t.string   "name",       :null => false
+    t.string   "name",           :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "cutoff_date"
+    t.integer  "unpaied_amount"
   end
 
   create_table "users", :force => true do |t|

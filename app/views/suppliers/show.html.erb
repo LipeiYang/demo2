@@ -8,6 +8,15 @@
   <%=h @supplier.name %>
 </p>
 
+<p>
+  <b><%= Supplier.human_attribute_name(:cutoff_date) %>:</b>
+  <%=h @supplier.cutoff_date %>
+</p>
+
+<p>
+  <b><%= Supplier.human_attribute_name(:unpaied_amount) %>:</b>
+  <%=h @supplier.unpaied_amount %>
+</p>
 
 <%= link_to t('Edit'), edit_supplier_path(@supplier) %> |
 <%= link_to t('Back'), suppliers_path %>
