@@ -9,7 +9,7 @@ class CriteriaOrder
   end
   
   def init_default
-    init_date_range Date.today-1.days, Date.today 
+    init_date_range Date.today-1.day, Date.today 
     init_customer
     init_product
     init_paied

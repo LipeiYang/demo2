@@ -8,6 +8,9 @@
     <th><%= Supplier.human_attribute_name(:name) %></th>
     <th><%= Supplier.human_attribute_name(:cutoff_date) %></th>
     <th><%= Supplier.human_attribute_name(:unpaied_amount) %></th>
+    <th><%= Supplier.human_attribute_name(:unsettle_amount_after_cutoff) %></th>
+    <th><%= Supplier.human_attribute_name(:paied_amount_after_cutoff) %></th>
+    <th><%= Supplier.human_attribute_name(:amount_to_pay) %></th>
   </tr>
 
 <% @suppliers.each do |supplier| %>
@@ -15,7 +18,10 @@
     <td><%=h supplier.seq_no %></td>
     <td><%=h supplier.name %></td>
     <td><%=h supplier.cutoff_date %></td>
-    <td><%=h supplier.unpaied_amount %></td>
+    <td class="right"><%=f supplier.unpaied_amount %></td>
+    <td class="right"><%=f supplier.unsettle_amount_after_cutoff %></td>
+    <td class="right"><%=f supplier.paied_amount_after_cutoff %></td>
+    <td class="right"><%=f supplier.amount_to_pay %></td>
     <td><%= link_to t('Edit'), edit_supplier_path(supplier) %></td>
     <% if supplier.purchases.empty? && supplier.payables.empty?%>
       <td><%= link_to t('Destroy'), supplier, :confirm => t('sure?'), :method => :delete %></td>
