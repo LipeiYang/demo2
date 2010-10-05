@@ -30,7 +30,7 @@ class Order < ActiveRecord::Base
     price*volume
   end
   
-  def totale
+  def total
     price*volume+manfee
   end
   

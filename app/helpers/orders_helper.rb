@@ -25,15 +25,15 @@ module OrdersHelper
   end
   
   def total_paied
-    @orders.inject(0) { |sum,order| order.is_paied.eql?('yes') ? sum += order.totale : sum += 0 }
+    @orders.inject(0) { |sum,order| order.is_paied.eql?('yes') ? sum += order.total : sum += 0 }
   end
   
   def total_unpaied
-    @orders.inject(0) { |sum,order| order.is_paied.eql?('no') ? sum += order.totale : sum += 0 }
+    @orders.inject(0) { |sum,order| order.is_paied.eql?('no') ? sum += order.total : sum += 0 }
   end
   
   def total
-    @orders.inject(0) { |sum,order| sum += order.totale }
+    @orders.inject(0) { |sum,order| sum += order.total }
   end
   
   def product_position_list
@@ -56,7 +56,7 @@ module OrdersHelper
       rlt[o.customer.name][:total_mat_fee]+=o.material_fee
       rlt[o.customer.name][:total_mat_profit]+=o.material_fee-o.material_cost
       rlt[o.customer.name][:total_man_fee]+=o.manfee
-      rlt[o.customer.name][:total_profit]+=o.totale-o.material_cost
+      rlt[o.customer.name][:total_profit]+=o.total-o.material_cost
     end
     rlt.sort_by{|a| -a[1][:total_profit]}
   end

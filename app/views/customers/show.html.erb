@@ -2,9 +2,20 @@
   <b><%= Customer.human_attribute_name(:seq_no) %>:</b>
   <%=h @customer.seq_no %>
 </p>
+
 <p>
   <b><%= Customer.human_attribute_name(:name) %>:</b>
   <%=h @customer.name %>
+</p>
+
+<p>
+  <b><%= Customer.human_attribute_name(:cutoff_date) %>:</b>
+  <%=h @customer.cutoff_date %>
+</p>
+
+<p>
+  <b><%= Customer.human_attribute_name(:inreceive_amount) %>:</b>
+  <%=h @customer.inreceive_amount %>
 </p>
 
 

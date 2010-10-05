@@ -104,6 +104,11 @@ zh:
       customer:
         seq_no: "编号"
         name: "姓名"
+        cutoff_date: "截止"
+        inreceive_amount: "未收"
+        unsettle_amount_after_cutoff: "订单（未收）"
+        received_amount_after_cutoff: "已收"
+        amount_will_receive: "待收"
       supplier:
         seq_no: "编号"
         name: "姓名"

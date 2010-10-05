@@ -6,12 +6,22 @@
   <tr>
     <th><%= Customer.human_attribute_name(:seq_no) %></th>
     <th><%= Customer.human_attribute_name(:name) %></th>
+    <th><%= Customer.human_attribute_name(:cutoff_date) %></th>
+    <th><%= Customer.human_attribute_name(:inreceive_amount) %></th>
+    <th><%= Customer.human_attribute_name(:unsettle_amount_after_cutoff) %></th>
+    <th><%= Customer.human_attribute_name(:received_amount_after_cutoff) %></th>
+    <th><%= Customer.human_attribute_name(:amount_will_receive) %></th>
   </tr>
 
 <% @customers.each do |customer| %>
   <tr>
     <td><%=h customer.seq_no %></td>
     <td><%=h customer.name %></td>
+    <td><%=h customer.cutoff_date %></td>
+    <td class="right"><%=f customer.inreceive_amount %></td>
+    <td class="right"><%=f customer.unsettle_amount_after_cutoff %></td>
+    <td class="right"><%=f customer.received_amount_after_cutoff %></td>
+    <td class="right"><%=f customer.amount_will_receive %></td>
     <td><%= link_to t('Edit'), edit_customer_path(customer) %></td>
     <% if customer.orders.empty? && customer.receivables.empty? %>
       <td><%= link_to t('Destroy'), customer, :confirm => t('sure?'), :method => :delete %></td>

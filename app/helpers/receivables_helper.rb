@@ -4,7 +4,7 @@ module ReceivablesHelper
     rlt = {}
     @unpaid_orders.each do |o|
       rlt[o.customer.name]||=0
-      rlt[o.customer.name]+=o.totale
+      rlt[o.customer.name]+=o.total
     end
     @receivables.each do |o|
       rlt[o.customer.name]||=0
@@ -14,6 +14,6 @@ module ReceivablesHelper
   end
   
   def total_unrec
-    @unpaid_orders.to_a.sum(&:totale)-@receivables.to_a.sum(&:amount)
+    @unpaid_orders.to_a.sum(&:total)-@receivables.to_a.sum(&:amount)
   end
 end
