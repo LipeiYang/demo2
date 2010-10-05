@@ -11,10 +11,6 @@ class PayablesController < ApplicationController
     @criteria_payable = session[:criteria_payable]
     @payables = Payable.search_payables(@criteria_payable)
     
-
-    # @payables = Payable.all :order => 'date DESC, seq_no DESC'
-    @unpaid_purchases = Purchase.find_all_by_is_paied('no')
-    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @payables }

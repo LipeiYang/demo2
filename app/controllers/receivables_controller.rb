@@ -10,8 +10,6 @@ class ReceivablesController < ApplicationController
     @criteria_receivable = session[:criteria_receivable]
     @receivables = Receivable.search_receivables(@criteria_receivable)
     
-    @unpaid_orders = Order.find_all_by_is_paied('no')
-    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @receivables }
