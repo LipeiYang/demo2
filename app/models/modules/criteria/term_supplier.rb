@@ -1,7 +1,7 @@
-module Modules::Criteria::TermSupplier
+module Modules::Criteria::TermSupplier 
   attr_accessor :supplier_id
   
-  def init_supplier(id='')
+  def init_supplier(id=nil)
     if id.blank?
       @supplier_id=nil
     else
@@ -9,8 +9,12 @@ module Modules::Criteria::TermSupplier
     end
   end
   
-  def all_suppliers?
-    @supplier_id.blank?
+  def self.all?(id)
+    id.blank?
+  end
+  
+  def self.all
+    nil
   end
   
 end

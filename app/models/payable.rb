@@ -8,7 +8,9 @@ class Payable < ActiveRecord::Base
   validates_numericality_of :amount
 
   def self.search_payables(criteria)
-    in_date_range(criteria).in_supplier(criteria).by_date_seq_no
+    in_date_range(criteria.start, criteria.end).
+    in_supplier(criteria.supplier_id).
+    by_date_seq_no
   end
   
   def before_save

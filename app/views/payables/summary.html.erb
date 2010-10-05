@@ -1,0 +1,16 @@
+<% title t('Listing payables') %>
+
+<table>
+  <tr>
+    <th><%= Supplier.human_name %></th>
+    <th><%= Supplier.human_attribute_name(:unpaied_amount) %></th>
+  </tr>
+  <% supplier_unpay_list.each do |o| %>
+    <tr>
+      <td><%=h o[0] %></td>
+      <td class="right"><%=f o[1] %></td>
+    </tr>
+  <% end %>
+</table>
+
+<h3>总未付金额：<%=f total_unpay %> </h3>

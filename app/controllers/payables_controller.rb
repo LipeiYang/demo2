@@ -1,6 +1,13 @@
 class PayablesController < ApplicationController
   # GET /payables
   # GET /payables.xml
+
+  def summary
+    @unpaid_purchases = Purchase.find_all_by_is_paied('no')
+    @payables = Payable.all
+    @suppliers = Supplier.all
+  end
+
   def index
     if params[:criteria_payable].blank?
       session[:criteria_payable] ||= CriteriaPayable.new

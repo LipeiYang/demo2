@@ -13,7 +13,11 @@ class Order < ActiveRecord::Base
   validates_numericality_of :volume, :price, :manfee
 
   def self.search_orders(criteria)
-    in_date_range(criteria).in_customer(criteria).in_product(criteria).in_pay_status(criteria).by_date_seq_no
+    in_date_range(criteria.start, criteria.end).
+    in_customer(criteria.customer_id).
+    in_product(criteria.product_id).
+    in_pay_status(criteria.is_paied).
+    by_date_seq_no
   end
   
   def before_save
