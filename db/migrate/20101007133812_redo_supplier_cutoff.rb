@@ -1,6 +1,5 @@
 class RedoSupplierCutoff < ActiveRecord::Migration
   def self.up
-    remove_column :suppliers, :cutoff_date
     add_column :suppliers, :cutoff_date, :date
     add_column :suppliers, :unpaied_amount, :float, :defaut=>0
     Supplier.all.each do |o|
