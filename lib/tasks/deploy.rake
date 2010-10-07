@@ -34,5 +34,11 @@ namespace :deploy do
     end
   end
   
-  
+  desc "Database Migration"
+  task :migrate do
+    puts 'Running db:migrate ...'
+    run `heroku rake db:migrate`
+    puts 'Running db:migrate_schemas ...'
+    run `heroku rake db:migrate_schemas`
+  end  
 end
