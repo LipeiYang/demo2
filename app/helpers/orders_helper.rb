@@ -26,15 +26,15 @@ module OrdersHelper
   end
   
   def total_paied
-    @orders.inject(0) { |sum,order| order.is_paied.eql?('yes') ? sum += order.total : sum += 0 }
+    @orders.sum { |order| order.is_paied.eql?(YES) ? order.total : 0}
   end
   
   def total_unpaied
-    @orders.inject(0) { |sum,order| order.is_paied.eql?('no') ? sum += order.total : sum += 0 }
+    @orders.sum { |order| order.is_paied.eql?(NO) ? order.total : 0}
   end
   
   def total
-    @orders.inject(0) { |sum,order| sum += order.total }
+    @orders.sum(&:total)
   end
   
   def product_position_list

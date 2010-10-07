@@ -3,15 +3,15 @@
 <%= render :partial => "order_filter_form" %>
 <table>
   <tr>
-    <th>编号</th>
-    <th>日期</th>
-    <th>客户</th>
+    <th><%=h Order.human_attribute_name :seq_no %></th>
+    <th><%=h Order.human_attribute_name :date %></th>
+    <th><%=h Customer.human_name %></th>
     <th><%=h Product.human_name %></th>
-    <th>数量（公斤）</th>
-    <th>价格</th>
-    <th>加工费</th>
-    <th>合计</th>
-    <th>已付</th>
+    <th><%=h Order.human_attribute_name :volume %></th>
+    <th><%=h Order.human_attribute_name :price %></th>
+    <th><%=h Order.human_attribute_name :manfee %></th>
+    <th><%=h Order.human_attribute_name :total %></th>
+    <th><%=h Order.human_attribute_name :is_paied %></th>
   </tr>
 
 <% @orders.each do |order| %>
@@ -80,8 +80,8 @@
   总材料收益：<%=f total_material_fee - total_material_cost %> | 
   总加工费：<%=f total_manfee %> | 
   总收益：<%=f total_revenue %> </h3>
-<h3>已付金额：<%=f total_paied %> | 
-  未付金额：<%=f total_unpaied %> | 
+<h3>已收金额：<%=f total_paied %> | 
+  未收金额：<%=f total_unpaied %> | 
   总金额：<%=f total %> </h3>
 <% if @criteria_order.profit_calculable?%>
   <h3>总利润：<%=f total_profit %> </h3>

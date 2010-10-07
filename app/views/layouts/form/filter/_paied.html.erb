@@ -1,2 +1,2 @@
-<%= label_tag t(:t_is_paied) %>
+<%= label_tag label_name %>
 <%= f.select(:is_paied, options_for_select({ t('t_yes') => YES, t('t_no') => NO }, criteria.is_paied), {:include_blank => t(:All)})%>

@@ -2,6 +2,6 @@
   <%= render :partial => "layouts/form/filter/date_range", :locals =>{ :f => f } %>
   <%= render :partial => "layouts/form/filter/customer", :locals =>{ :f => f } %>
   <%= render :partial => "layouts/form/filter/product", :locals =>{ :f => f } %>
-  <%= render :partial => "layouts/form/filter/paied", :locals =>{ :f => f, :criteria => @criteria_order } %>
+  <%= render :partial => "layouts/form/filter/paied", :locals =>{ :f => f, :criteria => @criteria_order, :label_name => Order.human_attribute_name(:is_paied) } %>
   <%= render :partial => "layouts/form/filter/submit", :locals =>{ :f => f } %>
 <% end %>

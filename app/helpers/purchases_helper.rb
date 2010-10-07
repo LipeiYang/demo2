@@ -1,11 +1,15 @@
 module PurchasesHelper
   
   def total_purchase_paied
-    @purchases.to_a.sum { |p| p.is_paied=='yes' ? p.total : 0 }
+    @purchases.sum { |purchase| purchase.is_paied.eql?(YES) ? purchase.total : 0 }
+  end
+  
+  def total_purchase_unpaied
+    @purchases.sum { |purchase| purchase.is_paied.eql?(NO) ? purchase.total : 0}
   end
   
   def total_purchase_fee
-    @purchases.inject(0) { |sum, purchase| sum += purchase.total } 
+    @purchases.sum(&:total) 
   end
   
   def product_purchase_list
@@ -24,7 +28,7 @@ module PurchasesHelper
     rlt = {}
     @purchases.each do |o|
       rlt[o.supplier.name]||={:paied_amount=>0, :total_amount=>0}
-      rlt[o.supplier.name][:paied_amount]+=o.total if o.is_paied=='yes'
+      rlt[o.supplier.name][:paied_amount]+=o.total if o.is_paied.eql?(YES)
       rlt[o.supplier.name][:total_amount]+=o.total
     end
     rlt.sort_by{|a| -a[1][:total_amount]}    
