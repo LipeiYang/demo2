@@ -10,7 +10,7 @@ class Payable < ActiveRecord::Base
   def self.search_payables(criteria)
     in_date_range(criteria.start, criteria.end).
     in_supplier(criteria.supplier_id).
-    by_date_seq_no
+    by_date_seq_no.all
   end
   
   def before_save

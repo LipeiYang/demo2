@@ -9,6 +9,6 @@ module PayablesHelper
   end
   
   def total_unpay
-    @payables.all.sum(&:amount)
+    @payables.sum(&:amount)
   end
 end

@@ -17,7 +17,7 @@ class Order < ActiveRecord::Base
     in_customer(criteria.customer_id).
     in_product(criteria.product_id).
     in_pay_status(criteria.is_paied).
-    by_date_seq_no
+    by_date_seq_no.all
   end
   
   def before_save

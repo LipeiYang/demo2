@@ -10,6 +10,6 @@ module ReceivablesHelper
   end
   
   def total_unrec
-    @receivables.all.sum(&:amount)
+    @receivables.sum(&:amount)
   end
 end

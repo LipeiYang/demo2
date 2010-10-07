@@ -13,7 +13,7 @@ class Purchase < ActiveRecord::Base
     in_supplier(criteria.supplier_id).
     in_product(criteria.product_id).
     in_pay_status(criteria.is_paied).
-    by_date_seq_no
+    by_date_seq_no.all
   end
 
   def before_save

@@ -1,7 +1,8 @@
 module OrdersHelper
 
   def total_profit
-    total_revenue-(@end_date-@start_date+1)*everyday_cost
+    total_revenue-@criteria_order.days*everyday_cost
+    
   end
 
   def everyday_cost
@@ -13,15 +14,15 @@ module OrdersHelper
   end
 
   def total_material_fee
-    @orders.inject(0) { |sum,order| sum += order.material_fee }
+    @orders.sum(&:material_fee)
   end
 
   def total_material_cost
-    @orders.inject(0) { |sum,order| sum += order.material_cost }
+    @orders.sum(&:material_cost)
   end
 
   def total_manfee
-    @orders.inject(0) { |sum,order| sum += order.manfee }
+    @orders.sum(&:manfee)
   end
   
   def total_paied

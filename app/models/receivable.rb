@@ -10,7 +10,7 @@ class Receivable < ActiveRecord::Base
   def self.search_receivables(criteria)
     in_date_range(criteria.start, criteria.end).
     in_customer(criteria.customer_id).
-    by_date_seq_no
+    by_date_seq_no.all
   end
   
   def before_save

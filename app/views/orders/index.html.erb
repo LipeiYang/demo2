@@ -83,6 +83,6 @@
 <h3>已付金额：<%=f total_paied %> | 
   未付金额：<%=f total_unpaied %> | 
   总金额：<%=f total %> </h3>
-<!-- <% if session[:product_id]==0 && session[:customer_id]==0 %>
-  <h3>;)¦<%=f total_profit %> </h3>
-<% end %> -->
+<% if Modules::Criteria::TermProduct.all?(@criteria_order.product_id)&& Modules::Criteria::TermCustomer.all?(@criteria_order.customer_id) %>
+  <h3>总利润：<%=f total_profit %> </h3>
+<% end %>
