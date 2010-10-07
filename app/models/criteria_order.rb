@@ -22,4 +22,9 @@ class CriteriaOrder
 	  init_paied criteria_params[:is_paied]
 	end
   
+  def profit_calculable?
+    Modules::Criteria::TermProduct.all?(@product_id)&& 
+    Modules::Criteria::TermCustomer.all?(@customer_id)&&
+    Modules::Criteria::TermPaied.all?(@is_paied)
+  end
 end
