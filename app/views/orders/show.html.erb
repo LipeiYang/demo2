@@ -1,33 +1,37 @@
 <p>
-  <b><%= t('t_seq_no') %>:</b>
+  <b><%=h Order.human_attribute_name :seq_no %>:</b>
   <%=h @order.seq_no %>
 </p>
 <p>
-  <b><%= t('t_date') %>:</b>
+  <b><%=h Order.human_attribute_name :date %>:</b>
   <%=h @order.date %>
 </p>
 <p>
-  <b><%= t('t_customer') %>:</b>
+  <b><%=h Customer.human_name %>:</b>
   <%=h @order.customer.name %>
 </p>
 <p>
-  <b><%= t('t_product') %>:</b>
+  <b><%=h Product.human_name %>:</b>
   <%=h @order.product.name %>
 </p>
 <p>
-  <b><%= t('t_volume') %>:</b>
-  <%=h @order.volume %>
+  <b><%=h Order.human_attribute_name :volume %>:</b>
+  <%=f @order.volume %>
 </p>
 <p>
-  <b><%= t('t_price') %>:</b>
-  <%=h @order.price %>
+  <b><%=h Order.human_attribute_name :price %>:</b>
+  <%=f @order.price %>
 </p>
 <p>
-  <b><%= t('t_manfee') %>:</b>
-  <%=h @order.manfee %>
+  <b><%=h Order.human_attribute_name :manfee %>:</b>
+  <%=f @order.manfee %>
 </p>
 <p>
-  <b><%= t('t_is_paied') %>:</b>
+  <b><%=h Order.human_attribute_name :total %>:</b>
+  <%=f @order.total %>
+</p>
+<p>
+  <b><%=h Order.human_attribute_name :is_paied %>:</b>
   <%=h t("t_#{@order.is_paied}") %>
 </p>
 <%= link_to t('Edit'), edit_order_path(@order) %> |
