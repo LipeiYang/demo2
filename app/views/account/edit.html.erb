@@ -3,11 +3,11 @@
 <% form_for(@user, :url => update_password_path) do |f| %>
   <%= f.error_messages %>
   <p>
-    <%= f.label t('New Password') %><br />
+    <%= f.label :password %><br />
     <%= f.password_field :password %>
   </p>
   <p>
-    <%= f.label t('Confirm New Password') %><br />
+    <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation %>
   </p>
   <p>

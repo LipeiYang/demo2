@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user_session, :current_user
   filter_parameter_logging :password, :password_confirmation
 
-  before_filter :set_locale, :require_user, :set_db_schema, :set_current_user
+  before_filter :set_locale, :require_user, :set_db_schema, :set_current_user, :store_location
   after_filter :clear_db_schema
 
 
@@ -33,7 +33,6 @@ class ApplicationController < ActionController::Base
     
     def require_user
       unless current_user
-        store_location
         redirect_to login_path
         return false
       end
@@ -81,8 +80,8 @@ class ApplicationController < ActionController::Base
       session[:return_to] = request.request_uri
     end
     
-    def redirect_back_or_default(default)
-      redirect_to(session[:return_to] || default)
+    def redirect_back_or_default(default, option)
+      redirect_to(session[:return_to] || default, option)
       session[:return_to] = nil
     end
 
