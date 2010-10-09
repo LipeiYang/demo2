@@ -3,10 +3,10 @@
 <%= render :partial => "receivable_filter_form" %>
 <table>
   <tr>
-    <th><%= t('t_seq_no') %></th>
-    <th><%= t('t_date') %></th>
-    <th><%= t('t_customer') %></th>
-    <th><%= t('t_amount') %></th>
+    <th><%= Receivable.human_attribute_name :seq_no %></th>
+    <th><%= Receivable.human_attribute_name :date %></th>
+    <th><%= Customer.human_name %></th>
+    <th><%= Receivable.human_attribute_name :amount %></th>
   </tr>
 
 <% @receivables.each do |receivable| %>

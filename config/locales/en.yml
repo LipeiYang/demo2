@@ -24,7 +24,6 @@ en:
   start_date: "start_date"
   end_date: "end_date"
   Search: "Search"
-  t_seq_no: "seq_no"
   t_date: "date"
   t_price: "price"
   t_volume: "volume"

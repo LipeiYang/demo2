@@ -5,7 +5,6 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :cost_items
 
-
   map.resources :suppliers
 
   map.resources :receivables
@@ -27,6 +26,7 @@ ActionController::Routing::Routes.draw do |map|
   map.login 'login', :controller => 'user_sessions', :action => 'new'  
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'  
   map.update_password 'update_password', :controller => 'account', :action => 'update_password'  
+  map.edit_password 'edit_password', :controller => 'account', :action => 'edit'
   
   map.home '', :controller => 'orders', :action => 'index'
 

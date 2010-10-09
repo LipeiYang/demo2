@@ -1,36 +1,36 @@
 <% form_for(@order) do |f| %>
   <%= f.error_messages %>
   <p>
-    <%= f.label t('t_seq_no') %><br />
+    <%= f.label :seq_no %><br />
     <%= f.text_field_hl :seq_no %>
   </p>
   <p>
-    <%= f.label t('t_date') %><br />
+    <%= f.label :date %><br />
     <%= f.date_select :date %>
   </p>
   <p>
-    <%= f.label t('t_customer') %><br />
+    <%= f.label Customer.human_name %><br />
     <%= collection_select(:order, :customer_id, Customer.all(:order=>"name"), :id, :name)%>
   </p>     
   <p>
-    <%= f.label t('t_product') %><br />
+    <%= f.label Product.human_name %><br />
     <%= collection_select(:order, :product_id, Product.all(:order=>"name"), :id, :name)%>
   </p>   
   <p>
-    <%= f.label t('t_volume') %><br />
+    <%= f.label :volume %><br />
     <%= f.text_field_hl :volume %>
   </p>
   <p>
-    <%= f.label t('t_price') %><br />
+    <%= f.label :price %><br />
     <%= f.text_field_hl :price %>
   </p>
   <p>
-    <%= f.label t('t_manfee') %><br />
+    <%= f.label :manfee %><br />
     <%= f.text_field_hl :manfee %>
   </p>
   <p>
-    <%= f.label t('t_is_paied') %>: 
-    <%= check_box(:order, :is_paied, {}, "yes", "no") %>
+    <%= f.label :is_paied %>: 
+    <%= check_box(:order, :is_paied, {}, YES, NO) %>
   </p>  
   <p>
     <%= f.submit_once t(button_label) %>

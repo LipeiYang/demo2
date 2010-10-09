@@ -1,18 +1,18 @@
 <p>
-  <b><%= t('t_seq_no') %>:</b>
+  <b><%= Receivable.human_attribute_name :seq_no %>:</b>
   <%=h @receivable.seq_no %>
 </p>
 <p>
-  <b><%= t('t_date') %>:</b>
+  <b><%= Receivable.human_attribute_name :date %>:</b>
   <%=h @receivable.date %>
 </p>
 <p>
-  <b><%= t('t_customer') %>:</b>
+  <b><%= Customer.human_name %>:</b>
   <%=h @receivable.customer.name %>
 </p>
 <p>
-  <b><%= t('t_amount') %>:</b>
-  <%=h @receivable.amount %>
+  <b><%= Receivable.human_attribute_name :amount %>:</b>
+  <%=f @receivable.amount %>
 </p>
 
 

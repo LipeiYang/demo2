@@ -16,4 +16,9 @@ class User < ActiveRecord::Base
   def admin?
     role_symbols.include?(:admin)
   end
+  
+  def user?
+    role_symbols.include?(:user)
+  end
+  
 end
