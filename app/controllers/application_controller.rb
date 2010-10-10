@@ -24,7 +24,13 @@ class ApplicationController < ActionController::Base
     
   private
     def set_locale
-      I18n.locale = params[:locale]
+      cookies[:locale] = params[:locale] unless params[:locale].blank?
+      I18n.locale = cookies[:locale]
+      if cookies[:locale].eql? 'zh'
+        @revert_language = 'en'
+      else
+        @revert_language = 'zh'
+      end
     end
     
     def set_current_user

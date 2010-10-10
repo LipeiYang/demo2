@@ -9,6 +9,7 @@
 <%= link_to CostItem.human_name, cost_items_path %>
 
 <span style="float:right">
+  <%= link_to t('Language'), params.merge(:locale=>@revert_language) %> |
   <% if current_user.admin? %>
     <%= @focused_name %> | 
   <% end %>

@@ -35,7 +35,7 @@
   <tr>
     <th><%= Supplier.human_name %></th>
     <th><%= Purchase.human_attribute_name :is_paied %></th>
-    <th>总金额</th>
+    <th><%= t('t_amount') %></th>
   </tr>
   <% supplier_purchase_list.each do |o| %>
     <tr>
