@@ -63,4 +63,18 @@ en:
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]  
+  per_year:   "Year"
+  per_month:  "Month"
+  per_day:    "Day"
+  activerecord:
+    models:
+      cost_item: "Cost"
+    attributes:
+      order:
+        seq_no: "Seq No."
+        manfee: "Processing Charge"
+        is_paied: "Paied"
+      purchase:
+        seq_no: "Seq No."
+        is_paied: "Paied"
   
