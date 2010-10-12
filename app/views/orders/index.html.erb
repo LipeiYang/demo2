@@ -40,12 +40,12 @@
 
 <table>
   <tr>
-    <th>材料</th>
-    <th>数量（公斤）</th>
-    <th>材料费</th>
-    <th>材料利润</th>
-    <th>加工费</th>
-    <th>总收益</th>
+    <th><%=h Product.human_name %></th>
+    <th><%=h Order.human_attribute_name :volume %></th>
+    <th><%=h t('Gross Amount') %></th>
+    <th><%=h t('Gross Profit') %></th>
+    <th><%=h Order.human_attribute_name :manfee %></th>
+    <th><%=h t('Revenue') %></th>
   </tr>
   <% product_position_list.each do |o| %>
     <tr>
@@ -61,11 +61,11 @@
 <br/>                   
 <table>
   <tr>
-    <th>客户</th>
-    <th>材料费</th>
-    <th>材料利润</th>
-    <th>加工费</th>
-    <th>总收益</th>
+    <th><%=h Customer.human_name %></th>
+    <th><%=h t('Gross Amount') %></th>
+    <th><%=h t('Gross Profit') %></th>
+    <th><%=h Order.human_attribute_name :manfee %></th>
+    <th><%=h t('Revenue') %></th>
   </tr>
   <% customer_position_list.each do |o| %>
     <tr>
@@ -77,13 +77,13 @@
     </tr>
   <% end %>
 </table>
-<h3>总材料费：<%=f total_material_fee %> | 
-  总材料收益：<%=f total_material_fee - total_material_cost %> | 
-  总加工费：<%=f total_manfee %> | 
-  总收益：<%=f total_revenue %> </h3>
-<h3>已收金额：<%=f total_paied %> | 
-  未收金额：<%=f total_unpaied %> | 
-  总金额：<%=f total %> </h3>
+<h3><%=h t('Total Gross Amount') %>: <%=f total_material_fee %> | 
+  <%=h t('Total Gross Profit') %>: <%=f total_material_fee - total_material_cost %> | 
+  <%=h t('Total Processing Charge') %>: <%=f total_manfee %> | 
+  <%=h t('Total Revenue') %>: <%=f total_revenue %> </h3>
+<h3><%=h t('Received Amount') %>: <%=f total_paied %> | 
+  <%=h t('Inreceived Amount') %>: <%=f total_unpaied %> | 
+  <%=h t('Total Amount') %>: <%=f total %> </h3>
 <% if @criteria_order.profit_calculable?%>
-  <h3>总利润：<%=f total_profit %> </h3>
+  <h3><%=h t('Total Profit') %>: <%=f total_profit %> </h3>
 <% end %>

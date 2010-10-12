@@ -30,5 +30,5 @@
 <% end %>
 </table>
 
-<h3>供应商总数：<%=h @suppliers.size %></h3>
-<h3>代付金额：<%=f total_amount_to_pay %></h3>
+<h3><%= t('Total Suppliers') %>: <%=h @suppliers.size %></h3>
+<h3><%= t('Total Unpaid') %>: <%=f total_amount_to_pay %></h3>

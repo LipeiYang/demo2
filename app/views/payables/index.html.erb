@@ -27,7 +27,7 @@
 <table>
   <tr>
     <th><%= Supplier.human_name %></th>
-    <th>金额</th>
+    <th><%= Payable.human_attribute_name(:amount) %></th>
   </tr>
   <% supplier_unpay_list.each do |o| %>
     <tr>
@@ -37,4 +37,4 @@
   <% end %>
 </table>
 
-<h3>总金额：<%=f total_unpay %> </h3>
+<h3><%= t('Total Amount') %>: <%=f total_unpay %></h3>

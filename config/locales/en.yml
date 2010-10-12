@@ -4,6 +4,7 @@
 en:
   hello: "Hello world"
   babajiayou: "Ba Ba Jia You"
+  zhangben: "Accounting"
   Listing orders: "Listing Orders"
   Listing purchases: "Listing Purchases"
   Listing receivables: "Listing Receivables"
@@ -49,8 +50,9 @@ en:
   t_customer: "customer"
   t_product: "product"
   t_is_paied: "is_paied"
-  t_amount: "amount" 
-  t_total: "total"
+  t_amount: "Amount" 
+  t_total: "Total"
+  Username: "Username"
   Password: "Password"
   Change Password: "Change Password"
   sure?: "sure?"
@@ -58,7 +60,25 @@ en:
   t_no: "No"
   All: "All"
   t_to: "to"
+  Total Gross Amount: "Total Gross Amount"
+  Total Gross Profit: "Total Gross Profit"
+  Total Processing Charge: "Total Processing Charge"
+  Total Revenue: "Total Revenue"
+  Gross Amount: "Gross Amount"
+  Gross Profit: "Gross Profit"
+  Revenue: "Revenue"
+  Total Profit: "Total Profit"
   Total Amount: "Total Amount"
+  Total Invest: "Total Investment"
+  Total Customers: "Total Customers"
+  Total Suppliers: "Total Suppliers"
+  Total Products: "Total Products"
+  Total Unpaid: "Total Outstanding"
+  Total Inreceive: "Total Outstanding"
+  Paid Amount: "Settled"
+  Unpaid Amount: "Outstanding"
+  Received Amount: "Settled"
+  Inreceived Amount: "Outstanding"
   Language: "中文"
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -69,12 +89,38 @@ en:
   activerecord:
     models:
       cost_item: "Cost"
+      invest: "Investment"
     attributes:
       order:
-        seq_no: "Seq No."
+        seq_no: "Ref No."
+        volume: "Quantity"
         manfee: "Processing Charge"
-        is_paied: "Paied"
+        is_paied: "Paid"
       purchase:
-        seq_no: "Seq No."
-        is_paied: "Paied"
-  
+        seq_no: "Ref No."
+        volume: "Quantity"
+        is_paied: "Paid"
+      invest:
+        seq_no: "Ref No."
+      customer:
+        seq_no: "Ref No."
+        cutoff_date: "Last Settle Date"
+        inreceive_amount: "Last Outstanding"
+        unsettle_amount_after_cutoff: "New Credit"
+        received_amount_after_cutoff: "New Receive"
+        amount_will_receive: "Outstanding"
+      supplier:
+        seq_no: "Ref No."
+        cutoff_date: "Last Settle Date"
+        unpaied_amount: "Last Outstanding"
+        unsettle_amount_after_cutoff: "New Debt"
+        paied_amount_after_cutoff: "New Pay"
+        amount_to_pay: "Outstanding"
+      product:
+        price: "Cost"
+        weighted_cost: "Estimate Cost"
+      cost_item:
+        seq_no: "Ref No."
+      user:
+        password_confirmation: "Password Confirmation"
+        

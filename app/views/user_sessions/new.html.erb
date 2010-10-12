@@ -1,3 +1,7 @@
+<span style="float:right">
+  <%= link_to t('Language'), params.merge(:locale=>@revert_language) %>
+</span>
+
 <% form_for @user_session do |f| %>  
   <%= f.label :username, t("Username") %>
   <%= f.text_field :username %>  
