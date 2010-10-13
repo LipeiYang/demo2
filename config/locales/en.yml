@@ -39,6 +39,7 @@ en:
   Back: "Back"
   Logout: "Logout"
   Login: "Login"
+  Print: "Print"
   Create: "Create"
   start_date: "start_date"
   end_date: "end_date"
