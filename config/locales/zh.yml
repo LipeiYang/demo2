@@ -98,7 +98,7 @@ zh:
       cost_item: "成本"
       payable: "付款"
       product: "产品"
-
+      user: "用户"
     attributes:
       order:
         seq_no: "编号"

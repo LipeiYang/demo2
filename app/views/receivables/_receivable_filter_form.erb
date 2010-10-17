@@ -1,5 +1,5 @@
 <% form_for(@criteria_receivable, :url => receivables_path) do |f| %>
-    <%= render :partial => "layouts/form/filter/date_range", :locals =>{ :f => f } %>
-    <%= render :partial => "layouts/form/filter/customer", :locals =>{ :f => f } %>
-    <%= render :partial => "layouts/form/filter/submit", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/date_range", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/customer", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/submit", :locals =>{ :f => f } %>
 <% end %>

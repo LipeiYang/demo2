@@ -1,0 +1,9 @@
+<% content_for :base_title do -%>
+<%= " - #{yield :title || t(:zhangben)}" -%>
+<% end %>
+
+<% content_for :base_body do %>
+<%= render :partial => "partials/menu" %>
+<h1><%= yield :title %></h1>
+<%= yield %>
+<% end %>

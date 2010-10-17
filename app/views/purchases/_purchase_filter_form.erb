@@ -1,7 +1,7 @@
 <% form_for(@criteria_purchase, :url => purchases_path) do |f| %>
-  <%= render :partial => "layouts/form/filter/date_range", :locals =>{ :f => f } %>
-  <%= render :partial => "layouts/form/filter/supplier", :locals =>{ :f => f } %>
-  <%= render :partial => "layouts/form/filter/product", :locals =>{ :f => f } %>
-  <%= render :partial => "layouts/form/filter/paied", :locals =>{ :f => f, :criteria => @criteria_purchase, :label_name => Purchase.human_attribute_name(:is_paied) } %>
-  <%= render :partial => "layouts/form/filter/submit", :locals =>{ :f => f } %>
+  <%= render :partial => "partials/form/filter/date_range", :locals =>{ :f => f } %>
+  <%= render :partial => "partials/form/filter/supplier", :locals =>{ :f => f } %>
+  <%= render :partial => "partials/form/filter/product", :locals =>{ :f => f } %>
+  <%= render :partial => "partials/form/filter/paied", :locals =>{ :f => f, :criteria => @criteria_purchase, :label_name => Purchase.human_attribute_name(:is_paied) } %>
+  <%= render :partial => "partials/form/filter/submit", :locals =>{ :f => f } %>
 <% end %>
