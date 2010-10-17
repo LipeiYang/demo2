@@ -30,7 +30,10 @@ tr.alt
   color:#000000;
   background-color:#EAF2D3;
 }
-
+form.inline
+{
+    display: inline-block;
+}
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;

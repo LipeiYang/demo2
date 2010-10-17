@@ -1,11 +1,16 @@
 <span style="float:right">
-  <%= link_to t('Language'), params.merge(:locale=>@revert_language) %>
+<%= link_to t('Language'), params.merge(:locale=>@revert_language) %>
 </span>
 
-<% form_for @user_session do |f| %>  
+<% form_for @user_session, :html => {:class => "inline"} do |f| %>  
   <%= f.label :username, t("Username") %>
   <%= f.text_field :username %>  
   <%= f.label :password, t('Password') %>
   <%= f.password_field :password %>  
   <%= f.submit t("Login") %>  
+<% end %> 
+<% form_for @user_session, :html => {:class => "inline"} do |f| %>  
+  <%= f.hidden_field  :username, :value => '000000'%>  
+  <%= f.hidden_field :password, :value => '000000' %>  
+  <%= f.submit t("Try") %>  
 <% end %> 
