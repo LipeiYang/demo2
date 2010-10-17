@@ -4,4 +4,7 @@
   <%= render :partial => "layouts/form/filter/product", :locals =>{ :f => f } %>
   <%= render :partial => "layouts/form/filter/paied", :locals =>{ :f => f, :criteria => @criteria_order, :label_name => Order.human_attribute_name(:is_paied) } %>
   <%= render :partial => "layouts/form/filter/submit", :locals =>{ :f => f } %>
+  <%= label_tag t('Use Estimate Cost') %>
+  <%= check_box_tag('by_esti_cost', YES, YES.eql?(cookies[:by_esti_cost]), {:onchange =>"this.form.submit()"}) %>
 <% end %>
+

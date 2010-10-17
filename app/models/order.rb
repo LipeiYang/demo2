@@ -34,7 +34,12 @@ class Order < ActiveRecord::Base
     price*volume+manfee
   end
   
-  def material_cost
+  def adjusted_material_cost
     product.price*volume
   end
+  
+  def estimate_material_cost
+    product.weighted_cost.blank? ? adjusted_material_cost : product.weighted_cost*volume
+  end
+  
 end

@@ -8,6 +8,12 @@ class Product < ActiveRecord::Base
 
   
   def weighted_cost
-    purchases.blank? ? "" : purchases.to_a.sum { |t| t.volume*t.price }/purchases.to_a.sum { |t| t.volume }
+    if purchases.empty?
+      ''
+    else
+      dd = 0
+      dr = purchases.all.sum { |t| dd+=t.volume; t.volume*t.price }
+      dr/dd
+    end
   end
 end
