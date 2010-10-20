@@ -16,7 +16,7 @@
   <% end %> |
   <%= link_to t('Language'), params.merge(:locale=>@revert_language) %> |
   <%= link_to_function t('Print'), 'javascript:print()' %> |
-  <% if current_user.user? %>
+  <% permitted_to? :edit, :account do %>
     <%= link_to t('Change Password'), edit_password_path %> | 
   <% end %>
   <%= link_to t('Logout'), logout_path %>
