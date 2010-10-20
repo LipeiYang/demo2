@@ -10,8 +10,10 @@
 
 <span style="float:right">
   <% if current_user.admin? %>
-    <%= @focused_name %> | 
-  <% end %>
+    <%= @focused_name %>
+  <% else %>
+    <%= current_user.name %>
+  <% end %> |
   <%= link_to t('Language'), params.merge(:locale=>@revert_language) %> |
   <%= link_to_function t('Print'), 'javascript:print()' %> |
   <% if current_user.user? %>
