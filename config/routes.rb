@@ -1,5 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :order_filters, :only => :create
+  
+  map.resources :purchase_filters, :only => :create
 
   map.resources :payables
 

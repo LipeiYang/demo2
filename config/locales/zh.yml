@@ -124,6 +124,11 @@ zh:
         volume: "数量（公斤）"    
         price: "价格（元）"
         is_paied: "已付"
+      purchase_filter:
+        d_to: "到"
+        i_supplier: "供应商"
+        i_product: "产品"
+        s_paid: "已付"
       receivable:
         seq_no: "编号"
         date: "日期"

@@ -1,0 +1,8 @@
+<% form_for(@purchase_filter) do |f| %>
+  <%= f.error_messages %>
+    <%= render :partial => "partials/form/filter/date_range", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/supplier", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/product", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/paied", :locals =>{ :f => f, :criteria => @purchase_filter } %>
+    <%= render :partial => "partials/form/filter/submit", :locals =>{ :f => f } %>
+<% end %>

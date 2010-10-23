@@ -8,8 +8,8 @@ class Receivable < ActiveRecord::Base
   validates_numericality_of :amount
   
   def self.search_receivables(criteria)
-    in_date_range(criteria.start, criteria.end).
-    in_customer(criteria.customer_id).
+    in_date_range(criteria.d_from, criteria.d_to).
+    in_customer(criteria.i_customer).
     by_date_seq_no.all
   end
   

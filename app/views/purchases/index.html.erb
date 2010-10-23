@@ -1,6 +1,6 @@
 <%= title t('Listing purchases') %>
 <h3><%= link_to t('New purchase'), new_purchase_path %></h3>
-<%= render :partial => "purchase_filter_form" %>
+<%= render :partial => "purchase_filters/form" %>
 <table>
   <tr>
     <th><%= Purchase.human_attribute_name :seq_no %></th>

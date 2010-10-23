@@ -9,10 +9,10 @@ class Purchase < ActiveRecord::Base
   validates_numericality_of :volume, :price
   
   def self.search_purchases(criteria)
-    in_date_range(criteria.start, criteria.end).
-    in_supplier(criteria.supplier_id).
-    in_product(criteria.product_id).
-    in_pay_status(criteria.is_paied).
+    in_date_range(criteria.d_from, criteria.d_to).
+    in_supplier(criteria.i_supplier).
+    in_product(criteria.i_product).
+    in_pay_status(criteria.s_paid).
     by_date_seq_no.all
   end
 

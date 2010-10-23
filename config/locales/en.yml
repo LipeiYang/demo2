@@ -108,6 +108,11 @@ en:
         seq_no: "Ref No."
         volume: "Quantity"
         is_paied: "Paid"
+      purchase_filter:
+        d_to: "To"
+        i_supplier: "Supplier"
+        i_product: "Product"
+        s_paid: "Paid"
       invest:
         seq_no: "Ref No."
       customer:

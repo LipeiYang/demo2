@@ -2,13 +2,9 @@ class PurchasesController < ApplicationController
   # GET /purchases
   # GET /purchases.xml
   def index
-    if params[:criteria_purchase].blank?
-      session[:criteria_purchase] ||= CriteriaPurchase.new
-    else
-      session[:criteria_purchase] = CriteriaPurchase.new(params[:criteria_purchase])
-    end
-    @criteria_purchase = session[:criteria_purchase]
-    @purchases = Purchase.search_purchases(@criteria_purchase)
+    session[:purchase_filter]||=PurchaseFilter.new
+    @purchase_filter = session[:purchase_filter]
+    @purchases = Purchase.search_purchases(@purchase_filter)
 
     respond_to do |format|
       format.html # index.html.erb

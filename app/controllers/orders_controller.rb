@@ -2,8 +2,8 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.xml
   def index
-    session[:criteria_order]||=OrderFilter.new
-    @order_filter = session[:criteria_order]
+    session[:order_filter]||=OrderFilter.new
+    @order_filter = session[:order_filter]
     @orders = Order.search_orders(@order_filter)
     
     respond_to do |format|
