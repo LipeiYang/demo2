@@ -1,3 +1,4 @@
+require 'activerecord_toolbox'
 class OrderFilter < ActiveRecord::TableLessBase
   column :d_from, :date, Date.today-1.day
   column :d_to, :date, Date.today
