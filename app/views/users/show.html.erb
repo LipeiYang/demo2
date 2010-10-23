@@ -50,9 +50,7 @@
 
 <p>
   <b>Role:</b>
-  <% @user.roles.each do |role| %>
-    <%=h role.name %>,
-  <% end %>
+  <%=h @user.roles.to_sentence :two_words_connector =>', ' %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
