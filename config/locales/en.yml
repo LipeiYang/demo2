@@ -113,6 +113,9 @@ en:
         i_supplier: "Supplier"
         i_product: "Product"
         s_paid: "Paid"
+      receivable_filter:
+        d_to: "To"
+        i_customer: "Customer"
       invest:
         seq_no: "Ref No."
       customer:

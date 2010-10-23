@@ -1,6 +1,6 @@
 <%= title t('Listing receivables') %>
 <h3><%= link_to t('New receivable'), new_receivable_path %></h3>
-<%= render :partial => "receivable_filter_form" %>
+<%= render :partial => "receivable_filters/form" %>
 <table>
   <tr>
     <th><%= Receivable.human_attribute_name :seq_no %></th>

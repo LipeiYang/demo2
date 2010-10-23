@@ -134,6 +134,9 @@ zh:
         date: "日期"
         customer: "客户"
         amount: "金额"
+      receivable_filter:
+        d_to: "到"
+        i_customer: "客户"
       customer:
         seq_no: "编号"
         name: "姓名"

@@ -1,0 +1,6 @@
+<% form_for(@receivable_filter) do |f| %>
+  <%= f.error_messages %>
+    <%= render :partial => "partials/form/filter/date_range", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/customer", :locals =>{ :f => f } %>
+    <%= render :partial => "partials/form/filter/submit", :locals =>{ :f => f } %>
+<% end %>

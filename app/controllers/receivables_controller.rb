@@ -2,13 +2,9 @@ class ReceivablesController < ApplicationController
   # GET /receivables
   # GET /receivables.xml
   def index
-    if params[:criteria_receivable].blank?
-      session[:criteria_receivable] ||= CriteriaReceivable.new
-    else
-      session[:criteria_receivable] = CriteriaReceivable.new(params[:criteria_receivable])
-    end
-    @criteria_receivable = session[:criteria_receivable]
-    @receivables = Receivable.search_receivables(@criteria_receivable)
+    session[:receivable_filter]||=ReceivableFilter.new
+    @receivable_filter = session[:receivable_filter]
+    @receivables = Receivable.search_receivables(@receivable_filter)
     
     respond_to do |format|
       format.html # index.html.erb
