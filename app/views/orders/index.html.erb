@@ -15,12 +15,8 @@
   </tr>
 
 <% @orders.each do |order| %>
-  <% if alert?(order) %>
-    <tr class="alt">
-  <% else %>
-    <tr>
-  <% end %>
-    <td><%=h order.seq_no %></td>
+  <tr>
+    <td><%=h link_to order.seq_no, order %></td>
     <td><%=h order.date %></td>
     <td><%=h order.customer.name %></td>
     <td><%=h order.product.name %></td>
@@ -29,7 +25,6 @@
     <td class="right"><%=f order.manfee %></td>
     <td class="right"><%=f order.total %></td>
     <td><%=h t("t_#{order.is_paied}") %></td>
-    <td><%= link_to t('Show'), order %></td>
     <td><%= link_to t('Edit'), edit_order_path(order) %></td>
     <td><%= link_to t('Destroy'), order, :confirm => t('sure?'), :method => :delete %></td>
   </tr>

@@ -1,5 +1,5 @@
 <% content_for :base_title do -%>
-<%= " - #{yield :title || t(:zhangben)}" -%>
+<%= " - #{(yield :title) || t(:zhangben)}" -%>
 <% end %>
 
 <% content_for :base_body do %>
