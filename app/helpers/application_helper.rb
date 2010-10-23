@@ -7,7 +7,7 @@ module ApplicationHelper
   end
   
   def ft(t)
-    t.strftime('%y-%m-%d %H:%M')
+    t.strftime('%y-%m-%d %H:%M') unless t==nil
   end
   
   def title(page_title)  

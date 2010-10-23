@@ -21,6 +21,9 @@ class ApplicationController < ActionController::Base
       redirect_to login_path
     end
     
+    def get_schema(user_name)
+      "leaf_#{user_name}"
+    end
     
   private
     def set_locale
@@ -53,10 +56,6 @@ class ApplicationController < ActionController::Base
       else
         SchemaUtils.add_schema_to_path get_schema(current_user.username)
       end
-    end
-    
-    def get_schema(user_name)
-      "leaf_#{user_name}"
     end
     
     def clear_db_schema

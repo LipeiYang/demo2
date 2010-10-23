@@ -47,7 +47,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     respond_to do |format|
-      if SchemaUtils.create_and_migrate_schema(@user.db_schema) && @user.save
+      if SchemaUtils.create_and_migrate_schema(get_schema(@user.username)) && @user.save
         format.html { redirect_to(@user, :notice => 'User was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
