@@ -172,6 +172,9 @@ zh:
         date: "日期"
         supplier: "供应商"
         amount: "金额"       
+      payable_filter:
+        d_to: "到"
+        i_supplier: "供应商"
       user:
         password: "密码"
         password_confirmation: "确认密码"

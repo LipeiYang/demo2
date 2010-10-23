@@ -3,13 +3,9 @@ class PayablesController < ApplicationController
   # GET /payables.xml
 
   def index
-    if params[:criteria_payable].blank?
-      session[:criteria_payable] ||= CriteriaPayable.new
-    else
-      session[:criteria_payable] = CriteriaPayable.new(params[:criteria_payable])
-    end
-    @criteria_payable = session[:criteria_payable]
-    @payables = Payable.search_payables(@criteria_payable)
+    session[:payable_filter]||=PayableFilter.new
+    @payable_filter = session[:payable_filter]
+    @payables = Payable.search_payables(@payable_filter)
     
     respond_to do |format|
       format.html # index.html.erb
