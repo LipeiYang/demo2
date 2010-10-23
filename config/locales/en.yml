@@ -83,6 +83,9 @@ en:
   Received Amount: "Settled"
   Inreceived Amount: "Outstanding"
   Language: "中文"
+  Contact Us: "Contact Us"
+  Wenzhou: "Wenzhou"
+  Hong Kong: "Hong Kong"
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]  
