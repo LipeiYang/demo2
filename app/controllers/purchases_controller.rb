@@ -1,5 +1,4 @@
 class PurchasesController < ApplicationController
-  include ControllerUtils
   # GET /purchases
   # GET /purchases.xml
   def index

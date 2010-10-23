@@ -99,6 +99,11 @@ en:
         volume: "Quantity"
         manfee: "Processing Charge"
         is_paied: "Paid"
+      order_filter:
+        d_to: "To"
+        i_customer: "Customer"
+        i_product: "Product"
+        s_paid: "Paid"
       purchase:
         seq_no: "Ref No."
         volume: "Quantity"

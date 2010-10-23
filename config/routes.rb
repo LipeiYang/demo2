@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :order_filters, :only => :create
+
   map.resources :payables
 
   map.resources :invests
@@ -10,8 +12,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :receivables
 
   map.resources :purchases
-  
-  map.resource :sessions
   
   map.resources :orders
 

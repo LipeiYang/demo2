@@ -1,2 +1,2 @@
-<%= label_tag Customer.human_name %>
-<%= f.collection_select(:customer_id, Customer.all(:order=>"name"), :id, :name, {:include_blank => t(:All)})%>
+<%= f.label :i_customer %>
+<%= f.collection_select(:i_customer, Customer.all(:order=>"name"), :id, :name, {:include_blank => t(:All)})%>

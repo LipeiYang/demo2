@@ -1,7 +1,7 @@
 module OrdersHelper
 
   def total_profit
-    total_revenue-@criteria_order.days*everyday_cost
+    total_revenue-@order_filter.days*everyday_cost
     
   end
 

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  d_from: 2010-10-21
+  d_to: 2010-10-21
+  i_customer: 1
+  i_product: 1
+  s_paid: MyString
+
+two:
+  d_from: 2010-10-21
+  d_to: 2010-10-21
+  i_customer: 1
+  i_product: 1
+  s_paid: MyString

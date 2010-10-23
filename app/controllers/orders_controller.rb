@@ -1,18 +1,10 @@
 class OrdersController < ApplicationController
-  include ControllerUtils
   # GET /orders
   # GET /orders.xml
   def index
-    cookies[:by_esti_cost] = params[:by_esti_cost]
-    
-    if params[:criteria_order].blank?
-      session[:criteria_order] ||= CriteriaOrder.new
-    else
-      session[:criteria_order] = CriteriaOrder.new(params[:criteria_order])
-    end
-    @criteria_order = session[:criteria_order]
-    @orders = Order.search_orders(@criteria_order)
-    
+    session[:criteria_order]||=OrderFilter.new
+    @order_filter = session[:criteria_order]
+    @orders = Order.search_orders(@order_filter)
     
     respond_to do |format|
       format.html # index.html.erb

@@ -1,6 +1,6 @@
 <%=title t('Listing orders') %>
 <h3><%= link_to t('New order'), new_order_path %></h3>
-<%= render :partial => "order_filter_form" %>
+<%= render :partial => "order_filters/form" %>
 <table>
   <tr>
     <th><%=h Order.human_attribute_name :seq_no %></th>
@@ -84,6 +84,6 @@
 <h3><%=h t('Received Amount') %>: <%=f total_paied %> | 
   <%=h t('Inreceived Amount') %>: <%=f total_unpaied %> | 
   <%=h t('Total Amount') %>: <%=f total %> </h3>
-<% if @criteria_order.profit_calculable?%>
+<% if @order_filter.profit_calculable? %>
   <h3><%=h t('Total Profit') %>: <%=f total_profit %> </h3>
 <% end %>
