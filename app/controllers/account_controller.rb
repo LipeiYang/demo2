@@ -23,6 +23,10 @@ class AccountController < ApplicationController
     end
   end
 
+  def edit_share
+    @user = current_user
+  end
+
   def update_share
     filtered_params={}
     filtered_params[:share] = params[:user][:share]
@@ -30,9 +34,9 @@ class AccountController < ApplicationController
     respond_to do |format|
       User.validates_inclusion_of :share, :in => [true, false]
       if @user.update_attributes(filtered_params)
-        format.html { render :action => "edit" }
+        format.html { render :action => "edit_share" }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "edit_share" }
       end
     end
   end

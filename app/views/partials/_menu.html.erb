@@ -19,6 +19,7 @@
   <%= link_to_function t('Print'), 'javascript:print()' %> |
   <% permitted_to? :edit, :account do %>
     <%= link_to t('Change Password'), edit_password_path %> | 
+    <%= link_to t('Support'), edit_share_path %> | 
   <% end %>
   <%= link_to t('Logout'), logout_path %>
 </span>

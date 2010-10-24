@@ -4,7 +4,7 @@ authorization do
   end
   
   role :user do  
-    has_permission_on [:account], :to => [:edit, :update_password, :update_share]  
+    has_permission_on [:account], :to => [:edit, :update_password, :update_share, :edit_share]  
   end
 end  
 
