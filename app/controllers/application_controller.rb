@@ -47,19 +47,23 @@ class ApplicationController < ActionController::Base
       end
     end
     
+    def focus_user
+      session[:user] = params[:user] unless params[:user].blank?
+      session[:user] ||= current_user.username
+      focused_user = User.find_by_username(session[:user])
+      focused_user ||= current_user
+    end
+    
     def set_db_schema
       if current_user.admin?
-        session[:user] = params[:user] unless params[:user].blank?
-        session[:user] ||= current_user.username
-        o_focused_user = User.find_by_username(session[:user])
-        o_focused_user ||= current_user
-        if o_focused_user.share_to_admin?
-          @focused_name = o_focused_user.name
-          SchemaUtils.add_schema_to_path get_schema(o_focused_user.username)
+        focused_user = focus_user
+        if focused_user.share_to_admin?
+          SchemaUtils.add_schema_to_path get_schema(focused_user.username)
+          @focused_name = focused_user.name
+          return
         else
           @focused_name = current_user.name
         end
-        return
       end
       SchemaUtils.add_schema_to_path get_schema(current_user.username)
     end
