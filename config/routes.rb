@@ -33,6 +33,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'  
   map.update_password 'update_password', :controller => 'account', :action => 'update_password'  
   map.edit_password 'edit_password', :controller => 'account', :action => 'edit'
+  map.update_share 'update_share', :controller => 'account', :action => 'update_share'
   
   map.home '', :controller => 'orders', :action => 'index'
 

@@ -10,7 +10,8 @@
 
 <span style="float:right">
   <% if current_user.admin? %>
-    <%= @focused_name %>
+    <%= @focused_name %> | 
+    <%= link_to 'User List', users_path %>
   <% else %>
     <%= current_user.name %>
   <% end %> |

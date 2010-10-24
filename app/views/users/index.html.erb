@@ -1,4 +1,3 @@
-<%= link_to 'Logout', logout_path %>
 <h1>Listing users</h1>
 
 <table>
@@ -9,21 +8,25 @@
     <th class="wid">Last Request At</th>
     <th class="wid">Last Login At</th>
     <th class="wid">Current Login At</th>
-    <th>Last IP</th>
-    <th>Current IP</th>
+    <th>Share</th>
     <th>Role</th>
   </tr>
 
 <% @users.each do |user| %>
   <tr>
-    <td><%=h user.username %></td>
+    <td>
+      <% if user.share_to_admin? %>
+        <%= link_to user.username, orders_path(:user=>user.username) %>
+      <% else %>
+        <%=h user.username %>
+      <% end%>
+    </td>
     <td><%=h user.name %></td>
     <td><%=h user.login_count %></td>
     <td><%=ft user.last_request_at || Time.now %></td>
     <td><%=ft user.last_login_at || Time.now %></td>
     <td><%=ft user.current_login_at || Time.now %></td>
-    <td><%=h user.last_login_ip %></td>
-    <td><%=h user.current_login_ip %></td>
+    <td><%=h user.share %></td>
     <td><%=h user.roles.to_sentence :two_words_connector =>', ' %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>

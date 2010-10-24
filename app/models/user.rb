@@ -21,4 +21,7 @@ class User < ActiveRecord::Base
     role_symbols.include?(:user)
   end
   
+  def share_to_admin?
+    share==true
+  end
 end

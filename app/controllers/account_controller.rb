@@ -17,12 +17,23 @@ class AccountController < ApplicationController
       User.validates_presence_of :password
       if @user.update_attributes(filtered_params)
         format.html { redirect_back_or_default(logout_path, :notice => t('Password was successfully updated.')) }
-        format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
       end
     end
   end
 
+  def update_share
+    filtered_params={}
+    filtered_params[:share] = params[:user][:share]
+    @user = current_user
+    respond_to do |format|
+      User.validates_inclusion_of :share, :in => [true, false]
+      if @user.update_attributes(filtered_params)
+        format.html { render :action => "edit" }
+      else
+        format.html { render :action => "edit" }
+      end
+    end
+  end
 end

@@ -1,10 +1,1 @@
-<% content_for :base_title do -%>
-<%= " - #{User.human_name}" -%>
-<% end %>
-
-<% content_for :base_body do %>
-<%= yield %>
-<% end %>
-
-<%= render :layout => "layouts/base_layout"%>
-
+<%= render :partial => "partials/common", :layout => "layouts/base_layout"%>
