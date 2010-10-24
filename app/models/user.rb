@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   has_many :assignments
   has_many :roles, :through => :assignments
   
+  validates_inclusion_of :share, :in => [true, false]
+  
   acts_as_authentic do |c| 
     c.validate_email_field = false 
     # c.logged_in_timeout = 10.minutes
@@ -23,5 +25,9 @@ class User < ActiveRecord::Base
   
   def share_to_admin?
     share==true
+  end
+  
+  def add_empty_passeord_error
+    errors.add(:password, :blank)
   end
 end

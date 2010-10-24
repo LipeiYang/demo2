@@ -14,12 +14,17 @@ class AccountController < ApplicationController
     
     @user = current_user
     respond_to do |format|
-      User.validates_presence_of :password
-      if @user.update_attributes(filtered_params)
-        format.html { redirect_back_or_default(logout_path, :notice => t('Password was successfully updated.')) }
-      else
+      if filtered_params[:password].blank?
+        @user.add_empty_passeord_error
         format.html { render :action => "edit" }
+      else
+        if @user.update_attributes(filtered_params)
+          format.html { redirect_back_or_default(logout_path, :notice => t('Password was successfully updated.')) }
+        else
+          format.html { render :action => "edit" }
+        end
       end
+      
     end
   end
 
@@ -32,7 +37,6 @@ class AccountController < ApplicationController
     filtered_params[:share] = params[:user][:share]
     @user = current_user
     respond_to do |format|
-      User.validates_inclusion_of :share, :in => [true, false]
       if @user.update_attributes(filtered_params)
         format.html { render :action => "edit_share" }
       else
