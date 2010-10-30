@@ -1,6 +1,9 @@
-<%= title t('Listing receivables') %>
-<h3><%= link_to t('New receivable'), new_receivable_path %></h3>
-<%= render :partial => "receivable_filters/form" %>
+<% title 'Listing receivables' %>
+
+<%= render_new_link 'New receivable', new_receivable_path %>
+
+<%= render_filter "receivable_filters/form" %>
+
 <table>
   <tr>
     <th><%= Receivable.human_attribute_name :seq_no %></th>
@@ -15,8 +18,8 @@
     <td><%=h receivable.date %></td>
     <td><%=h receivable.customer.name %></td>
     <td class="right"><%=f receivable.amount %></td>
-    <td><%= link_to t('Edit'), edit_receivable_path(receivable) %></td>
-    <td><%= link_to t('Destroy'), receivable, :confirm => t('sure?'), :method => :delete %></td>
+    <%= render_edit_link edit_receivable_path(receivable) %>
+    <%= render_delete_link receivable %>
   </tr>
 <% end %>
 </table>

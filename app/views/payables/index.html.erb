@@ -1,7 +1,9 @@
-<% title t('Listing payables') %>
+<% title 'Listing payables' %>
 
-<h3><%= link_to t('New payable'), new_payable_path %></h3>
-<%= render :partial => "payable_filters/form" %>
+<%= render_new_link 'New payable', new_payable_path %>
+
+<%= render_filter "payable_filters/form" %>
+
 <table>
   <tr>
     <th><%= Payable.human_attribute_name(:seq_no) %></th>
@@ -16,8 +18,8 @@
     <td><%=h payable.date %></td>
     <td><%=h payable.supplier.name %></td>
     <td class="right"><%=f payable.amount %></td>
-    <td><%= link_to t('Edit'), edit_payable_path(payable) %></td>
-    <td><%= link_to t('Destroy'), payable, :confirm => t('sure?'), :method => :delete %></td>
+    <%= render_edit_link edit_payable_path(payable) %>
+    <%= render_delete_link payable %>
   </tr>
 <% end %>
 </table>

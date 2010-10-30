@@ -116,10 +116,10 @@ zh:
         date: "日期"
         customer: "客户"
         product: "产品"
-        volume: "数量（公斤）"    
-        price: "价格（元）"
-        manfee: "加工费（元）"
-        total: "合计（元）"
+        volume: "数量"    
+        price: "价格"
+        manfee: "加工费"
+        total: "合计"
         is_paied: "已收"
       order_filter:
         d_to: "到"
@@ -131,8 +131,8 @@ zh:
         date: "日期"
         supplier: "供应商"
         product: "产品"
-        volume: "数量（公斤）"    
-        price: "价格（元）"
+        volume: "数量"    
+        price: "价格"
         is_paied: "已付"
       purchase_filter:
         d_to: "到"
@@ -170,7 +170,7 @@ zh:
       cost_item:
         seq_no: "编号"
         name: "名称"
-        price: "价格（元）"
+        price: "价格"
         period: "周期"
       invest:
         seq_no: "编号"

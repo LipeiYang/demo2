@@ -1,6 +1,9 @@
-<%= title t('Listing purchases') %>
-<h3><%= link_to t('New purchase'), new_purchase_path %></h3>
-<%= render :partial => "purchase_filters/form" %>
+<% title 'Listing purchases' %>
+
+<%= render_new_link 'New purchase', new_purchase_path %>
+
+<%= render_filter "purchase_filters/form" %>
+
 <table>
   <tr>
     <th><%= Purchase.human_attribute_name :seq_no %></th>
@@ -23,8 +26,8 @@
     <td class="right"><%=f purchase.price %></td>
     <td class="right"><%=f purchase.total %></td>
     <td><%=h t("t_#{purchase.is_paied}") %></td>
-    <td><%= link_to t('Edit'), edit_purchase_path(purchase) %></td>
-    <td><%= link_to t('Destroy'), purchase, :confirm => t('sure?'), :method => :delete %></td>
+    <%= render_edit_link edit_purchase_path(purchase) %>
+    <%= render_delete_link purchase %>
   </tr>
 <% end %>
 </table>

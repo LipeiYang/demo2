@@ -1,6 +1,6 @@
-<% title t('Listing suppliers') %>
+<% title 'Listing suppliers' %>
 
-<h3><%= link_to t('New supplier'), new_supplier_path %></h3>
+<%= render_new_link 'New supplier', new_supplier_path %>
 
 <table>
   <tr>
@@ -22,9 +22,9 @@
     <td class="right"><%=f supplier.unsettle_amount_after_cutoff %></td>
     <td class="right"><%=f supplier.paied_amount_after_cutoff %></td>
     <td class="right"><%=f supplier.amount_to_pay %></td>
-    <td><%= link_to t('Edit'), edit_supplier_path(supplier) %></td>
+    <%= render_edit_link edit_supplier_path(supplier) %>
     <% if supplier.purchases.empty? && supplier.payables.empty?%>
-      <td><%= link_to t('Destroy'), supplier, :confirm => t('sure?'), :method => :delete %></td>
+      <%= render_delete_link supplier %>
     <% end %>
   </tr>
 <% end %>

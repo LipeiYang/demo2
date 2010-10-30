@@ -1,0 +1,36 @@
+body {
+   background: transparent;
+   font-size: 12pt;
+}
+div#menu {
+  display: none;
+}
+div#filter {
+  display: none;
+}
+div#optr {
+  display: none;
+}
+td#optr {
+  visibility:collapse;
+  padding:0px 0px 0px 0px;
+}
+table {
+  border-collapse:collapse;
+}
+td, th 
+{
+  border:1px solid black;
+  padding:3px 7px 2px 7px;
+}
+th 
+{
+  text-align:left;
+  padding-top:5px;
+  padding-bottom:4px;
+}
+td.right
+{
+  text-align:right;
+}
+

@@ -1,6 +1,6 @@
-<% title t('Listing products') %>
+<% title 'Listing products' %>
 
-<h3><%= link_to t('New product'), new_product_path %></h3>
+<%= render_new_link 'New product', new_product_path %>
 
 <table>
   <tr>
@@ -14,9 +14,9 @@
     <td><%=h product.name %></td>
     <td class="right"><%=f product.price %></td>
     <td class="right"><%=f product.weighted_cost %></td>
-    <td><%= link_to t('Edit'), edit_product_path(product) %></td>
+    <%= render_edit_link edit_product_path(product) %>
     <% if product.orders.empty? && product.purchases.empty? %>
-      <td><%= link_to t('Destroy'), product, :confirm => t('sure?'), :method => :delete %></td>
+      <%= render_delete_link product %>
     <% end %>
   </tr>
 <% end %>

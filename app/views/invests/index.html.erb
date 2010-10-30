@@ -1,6 +1,6 @@
-<% title t('Listing invests') %>
+<% title 'Listing invests' %>
 
-<h3><%= link_to t('New invest'), new_invest_path %></h3>
+<%= render_new_link 'New invest', new_invest_path %>
 
 <table>
   <tr>
@@ -16,8 +16,8 @@
     <td><%=h invest.date %></td>
     <td><%=h invest.cost_item.name %></td>
     <td class="right"><%=f invest.amount %></td>
-    <td><%= link_to t('Edit'), edit_invest_path(invest) %></td>
-    <td><%= link_to t('Destroy'), invest, :confirm => t('sure?'), :method => :delete %></td>
+    <%= render_edit_link edit_invest_path(invest) %>
+    <%= render_delete_link invest %>
   </tr>
 <% end %>
 </table>

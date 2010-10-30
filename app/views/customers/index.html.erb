@@ -1,6 +1,6 @@
-<% title t('Listing customers') %>
+<% title 'Listing customers' %>
 
-<h3><%= link_to t('New customer'), new_customer_path %></h3>
+<%= render_new_link 'New customer', new_customer_path %></h3>
 
 <table>
   <tr>
@@ -22,9 +22,9 @@
     <td class="right"><%=f customer.unsettle_amount_after_cutoff %></td>
     <td class="right"><%=f customer.received_amount_after_cutoff %></td>
     <td class="right"><%=f customer.amount_will_receive %></td>
-    <td><%= link_to t('Edit'), edit_customer_path(customer) %></td>
+    <%= render_edit_link edit_customer_path(customer) %>
     <% if customer.orders.empty? && customer.receivables.empty? %>
-      <td><%= link_to t('Destroy'), customer, :confirm => t('sure?'), :method => :delete %></td>
+      <%= render_delete_link customer %>
     <% end %>
   </tr>
 <% end %>

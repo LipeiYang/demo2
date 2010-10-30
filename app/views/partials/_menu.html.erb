@@ -1,3 +1,4 @@
+<div id="menu">
 <%= link_to Order.human_name, orders_path %> |
 <%= link_to Purchase.human_name, purchases_path %> |
 <%= link_to Receivable.human_name, receivables_path %> |
@@ -10,16 +11,17 @@
 
 <span style="float:right">
   <% if current_user.admin? %>
-    <%= @focused_name %> | 
+    <%= @focused_name -%> | 
     <%= link_to 'User List', users_path %>
   <% else %>
-    <%= current_user.name %>
+    <%= current_user.name -%>
   <% end %> |
   <%= link_to t('Language'), params.merge(:locale=>@revert_language) %> |
   <%= link_to_function t('Print'), 'javascript:print()' %> |
-  <% permitted_to? :edit, :account do %>
+  <% permitted_to? :edit, :account do -%>
     <%= link_to t('Change Password'), edit_password_path %> | 
     <%= link_to t('Support'), edit_share_path %> | 
-  <% end %>
+  <% end -%>
   <%= link_to t('Logout'), logout_path %>
 </span>
+</div>

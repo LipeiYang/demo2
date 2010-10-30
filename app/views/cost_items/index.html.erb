@@ -1,6 +1,6 @@
-<% title t('Listing cost_items') %> 
+<% title 'Listing cost_items' %> 
 
-<h3><%= link_to t('New cost_item'), new_cost_item_path %></h3>
+<%= render_new_link 'New cost_item', new_cost_item_path %>
 
 <table>
   <tr>
@@ -16,9 +16,9 @@
     <td><%=h cost_item.name %></td>
     <td><%=h day_to_period[cost_item.period] %></td>
     <td class="right"><%=f cost_item.price %></td>
-    <td><%= link_to t('Edit'), edit_cost_item_path(cost_item) %></td>
+    <%= render_edit_link edit_cost_item_path(cost_item) %>
     <% if cost_item.invests.empty? %>
-      <td><%= link_to t('Destroy'), cost_item, :confirm => t('sure?'), :method => :delete %></td>
+      <%= render_delete_link cost_item %>
     <% end %>
   </tr>
 <% end %>

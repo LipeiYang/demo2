@@ -4,27 +4,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title><%= t(:babajiayou) %><%= yield :base_title %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
-  <script type="text/javascript">
-  
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-19151626-1']);
-    _gaq.push(['_trackPageview']);
-  
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  
-  </script>
+  <title><%= t(:babajiayou) %><%= yield :base_html_title %></title>
+  <%= stylesheet_link_tag 'main', :media => :screen %>
+  <%= stylesheet_link_tag 'print', :media => :print %>
 </head>
 <body>
 
 <p style="color: green"><%= notice %></p>
 
-<%= yield :base_body %>
+<%= yield :base_html_body %>
 
 </body>
 </html>
