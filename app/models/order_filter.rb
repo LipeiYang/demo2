@@ -7,7 +7,7 @@ class OrderFilter < ActiveRecord::TableLessBase
   column :s_paid, :string
   
   def profit_calculable?
-    i_customer==nil&&i_product==nil&&s_paid==''
+    i_customer.blank?&&i_product.blank?&&s_paid.blank?
   end
   
   def days

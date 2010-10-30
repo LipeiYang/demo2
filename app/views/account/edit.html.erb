@@ -1,4 +1,6 @@
-<% title 'Change Password' %>
+<% title 'My Account' %>
+
+<h3><%= t('Change Password') %></h3>
 
 <% form_for(@user, :url => update_password_path) do |f| %>
   <%= f.error_messages %>
@@ -14,5 +16,18 @@
     <%= f.submit t("Update") %>
   </p>
 <% end %>
+
+<h3><%= t('Administrative Support') %></h3>
+
+<% form_for(@user, :url => update_share_path) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.radio_button :share, true, {:onchange =>"this.form.submit()"}%>
+    <%= t('Allow') %>
+    <%= f.radio_button :share, false, {:onchange =>"this.form.submit()"}%>
+    <%= t('Deny') %>
+  </p>
+<% end %>
+
 <%= link_to t('Back'), session[:return_to] %>
 

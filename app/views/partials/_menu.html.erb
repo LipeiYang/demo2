@@ -17,10 +17,9 @@
     <%= current_user.name -%>
   <% end %> |
   <%= link_to t('Language'), params.merge(:locale=>@revert_language) %> |
-  <%= link_to_function t('Print'), 'javascript:print()' %> |
+  
   <% permitted_to? :edit, :account do -%>
-    <%= link_to t('Change Password'), edit_password_path %> | 
-    <%= link_to t('Support'), edit_share_path %> | 
+    <%= link_to t('My Account'), edit_account_path %> | 
   <% end -%>
   <%= link_to t('Logout'), logout_path %>
 </span>

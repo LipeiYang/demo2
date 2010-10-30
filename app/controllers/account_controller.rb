@@ -28,19 +28,15 @@ class AccountController < ApplicationController
     end
   end
 
-  def edit_share
-    @user = current_user
-  end
-
   def update_share
     filtered_params={}
     filtered_params[:share] = params[:user][:share]
     @user = current_user
     respond_to do |format|
       if @user.update_attributes(filtered_params)
-        format.html { render :action => "edit_share" }
+        format.html { render :action => "edit" }
       else
-        format.html { render :action => "edit_share" }
+        format.html { render :action => "edit" }
       end
     end
   end
