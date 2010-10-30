@@ -4,3 +4,6 @@
 tmp
 log
 backups
+*.gif
+*.png
+*.jpg
