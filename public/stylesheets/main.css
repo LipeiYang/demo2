@@ -25,10 +25,13 @@ td.right
 {
   text-align:right;
 }
-tr.alt
+tr.alter
 {
-  color:#000000;
   background-color:#EAF2D3;
+}
+tr.alert
+{
+  background-color:#FFFF99;
 }
 form.inline
 {

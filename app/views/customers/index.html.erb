@@ -14,7 +14,15 @@
   </tr>
 
 <% @customers.each do |customer| %>
-  <tr>
+  <% if customer.long_time_no_trade? %>
+    <% if customer.unsettle?%>
+      <tr class="alert">
+    <% else %>
+      <tr class="alter">
+    <% end %>
+  <% else %>
+    <tr>
+  <% end %>
     <td><%=h customer.seq_no %></td>
     <td><%=h customer.name %></td>
     <td><%=h customer.cutoff_date %></td>
@@ -32,4 +40,3 @@
 
 <h3><%= t('Total Customers') %>：<%=h @customers.size %></h3>
 <h3><%= t('Total Inreceive') %>：<%=f total_amount_will_receive %></h3>
-
