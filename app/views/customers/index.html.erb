@@ -16,9 +16,9 @@
 <% @customers.each do |customer| %>
   <% if customer.long_time_no_trade? %>
     <% if customer.unsettle?%>
-      <tr class="alert">
+      <tr class="alert" title="大额拖欠且两个月没有订单">
     <% else %>
-      <tr class="alter">
+      <tr class="alter" title="两个月没有订单">
     <% end %>
   <% else %>
     <tr>
