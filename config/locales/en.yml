@@ -137,6 +137,8 @@ en:
         unsettle_amount_after_cutoff: "New Credit"
         received_amount_after_cutoff: "New Receive"
         amount_will_receive: "Outstanding"
+        telph: "Telephone"
+        mobph: "Mobile Phone"
       supplier:
         seq: "Ref No."
         cutoff_date: "Last Settle Date"
@@ -144,6 +146,8 @@ en:
         unsettle_amount_after_cutoff: "New Debt"
         paied_amount_after_cutoff: "New Pay"
         amount_to_pay: "Outstanding"
+        telph: "Telephone"
+        mobph: "Mobile Phone"
       product:
         seq: "Ref No."
         price: "Cost"

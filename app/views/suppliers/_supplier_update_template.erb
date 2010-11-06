@@ -1,10 +1,7 @@
 <% form_for(@supplier) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :seq %><br />
-    <%= f.text_field_hl :seq %>
-  </p>
+  <%= render :partial => "partials/form/update/seq", :locals =>{ :f => f } %>
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -17,6 +14,8 @@
     <%= f.label :unpaied_amount %><br />
     <%= f.text_field_hl :unpaied_amount %>
   </p>
+  <%= render :partial => "partials/form/update/telph", :locals =>{ :f => f } %>
+  <%= render :partial => "partials/form/update/mobph", :locals =>{ :f => f } %>
   <p>
     <%= f.submit_once t(button_label) %>
   </p>

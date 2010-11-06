@@ -1,8 +1,4 @@
-<p>
-  <b><%= Supplier.human_attribute_name(:seq) %>:</b>
-  <%=h @supplier.seq %>
-</p>
-
+<%= render :partial => "partials/show/seq", :locals =>{:o => @supplier} %>
 <p>
   <b><%= Supplier.human_attribute_name(:name) %>:</b>
   <%=h @supplier.name %>
@@ -17,6 +13,8 @@
   <b><%= Supplier.human_attribute_name(:unpaied_amount) %>:</b>
   <%=h @supplier.unpaied_amount %>
 </p>
+<%= render :partial => "partials/show/telph", :locals =>{:o => @supplier} %>
+<%= render :partial => "partials/show/mobph", :locals =>{:o => @supplier} %>
 
 <%= link_to t('Edit'), edit_supplier_path(@supplier) %> |
 <%= link_to t('Back'), suppliers_path %>

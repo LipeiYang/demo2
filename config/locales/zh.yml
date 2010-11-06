@@ -156,6 +156,8 @@ zh:
         unsettle_amount_after_cutoff: "新欠"
         received_amount_after_cutoff: "新收"
         amount_will_receive: "待收"
+        telph: "电话"
+        mobph: "手机"
       supplier:
         seq: "编号"
         name: "姓名"
@@ -164,6 +166,8 @@ zh:
         unsettle_amount_after_cutoff: "新欠"
         paied_amount_after_cutoff: "新付"
         amount_to_pay: "待付"
+        telph: "电话"
+        mobph: "手机"
       product:
         seq: "编号"
         name: "名称"

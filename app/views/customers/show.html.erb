@@ -1,8 +1,4 @@
-<p>
-  <b><%= Customer.human_attribute_name(:seq) %>:</b>
-  <%=h @customer.seq %>
-</p>
-
+<%= render :partial => "partials/show/seq", :locals =>{:o => @customer} %>
 <p>
   <b><%= Customer.human_attribute_name(:name) %>:</b>
   <%=h @customer.name %>
@@ -17,7 +13,8 @@
   <b><%= Customer.human_attribute_name(:inreceive_amount) %>:</b>
   <%=h @customer.inreceive_amount %>
 </p>
-
+<%= render :partial => "partials/show/telph", :locals =>{:o => @customer} %>
+<%= render :partial => "partials/show/mobph", :locals =>{:o => @customer} %>
 
 <%= link_to t('Edit'), edit_customer_path(@customer) %> |
 <%= link_to t('Back'), customers_path %>

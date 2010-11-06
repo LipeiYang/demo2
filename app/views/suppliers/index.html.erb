@@ -11,6 +11,8 @@
     <th><%= Supplier.human_attribute_name(:unsettle_amount_after_cutoff) %></th>
     <th><%= Supplier.human_attribute_name(:paied_amount_after_cutoff) %></th>
     <th><%= Supplier.human_attribute_name(:amount_to_pay) %></th>
+    <th><%= Supplier.human_attribute_name(:telph) %></th>
+    <th><%= Supplier.human_attribute_name(:mobph) %></th>
   </tr>
 
 <% @suppliers.each do |supplier| %>
@@ -22,6 +24,8 @@
     <td class="right"><%=f supplier.unsettle_amount_after_cutoff %></td>
     <td class="right"><%=f supplier.paied_amount_after_cutoff %></td>
     <td class="right"><%=f supplier.amount_to_pay %></td>
+    <td><%=h supplier.telph %></td>
+    <td><%=h supplier.mobph %></td>
     <%= render_edit_link edit_supplier_path(supplier) %>
     <% if supplier.purchases.empty? && supplier.payables.empty?%>
       <%= render_delete_link supplier %>
