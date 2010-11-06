@@ -20,7 +20,6 @@
 <h3><%= t('Administrative Support') %></h3>
 
 <% form_for(@user, :url => update_share_path) do |f| %>
-  <%= f.error_messages %>
   <p>
     <%= f.radio_button :share, true, {:onchange =>"this.form.submit()"}%>
     <%= t('Allow') %>

@@ -2,6 +2,7 @@ class Product < ActiveRecord::Base
   has_many :orders
   has_many :purchases
   
+  validates_length_of :seq, :maximum => 20
   validates_presence_of :name
   validates_uniqueness_of :name
   validates_numericality_of :price

@@ -4,6 +4,7 @@
 
 <table>
   <tr>
+    <th><%= Product.human_attribute_name(:seq) %></th>
     <th><%= Product.human_attribute_name(:name) %></th>
     <th><%= Product.human_attribute_name(:price) %></th>
     <th><%= Product.human_attribute_name(:weighted_cost) %></th>
@@ -11,6 +12,7 @@
 
 <% @products.each do |product| %>
   <tr>
+    <td><%=h product.seq %></td>
     <td><%=h product.name %></td>
     <td class="right"><%=f product.price %></td>
     <td class="right"><%=f product.weighted_cost %></td>

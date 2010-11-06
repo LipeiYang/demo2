@@ -165,6 +165,7 @@ zh:
         paied_amount_after_cutoff: "新付"
         amount_to_pay: "待付"
       product:
+        seq: "编号"
         name: "名称"
         price: "成本价"
         weighted_cost: "参考成本"
@@ -201,5 +202,5 @@ zh:
         blank: "必须填写"
         taken: "不能重名"
         confirmation: "两次输入不一致"
-        too_short: "太短"
-        too_long: "不能超过%{count}位"
+        too_short: "太短，最少%{count}位"
+        too_long: "太长，最多%{count}位"

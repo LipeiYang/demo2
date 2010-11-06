@@ -2,16 +2,16 @@
   <%= f.error_messages %>
 
   <p>
+    <%= f.label :seq %><br />
+    <%= f.text_field_hl :seq %>
+  </p>
+  <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
   <p>
     <%= f.label :price %><br />
-    <%= f.text_field :price %>
-  </p>
-  <p>
-    <%= Product.human_attribute_name(:weighted_cost) %>:
-    <%=f @product.weighted_cost %>
+    <%= f.text_field_hl :price %>
   </p>
   <p>
     <%= f.submit_once t(button_label) %>

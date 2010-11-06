@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
   # GET /products/new.xml
   def new
     @product = Product.new
-
+    @product.seq = get_next_seq(Product)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @product }

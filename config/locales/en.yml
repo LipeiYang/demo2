@@ -145,6 +145,7 @@ en:
         paied_amount_after_cutoff: "New Pay"
         amount_to_pay: "Outstanding"
       product:
+        seq: "Ref No."
         price: "Cost"
         weighted_cost: "Estimate Cost"
       cost_item:
