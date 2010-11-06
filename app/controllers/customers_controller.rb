@@ -2,7 +2,7 @@ class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.xml
   def index
-    @customers = Customer.all :order => 'seq DESC'
+    @customers = Customer.all :order => 'length(seq) DESC, seq DESC'
 
     respond_to do |format|
       format.html # index.html.erb

@@ -2,7 +2,7 @@ class CostItemsController < ApplicationController
   # GET /cost_items
   # GET /cost_items.xml
   def index
-    @cost_items = CostItem.all :order => 'seq DESC'
+    @cost_items = CostItem.all :order => 'length(seq) DESC, seq DESC'
 
     respond_to do |format|
       format.html # index.html.erb

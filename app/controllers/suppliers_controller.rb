@@ -2,7 +2,7 @@ class SuppliersController < ApplicationController
   # GET /suppliers
   # GET /suppliers.xml
   def index
-    @suppliers = Supplier.all :order => 'seq DESC'
+    @suppliers = Supplier.all :order => 'length(seq) DESC, seq DESC'
 
     respond_to do |format|
       format.html # index.html.erb
