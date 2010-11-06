@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <th><%= Supplier.human_attribute_name(:seq_no) %></th>
+    <th><%= Supplier.human_attribute_name(:seq) %></th>
     <th><%= Supplier.human_attribute_name(:name) %></th>
     <th><%= Supplier.human_attribute_name(:cutoff_date) %></th>
     <th><%= Supplier.human_attribute_name(:unpaied_amount) %></th>
@@ -15,7 +15,7 @@
 
 <% @suppliers.each do |supplier| %>
   <tr>
-    <td><%=h supplier.seq_no %></td>
+    <td><%=h supplier.seq %></td>
     <td><%=h supplier.name %></td>
     <td><%=h supplier.cutoff_date %></td>
     <td class="right"><%=f supplier.unpaied_amount %></td>

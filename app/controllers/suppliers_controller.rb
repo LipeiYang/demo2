@@ -2,7 +2,7 @@ class SuppliersController < ApplicationController
   # GET /suppliers
   # GET /suppliers.xml
   def index
-    @suppliers = Supplier.all :order => 'seq_no DESC'
+    @suppliers = Supplier.all :order => 'seq DESC'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,7 +25,7 @@ class SuppliersController < ApplicationController
   # GET /suppliers/new.xml
   def new
     @supplier = Supplier.new
-    @supplier.seq_no = get_next_id(Supplier)
+    @supplier.seq = get_next_seq(Supplier)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @supplier }

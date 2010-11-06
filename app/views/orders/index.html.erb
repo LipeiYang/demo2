@@ -6,7 +6,7 @@
 
 <table>
   <tr>
-    <th><%=h Order.human_attribute_name :seq_no %></th>
+    <th><%=h Order.human_attribute_name :seq %></th>
     <th><%=h Order.human_attribute_name :date %></th>
     <th><%=h Customer.human_name %></th>
     <th><%=h Product.human_name %></th>
@@ -19,7 +19,7 @@
 
 <% @orders.each do |order| %>
   <tr>
-    <td><%=h link_to order.seq_no, order %></td>
+    <td><%=h link_to order.seq, order %></td>
     <td><%=h order.date %></td>
     <td><%=h order.customer.name %></td>
     <td><%=h order.product.name %></td>

@@ -27,7 +27,7 @@ class OrdersController < ApplicationController
   # GET /orders/new.xml
   def new
     @order = Order.new
-    @order.seq_no = get_next_id(Order)
+    @order.seq = get_next_seq(Order)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @order }

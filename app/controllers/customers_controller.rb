@@ -2,7 +2,7 @@ class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.xml
   def index
-    @customers = Customer.all :order => 'seq_no DESC'
+    @customers = Customer.all :order => 'seq DESC'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,7 +25,7 @@ class CustomersController < ApplicationController
   # GET /customers/new.xml
   def new
     @customer = Customer.new
-    @customer.seq_no = get_next_id(Customer)
+    @customer.seq = get_next_seq(Customer)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @customer }

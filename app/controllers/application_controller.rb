@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
 
 
   protected
-    def get_next_id(m)
+    def get_next_seq(m)
       m.last.blank? ? 1 : m.last.id+1
     end
 

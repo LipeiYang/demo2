@@ -3,12 +3,12 @@ class Order < ActiveRecord::Base
   Modules::Scopes::TermCustomer, 
   Modules::Scopes::TermProduct, 
   Modules::Scopes::TermPaied, 
-  Modules::Scopes::SortDateSeqNo
+  Modules::Scopes::SortDateSeq
   
   belongs_to :customer
   belongs_to :product
   
-  validates_numericality_of :seq_no, :only_integer => true, :message=>:not_an_integer
+  validates_length_of :seq, :maximum => 20
   validates_presence_of :customer, :product, :date
   validates_numericality_of :volume, :price, :manfee
 
@@ -17,7 +17,7 @@ class Order < ActiveRecord::Base
     in_customer(criteria.i_customer).
     in_product(criteria.i_product).
     in_pay_status(criteria.s_paid).
-    by_date_seq_no.all
+    by_date_seq.all
   end
   
   def before_save

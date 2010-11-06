@@ -6,7 +6,7 @@
 
 <table>
   <tr>
-    <th><%= Payable.human_attribute_name(:seq_no) %></th>
+    <th><%= Payable.human_attribute_name(:seq) %></th>
     <th><%= Payable.human_attribute_name(:date) %></th>
     <th><%= Supplier.human_name %></th>
     <th><%= Payable.human_attribute_name(:amount) %></th>
@@ -14,7 +14,7 @@
 
 <% @payables.each do |payable| %>
   <tr>
-    <td><%=h payable.seq_no %></td>
+    <td><%=h payable.seq %></td>
     <td><%=h payable.date %></td>
     <td><%=h payable.supplier.name %></td>
     <td class="right"><%=f payable.amount %></td>

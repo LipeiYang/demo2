@@ -6,7 +6,7 @@
 
 <table>
   <tr>
-    <th><%= Purchase.human_attribute_name :seq_no %></th>
+    <th><%= Purchase.human_attribute_name :seq %></th>
     <th><%= Purchase.human_attribute_name :date %></th>
     <th><%= Supplier.human_name %></th>
     <th><%= Product.human_name %></th>
@@ -18,7 +18,7 @@
 
 <% @purchases.each do |purchase| %>
   <tr>
-    <td><%=h purchase.seq_no %></td>
+    <td><%=h purchase.seq %></td>
     <td><%=h purchase.date %></td>
     <td><%=h purchase.supplier.name %></td>
     <td><%=h purchase.product.name %></td>

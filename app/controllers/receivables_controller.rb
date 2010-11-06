@@ -27,7 +27,7 @@ class ReceivablesController < ApplicationController
   # GET /receivables/new.xml
   def new
     @receivable = Receivable.new
-    @receivable.seq_no = get_next_id(Receivable)
+    @receivable.seq = get_next_seq(Receivable)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @receivable }

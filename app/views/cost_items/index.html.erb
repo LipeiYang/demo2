@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <th><%= CostItem.human_attribute_name(:seq_no) %></th>
+    <th><%= CostItem.human_attribute_name(:seq) %></th>
     <th><%= CostItem.human_attribute_name(:name) %></th>
     <th><%= CostItem.human_attribute_name(:period) %></th>
     <th><%= CostItem.human_attribute_name(:price) %></th>
@@ -12,7 +12,7 @@
 
 <% @cost_items.each do |cost_item| %>
   <tr>
-    <td><%=h cost_item.seq_no %></td>
+    <td><%=h cost_item.seq %></td>
     <td><%=h cost_item.name %></td>
     <td><%=h day_to_period[cost_item.period] %></td>
     <td class="right"><%=f cost_item.price %></td>

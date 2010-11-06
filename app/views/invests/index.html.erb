@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <th><%= Invest.human_attribute_name(:seq_no) %></th>
+    <th><%= Invest.human_attribute_name(:seq) %></th>
     <th><%= Invest.human_attribute_name(:date) %></th>
     <th><%= CostItem.human_name %></th>
     <th><%= Invest.human_attribute_name(:amount) %></th>
@@ -12,7 +12,7 @@
 
 <% @invests.each do |invest| %>
   <tr>
-    <td><%=h invest.seq_no %></td>
+    <td><%=h invest.seq %></td>
     <td><%=h invest.date %></td>
     <td><%=h invest.cost_item.name %></td>
     <td class="right"><%=f invest.amount %></td>

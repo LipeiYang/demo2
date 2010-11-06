@@ -6,7 +6,7 @@
 
 <table>
   <tr>
-    <th><%= Receivable.human_attribute_name :seq_no %></th>
+    <th><%= Receivable.human_attribute_name :seq %></th>
     <th><%= Receivable.human_attribute_name :date %></th>
     <th><%= Customer.human_name %></th>
     <th><%= Receivable.human_attribute_name :amount %></th>
@@ -14,7 +14,7 @@
 
 <% @receivables.each do |receivable| %>
   <tr>
-    <td><%=h receivable.seq_no %></td>
+    <td><%=h receivable.seq %></td>
     <td><%=h receivable.date %></td>
     <td><%=h receivable.customer.name %></td>
     <td class="right"><%=f receivable.amount %></td>

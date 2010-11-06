@@ -113,7 +113,7 @@ zh:
       user: "用户"
     attributes:
       order:
-        seq_no: "编号"
+        seq: "编号"
         date: "日期"
         customer: "客户"
         product: "产品"
@@ -128,7 +128,7 @@ zh:
         i_product: "产品"
         s_paid: "已收"
       purchase:
-        seq_no: "编号"
+        seq: "编号"
         date: "日期"
         supplier: "供应商"
         product: "产品"
@@ -141,7 +141,7 @@ zh:
         i_product: "产品"
         s_paid: "已付"
       receivable:
-        seq_no: "编号"
+        seq: "编号"
         date: "日期"
         customer: "客户"
         amount: "金额"
@@ -149,7 +149,7 @@ zh:
         d_to: "到"
         i_customer: "客户"
       customer:
-        seq_no: "编号"
+        seq: "编号"
         name: "姓名"
         cutoff_date: "截止"
         inreceive_amount: "未收"
@@ -157,7 +157,7 @@ zh:
         received_amount_after_cutoff: "新收"
         amount_will_receive: "待收"
       supplier:
-        seq_no: "编号"
+        seq: "编号"
         name: "姓名"
         cutoff_date: "截止"
         unpaied_amount: "未付"
@@ -169,17 +169,17 @@ zh:
         price: "成本价"
         weighted_cost: "参考成本"
       cost_item:
-        seq_no: "编号"
+        seq: "编号"
         name: "名称"
         price: "价格"
         period: "周期"
       invest:
-        seq_no: "编号"
+        seq: "编号"
         date: "日期"
         cost_item: "成本"
         amount: "金额"
       payable:
-        seq_no: "编号"
+        seq: "编号"
         date: "日期"
         supplier: "供应商"
         amount: "金额"       
@@ -202,3 +202,4 @@ zh:
         taken: "不能重名"
         confirmation: "两次输入不一致"
         too_short: "太短"
+        too_long: "不能超过%{count}位"

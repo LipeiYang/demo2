@@ -104,7 +104,7 @@ en:
       invest: "Investment"
     attributes:
       order:
-        seq_no: "Ref No."
+        seq: "Ref No."
         volume: "Quantity"
         manfee: "Processing Charge"
         is_paied: "Paid"
@@ -114,7 +114,7 @@ en:
         i_product: "Product"
         s_paid: "Paid"
       purchase:
-        seq_no: "Ref No."
+        seq: "Ref No."
         volume: "Quantity"
         is_paied: "Paid"
       purchase_filter:
@@ -129,16 +129,16 @@ en:
         d_to: "To"
         i_supplier: "Supplier"
       invest:
-        seq_no: "Ref No."
+        seq: "Ref No."
       customer:
-        seq_no: "Ref No."
+        seq: "Ref No."
         cutoff_date: "Last Settle Date"
         inreceive_amount: "Last Outstanding"
         unsettle_amount_after_cutoff: "New Credit"
         received_amount_after_cutoff: "New Receive"
         amount_will_receive: "Outstanding"
       supplier:
-        seq_no: "Ref No."
+        seq: "Ref No."
         cutoff_date: "Last Settle Date"
         unpaied_amount: "Last Outstanding"
         unsettle_amount_after_cutoff: "New Debt"
@@ -148,7 +148,7 @@ en:
         price: "Cost"
         weighted_cost: "Estimate Cost"
       cost_item:
-        seq_no: "Ref No."
+        seq: "Ref No."
       user:
         password_confirmation: "Password Confirmation"
         

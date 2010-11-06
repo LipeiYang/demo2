@@ -28,7 +28,7 @@ class PayablesController < ApplicationController
   # GET /payables/new.xml
   def new
     @payable = Payable.new
-    @payable.seq_no = get_next_id(Payable)
+    @payable.seq = get_next_seq(Payable)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @payable }

@@ -2,7 +2,7 @@ class Customer < ActiveRecord::Base
   has_many :orders
   has_many :receivables
   
-  validates_numericality_of :seq_no, :only_integer => true, :message=>:not_an_integer
+  validates_length_of :seq, :maximum => 20
   validates_presence_of :name, :cutoff_date
   validates_uniqueness_of :name
   validates_numericality_of :inreceive_amount

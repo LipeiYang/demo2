@@ -2,7 +2,7 @@ class CostItemsController < ApplicationController
   # GET /cost_items
   # GET /cost_items.xml
   def index
-    @cost_items = CostItem.all :order => 'seq_no DESC'
+    @cost_items = CostItem.all :order => 'seq DESC'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,7 +25,7 @@ class CostItemsController < ApplicationController
   # GET /cost_items/new.xml
   def new
     @cost_item = CostItem.new
-    @cost_item.seq_no = get_next_id(CostItem)
+    @cost_item.seq = get_next_seq(CostItem)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @cost_item }
