@@ -16,7 +16,8 @@ class ApplicationController < ActionController::Base
     def catch_exceptions
       begin
         yield
-      rescue
+      rescue Exception => e
+        ::Exceptional::Catcher.handle(e)
         flash[:notice] = t("Exception Message")
         redirect_to(:action => 'index')
       end
