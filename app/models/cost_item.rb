@@ -1,7 +1,7 @@
 class CostItem < ActiveRecord::Base
   has_many :invests
   
-  validates_numericality_of :seq, :only_integer => true, :message=>:not_an_integer
+  validates_length_of :seq, :maximum => 20
   validates_presence_of :name
   validates_uniqueness_of :name
   validates_numericality_of :price
