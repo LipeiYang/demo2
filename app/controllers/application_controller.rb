@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
   filter_parameter_logging :password, :password_confirmation
 
   before_filter :set_locale, :require_user, :set_db_schema, :set_current_user, :store_location
-  after_filter :clear_db_schema
   around_filter :catch_exceptions
   
   protected
@@ -16,10 +15,8 @@ class ApplicationController < ActionController::Base
     def catch_exceptions
       begin
         yield
-      rescue Exception => e
-        ::Exceptional::Catcher.handle(e)
-        flash[:notice] = t("Exception Message")
-        redirect_to(:action => 'index')
+      ensure
+        clear_db_schema
       end
     end
     

@@ -1,6 +1,5 @@
 class AccountController < ApplicationController
   skip_before_filter :set_db_schema, :store_location
-  skip_after_filter :clear_db_schema  
   filter_access_to :all
   
   def edit
