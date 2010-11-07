@@ -11,8 +11,6 @@
     <th><%= Customer.human_attribute_name(:unsettle_amount_after_cutoff) %></th>
     <th><%= Customer.human_attribute_name(:received_amount_after_cutoff) %></th>
     <th><%= Customer.human_attribute_name(:amount_will_receive) %></th>
-    <th><%= Customer.human_attribute_name(:telph) %></th>
-    <th><%= Customer.human_attribute_name(:mobph) %></th>
   </tr>
 
 <% @customers.each do |customer| %>
@@ -32,8 +30,6 @@
     <td class="right"><%=f customer.unsettle_amount_after_cutoff %></td>
     <td class="right"><%=f customer.received_amount_after_cutoff %></td>
     <td class="right"><%=f customer.amount_will_receive %></td>
-    <td><%=h customer.telph %></td>
-    <td><%=h customer.mobph %></td>
     <%= render_edit_link edit_customer_path(customer) %>
     <% if customer.orders.empty? && customer.receivables.empty? %>
       <%= render_delete_link customer %>

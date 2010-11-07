@@ -9,9 +9,19 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_locale, :require_user, :set_db_schema, :set_current_user, :store_location
   after_filter :clear_db_schema
-
-
+  around_filter :catch_exceptions
+  
   protected
+
+    def catch_exceptions
+      begin
+        yield
+      rescue
+        flash[:notice] = t("Exception Message")
+        redirect_to(:action => 'index')
+      end
+    end
+    
     def get_next_seq(m)
       m.last.blank? ? 1 : m.last.id+1
     end

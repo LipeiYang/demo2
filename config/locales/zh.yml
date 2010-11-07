@@ -91,6 +91,7 @@ zh:
   Wenzhou: "温州"
   Hong Kong: "香港"
   Email: "邮箱"
+  Exception Message: "十分抱歉，您的操作未能成功，我们会尽快处理"
   date:
     month_names: [~, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     order: [ :year, :month, :day ]
