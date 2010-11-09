@@ -1,21 +1,29 @@
-<p>
-  <b><%= Product.human_attribute_name(:seq) %>:</b>
-  <%=h @product.seq %>
-</p>
-
-<p>
-  <b><%= Product.human_attribute_name(:name) %>:</b>
-  <%=h @product.name %>
-</p>
-
+<%= render :partial => "partials/show/seq", :locals =>{:o => @product} %>
+<%= render :partial => "partials/show/name", :locals =>{:o => @product} %>
 <p>
   <b><%= Product.human_attribute_name(:price) %>:</b>
   <%=f @product.price %>
 </p>
-
 <p>
   <b><%= Product.human_attribute_name(:weighted_cost) %>:</b>
   <%=f @product.weighted_cost %>
+</p>
+<%= render :partial => "partials/show/cutoff_date", :locals =>{:o => @product} %>
+<p>
+  <b><%= Product.human_attribute_name(:inventory) %>:</b>
+  <%=f @product.inventory %>
+</p>
+<p>
+  <b><%= Product.human_attribute_name(:sell_amount) %>:</b>
+  <%=f @product.sell_amount %>
+</p>
+<p>
+  <b><%= Product.human_attribute_name(:purchase_amount) %>:</b>
+  <%=f @product.purchase_amount %>
+</p>
+<p>
+  <b><%= Product.human_attribute_name(:remain_amount) %>:</b>
+  <%=f @product.remain_amount %>
 </p>
 
 <%= link_to t('Edit'), edit_product_path(@product) %> |

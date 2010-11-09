@@ -2,7 +2,7 @@ class Supplier < ActiveRecord::Base
   has_many :purchases
   has_many :payables
   
-  validates_length_of :seq, :maximum => 20
+  validates_length_of :seq, :name, :maximum => 20
   validates_presence_of :name, :cutoff_date
   validates_uniqueness_of :name
   validates_numericality_of :unpaied_amount

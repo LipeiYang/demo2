@@ -6,6 +6,11 @@
   <tr>
     <th><%= Product.human_attribute_name(:seq) %></th>
     <th><%= Product.human_attribute_name(:name) %></th>
+    <th><%= Product.human_attribute_name(:cutoff_date) %></th>
+    <th><%= Product.human_attribute_name(:inventory) %></th>
+    <th><%= Product.human_attribute_name(:sell_amount) %></th>
+    <th><%= Product.human_attribute_name(:purchase_amount) %></th>
+    <th><%= Product.human_attribute_name(:remain_amount) %></th>
     <th><%= Product.human_attribute_name(:price) %></th>
     <th><%= Product.human_attribute_name(:weighted_cost) %></th>
   </tr>
@@ -14,8 +19,14 @@
   <tr>
     <td><%=h product.seq %></td>
     <td><%=h product.name %></td>
+    <td><%=h product.cutoff_date %></td>
+    <td class="right"><%=f product.inventory %></td>
+    <td class="right"><%=f product.sell_amount %></td>
+    <td class="right"><%=f product.purchase_amount %></td>
+    <td class="right"><%=f product.remain_amount %></td>
     <td class="right"><%=f product.price %></td>
     <td class="right"><%=f product.weighted_cost %></td>
+    <%= render_show_link product %>
     <%= render_edit_link edit_product_path(product) %>
     <% if product.orders.empty? && product.purchases.empty? %>
       <%= render_delete_link product %>

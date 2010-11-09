@@ -1,17 +1,16 @@
 <% form_for(@product) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label :seq %><br />
-    <%= f.text_field_hl :seq %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
+  <%= render :partial => "partials/form/update/seq", :locals =>{ :f => f } %>
+  <%= render :partial => "partials/form/update/name", :locals =>{ :f => f } %>
   <p>
     <%= f.label :price %><br />
     <%= f.text_field_hl :price %>
+  </p>
+  <%= render :partial => "partials/form/update/cutoff_date", :locals =>{ :f => f } %>
+  <p>
+    <%= f.label :inventory %><br />
+    <%= f.text_field_hl :inventory %>
   </p>
   <p>
     <%= f.submit_once t(button_label) %>
