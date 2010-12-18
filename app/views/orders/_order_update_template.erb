@@ -28,8 +28,6 @@
     <% f.fields_for :order_proc_maps do |builder| %>
       <%= render 'order_proc_map_fields', :f => builder %>
     <% end %>
-    <br />
-    <%= f.label :manfee %><%= f.text_field_hl :manfee %>
     <%= f.link_to_add Order.human_attribute_name(:add_proc), :order_proc_maps %>
   </div>
   <p>

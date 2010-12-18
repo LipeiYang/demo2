@@ -127,7 +127,7 @@ zh:
         manfee: "加工"
         total: "合计"
         is_paied: "已收"
-        add_proc: "添加"
+        add_proc: "添加加工"
       order_proc_map:
         num: "件"
         remove: "删除"

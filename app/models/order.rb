@@ -25,9 +25,12 @@ class Order < ActiveRecord::Base
   end
   
   def before_save
-    self.manfee ||= 0
     self.volume ||= 0
     self.price ||= 0
+  end
+  
+  def manfee
+    order_proc_maps.all.sum(&:fee)
   end
   
   def material_fee

@@ -4,4 +4,8 @@ class OrderProcMap < ActiveRecord::Base
   
   validates_presence_of :num
   validates_numericality_of :num
+  
+  def fee
+    proc_type.price*num
+  end
 end

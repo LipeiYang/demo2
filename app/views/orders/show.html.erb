@@ -25,6 +25,11 @@
 <p>
   <b><%=h Order.human_attribute_name :manfee %>:</b>
   <%=f @order.manfee %>
+  <ul>
+  <% @order.order_proc_maps.each do |p| %>
+    <li><%=h p.proc_type.name %><%=h p.num %><%=h OrderProcMap.human_attribute_name :num %></li>
+  <% end %>
+  </ul>
 </p>
 <p>
   <b><%=h Order.human_attribute_name :total %>:</b>

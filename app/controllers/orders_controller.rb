@@ -59,7 +59,8 @@ class OrdersController < ApplicationController
   # PUT /orders/1.xml
   def update
     @order = Order.find(params[:id])
-
+    # for fix nested order_proc_maps update case, if no each loop update_attributes will no update order_proc_maps
+    @order.order_proc_maps.each {}
     respond_to do |format|
       if @order.update_attributes(params[:order])
         format.html { redirect_to(@order, :notice => 'Order was successfully updated.') }
