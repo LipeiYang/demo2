@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :proc_types
+
   map.resources :order_filters, :only => :create
   
   map.resources :purchase_filters, :only => :create

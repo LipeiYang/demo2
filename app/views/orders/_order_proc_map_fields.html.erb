@@ -1,0 +1,8 @@
+<%= f.collection_select(:proc_type_id, ProcType.all(:order=>"name"), :id, :name) %>
+ - 
+<%= f.text_field_hl :num, :size => 1 %>
+<%= f.label :num %> | 
+<!-- <%= f.label :price %>
+<%= f.text_field_hl :price %> -->
+<%= f.link_to_remove OrderProcMap.human_attribute_name(:remove) %>
+<br />

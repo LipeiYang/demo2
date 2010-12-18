@@ -1,0 +1,20 @@
+<% title 'Listing proc_types' %>
+
+<%= render_new_link 'New proc_type', new_proc_type_path %>
+
+<table>
+  <tr>
+    <th><%= ProcType.human_attribute_name(:name) %></th>
+    <th><%= ProcType.human_attribute_name(:price) %></th>
+  </tr>
+
+<% @proc_types.each do |proc_type| %>
+  <tr>
+    <td><%=h proc_type.name %></td>
+    <td class="right"><%=f proc_type.price %></td>
+    <%= render_edit_link edit_proc_type_path(proc_type) %>
+    <%= render_delete_link proc_type %>
+  </tr>
+<% end %>
+</table>
+

@@ -1,0 +1,2 @@
+module ProcTypesHelper
+end

@@ -14,6 +14,7 @@ zh:
   Listing cost_items: "成本列表"
   Listing invests: "支出清单"
   Listing payables: "付款清单"
+  Listing proc_types: "加工列表"
   New order: "添加订单"
   New purchase: "添加进货"
   New receivable: "添加收款"
@@ -23,6 +24,7 @@ zh:
   New cost_item: "添加成本"
   New invest: "添加支出"
   New payable: "添加付款"
+  New proc_type: "添加加工"
   Editing order: "修改订单"
   Editing purchase: "修改进货"
   Editing receivable: "修改收款"
@@ -32,6 +34,7 @@ zh:
   Editing cost_item: "修改成本"
   Editing invest: "修改支出"
   Editing payable: "修改付款"
+  Editing proc_type: "修改加工"
   Show: "查看"
   Edit: "修改"
   Destroy: "删除"
@@ -112,6 +115,7 @@ zh:
       payable: "付款"
       product: "产品"
       user: "用户"
+      proc_type: "加工"
     attributes:
       order:
         seq: "编号"
@@ -120,9 +124,16 @@ zh:
         product: "产品"
         volume: "数量"    
         price: "价格"
-        manfee: "加工费"
+        manfee: "加工"
         total: "合计"
         is_paied: "已收"
+        add_proc: "添加"
+      order_proc_map:
+        num: "件"
+        remove: "删除"
+      proc_type:
+        name: "名称"
+        price: "价格"
       order_filter:
         d_to: "到"
         i_customer: "客户"

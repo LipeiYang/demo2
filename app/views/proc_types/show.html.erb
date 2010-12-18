@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @proc_type.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @proc_type.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_proc_type_path(@proc_type) %> |
+<%= link_to 'Back', proc_types_path %>
