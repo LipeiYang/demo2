@@ -13,7 +13,7 @@
   </tr>
 
 <% @receivables.each do |receivable| %>
-  <tr>
+  <tr jurl="<%= receivable_path(receivable) -%>">
     <td><%=h receivable.seq %></td>
     <td><%=h receivable.date %></td>
     <td><%=h receivable.customer.name %></td>

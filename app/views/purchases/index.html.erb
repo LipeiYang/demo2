@@ -17,7 +17,7 @@
   </tr>
 
 <% @purchases.each do |purchase| %>
-  <tr>
+  <tr jurl="<%= purchase_path(purchase) -%>">
     <td><%=h purchase.seq %></td>
     <td><%=h purchase.date %></td>
     <td><%=h purchase.supplier.name %></td>

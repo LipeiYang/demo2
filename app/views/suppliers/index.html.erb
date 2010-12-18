@@ -14,7 +14,7 @@
   </tr>
 
 <% @suppliers.each do |supplier| %>
-  <tr>
+  <tr jurl="<%= supplier_path(supplier) -%>">
     <td><%=h supplier.seq %></td>
     <td><%=h supplier.name %></td>
     <td><%=h supplier.cutoff_date %></td>
@@ -22,7 +22,6 @@
     <td class="right"><%=f supplier.unsettle_amount_after_cutoff %></td>
     <td class="right"><%=f supplier.paied_amount_after_cutoff %></td>
     <td class="right"><%=f supplier.amount_to_pay %></td>
-    <%= render_show_link supplier %>
     <%= render_edit_link edit_supplier_path(supplier) %>
     <% if supplier.purchases.empty? && supplier.payables.empty?%>
       <%= render_delete_link supplier %>

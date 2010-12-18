@@ -11,7 +11,7 @@
   </tr>
 
 <% @invests.each do |invest| %>
-  <tr>
+  <tr jurl="<%= invest_path(invest) -%>">
     <td><%=h invest.seq %></td>
     <td><%=h invest.date %></td>
     <td><%=h invest.cost_item.name %></td>

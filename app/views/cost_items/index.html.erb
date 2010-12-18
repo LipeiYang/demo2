@@ -11,7 +11,7 @@
   </tr>
 
 <% @cost_items.each do |cost_item| %>
-  <tr>
+  <tr jurl="<%= cost_item_path(cost_item) -%>">
     <td><%=h cost_item.seq %></td>
     <td><%=h cost_item.name %></td>
     <td><%=h day_to_period[cost_item.period] %></td>

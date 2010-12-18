@@ -16,7 +16,7 @@
   </tr>
 
 <% @products.each do |product| %>
-  <tr>
+  <tr jurl="<%= product_path(product) -%>">
     <td><%=h product.seq %></td>
     <td><%=h product.name %></td>
     <td><%=h product.cutoff_date %></td>
