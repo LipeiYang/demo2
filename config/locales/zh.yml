@@ -129,7 +129,9 @@ zh:
         is_paied: "已收"
         add_proc: "添加加工"
       order_proc_map:
-        num: "件"
+        num: "件数"
+        price: "价格"
+        leng: "长度"
         remove: "删除"
       proc_type:
         name: "名称"

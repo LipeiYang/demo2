@@ -10,7 +10,7 @@ class Order < ActiveRecord::Base
 
   has_many :order_proc_maps, :dependent => :destroy
   has_many :proc_types, :through => :order_proc_maps
-  accepts_nested_attributes_for :order_proc_maps, :allow_destroy => true, :reject_if => lambda {|a| a[:num].blank? }
+  accepts_nested_attributes_for :order_proc_maps, :allow_destroy => true
   
   validates_length_of :seq, :maximum => 20
   validates_presence_of :customer, :product, :date

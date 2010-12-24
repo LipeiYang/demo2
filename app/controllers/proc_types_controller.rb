@@ -6,6 +6,7 @@ class ProcTypesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render :json=>@proc_types } 
       format.xml  { render :xml => @proc_types }
     end
   end
@@ -17,6 +18,7 @@ class ProcTypesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
+      format.json { render :json=>@proc_type }
       format.xml  { render :xml => @proc_type }
     end
   end
