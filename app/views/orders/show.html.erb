@@ -27,7 +27,9 @@
   <%=f @order.manfee %>
   <ul>
   <% @order.order_proc_maps.each do |p| %>
-    <li><%=h p.proc_type.name %><%=h p.num %><%=h OrderProcMap.human_attribute_name :num %></li>
+    <li><%=h p.proc_type.name %>
+      <%=h OrderProcMap.human_attribute_name :price %><%=h p.price %>
+      <%=h OrderProcMap.human_attribute_name :num %><%=h p.num %></li>
   <% end %>
   </ul>
 </p>
