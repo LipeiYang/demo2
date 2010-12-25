@@ -15,7 +15,7 @@ if(!procs){
   });
 }
 
-$('form select.proc_select').live('change', function() {
+$('form select.proc_select').live('blur change', function() {
   var i = $(this).val();
   var proc_price_input = $(this).siblings('input.proc_price_input');
   proc_price_input.val(get_proc_price(i));

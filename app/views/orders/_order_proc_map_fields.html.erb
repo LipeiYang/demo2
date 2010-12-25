@@ -1,6 +1,6 @@
 <%= f.collection_select(:proc_type_id, ProcType.list, :id, :name, {}, :class => 'proc_select') %> - 
 <%= f.label :price %>
-<%= f.text_field_hl :price, :size => 1, :class => 'proc_price_input', :value => ProcType.list.first.price %> 
+<%= f.text_field_hl :price, :size => 1, :class => 'proc_price_input' %> 
 <%= f.label :num %>
 <%= f.text_field_hl :num, :size => 1 %> 
 <%= f.label :leng %>

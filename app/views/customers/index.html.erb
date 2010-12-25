@@ -14,23 +14,14 @@
   </tr>
 
 <% @customers.each do |customer| %>
-  <% if customer.long_time_no_trade? %>
-    <% if customer.unsettle?%>
-      <tr class="alert" title="大额拖欠且两个月没有订单">
-    <% else %>
-      <tr class="alter" title="两个月没有订单">
-    <% end %>
-  <% else %>
-    <tr>
-  <% end %>
+  <tr jurl="<%= customer_path(customer) -%>">
     <td><%=h customer.seq %></td>
-    <td><%=h customer.name %></td>
+    <td><%=h customer.name %><%= set_alert customer %></td>
     <td><%=h customer.cutoff_date %></td>
     <td class="right"><%=f customer.inreceive_amount %></td>
     <td class="right"><%=f customer.unsettle_amount_after_cutoff %></td>
     <td class="right"><%=f customer.received_amount_after_cutoff %></td>
     <td class="right"><%=f customer.amount_will_receive %></td>
-    <%= render_show_link customer %>
     <%= render_edit_link edit_customer_path(customer) %>
     <% if customer.orders.empty? && customer.receivables.empty? %>
       <%= render_delete_link customer %>
@@ -38,6 +29,8 @@
   </tr>
 <% end %>
 </table>
+<p><%= customer_idle_html %> 最近两个月没有订单</p>
+<p><%= customer_idle_unsettle_html %> 最近两个月没有订单且有大额拖欠</p>
 
 <h3><%= t('Total Customers') %>：<%=h @customers.size %></h3>
 <h3><%= t('Total Inreceive') %>：<%=f total_amount_will_receive %></h3>
