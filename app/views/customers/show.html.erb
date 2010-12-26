@@ -17,4 +17,7 @@
 <%= render :partial => "partials/show/mobph", :locals =>{:o => @customer} %>
 
 <%= link_to t('Edit'), edit_customer_path(@customer) %> |
+<% if @customer.orders.empty? && @customer.receivables.empty? %>
+<%= link_to(t('Destroy'), @customer, :confirm => t('sure?'), :method => :delete) %> | 
+<% end %>
 <%= link_to t('Back'), customers_path %>

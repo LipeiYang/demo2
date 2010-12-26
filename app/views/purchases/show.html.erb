@@ -31,5 +31,6 @@
   <%=h t("t_#{@purchase.is_paied}") %>
 </p>
 
-<%= link_to t('Edit'), edit_purchase_path(@purchase) %> |
+<%= link_to t('Edit'), edit_purchase_path(@purchase) %> | 
+<%= link_to(t('Destroy'), @purchase, :confirm => t('sure?'), :method => :delete) %> | 
 <%= link_to t('Back'), purchases_path %>

@@ -1,5 +1,6 @@
 <script type="text/javascript" charset="utf-8">
   var proc_types_json_url = '<%=h "#{proc_types_path}.json" -%>'
+  var j_procs = $.parseJSON('<%= ProcType.list.to_json -%>');
 </script>
 <%= javascript_include_tag 'order_proc' %>
 

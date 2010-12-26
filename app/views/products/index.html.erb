@@ -26,11 +26,7 @@
     <td class="right"><%=f product.remain_amount %></td>
     <td class="right"><%=f product.price %></td>
     <td class="right"><%=f product.weighted_cost %></td>
-    <%= render_show_link product %>
     <%= render_edit_link edit_product_path(product) %>
-    <% if product.orders.empty? && product.purchases.empty? %>
-      <%= render_delete_link product %>
-    <% end %>
   </tr>
 <% end %>
 </table>

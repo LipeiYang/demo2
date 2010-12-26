@@ -13,9 +13,6 @@
     <td><%=h proc_type.name %></td>
     <td class="right"><%=f proc_type.price %></td>
     <%= render_edit_link edit_proc_type_path(proc_type) %>
-    <% if proc_type.order_proc_maps.empty? %>
-      <%= render_delete_link proc_type %>
-    <% end %>
   </tr>
 <% end %>
 </table>

@@ -8,5 +8,8 @@
 <%= render :partial => "partials/show/telph", :locals =>{:o => @supplier} %>
 <%= render :partial => "partials/show/mobph", :locals =>{:o => @supplier} %>
 
-<%= link_to t('Edit'), edit_supplier_path(@supplier) %> |
+<%= link_to t('Edit'), edit_supplier_path(@supplier) %> | 
+<% if @supplier.purchases.empty? && @supplier.payables.empty?%>
+<%= link_to(t('Destroy'), @supplier, :confirm => t('sure?'), :method => :delete) %> | 
+<% end %>
 <%= link_to t('Back'), suppliers_path %>

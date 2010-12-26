@@ -19,4 +19,7 @@
 </p>
 
 <%= link_to t('Edit'), edit_cost_item_path(@cost_item) %> |
+<% if @cost_item.invests.empty? %>
+<%= link_to(t('Destroy'), @cost_item, :confirm => t('sure?'), :method => :delete) %> | 
+<% end %>
 <%= link_to t('Back'), cost_items_path %>

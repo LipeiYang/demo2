@@ -17,9 +17,6 @@
     <td><%=h day_to_period[cost_item.period] %></td>
     <td class="right"><%=f cost_item.price %></td>
     <%= render_edit_link edit_cost_item_path(cost_item) %>
-    <% if cost_item.invests.empty? %>
-      <%= render_delete_link cost_item %>
-    <% end %>
   </tr>
 <% end %>
 </table>

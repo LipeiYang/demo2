@@ -20,4 +20,5 @@
 
 
 <%= link_to t('Edit'), edit_invest_path(@invest) %> |
+<%= link_to(t('Destroy'), @invest, :confirm => t('sure?'), :method => :delete) %> | 
 <%= link_to t('Back'), invests_path %>

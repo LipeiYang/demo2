@@ -16,5 +16,6 @@
 </p>
 
 
-<%= link_to t('Edit'), edit_receivable_path(@receivable) %> |
+<%= link_to t('Edit'), edit_receivable_path(@receivable) %> | 
+<%= link_to(t('Destroy'), @receivable, :confirm => t('sure?'), :method => :delete) %> | 
 <%= link_to t('Back'), receivables_path %>

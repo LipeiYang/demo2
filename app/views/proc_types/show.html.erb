@@ -9,5 +9,8 @@
 </p>
 
 
-<%= link_to 'Edit', edit_proc_type_path(@proc_type) %> |
-<%= link_to 'Back', proc_types_path %>
+<%= link_to t('Edit'), edit_proc_type_path(@proc_type) %> | 
+<% if @proc_type.order_proc_maps.empty? %>
+<%= link_to(t('Destroy'), @proc_type, :confirm => t('sure?'), :method => :delete) %> | 
+<% end %>
+<%= link_to t('Back'), proc_types_path %>

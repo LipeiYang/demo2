@@ -23,9 +23,6 @@
     <td class="right"><%=f customer.received_amount_after_cutoff %></td>
     <td class="right"><%=f customer.amount_will_receive %></td>
     <%= render_edit_link edit_customer_path(customer) %>
-    <% if customer.orders.empty? && customer.receivables.empty? %>
-      <%= render_delete_link customer %>
-    <% end %>
   </tr>
 <% end %>
 </table>

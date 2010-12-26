@@ -23,9 +23,6 @@
     <td class="right"><%=f supplier.paied_amount_after_cutoff %></td>
     <td class="right"><%=f supplier.amount_to_pay %></td>
     <%= render_edit_link edit_supplier_path(supplier) %>
-    <% if supplier.purchases.empty? && supplier.payables.empty?%>
-      <%= render_delete_link supplier %>
-    <% end %>
   </tr>
 <% end %>
 </table>

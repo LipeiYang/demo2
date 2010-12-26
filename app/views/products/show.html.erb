@@ -26,5 +26,8 @@
   <%=f @product.remain_amount %>
 </p>
 
-<%= link_to t('Edit'), edit_product_path(@product) %> |
+<%= link_to t('Edit'), edit_product_path(@product) %> | 
+<% if @product.orders.empty? && @product.purchases.empty? %>
+<%= link_to(t('Destroy'), @product, :confirm => t('sure?'), :method => :delete) %> | 
+<% end %>
 <%= link_to t('Back'), products_path %>
