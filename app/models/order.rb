@@ -30,7 +30,11 @@ class Order < ActiveRecord::Base
   end
   
   def manfee
-    order_proc_maps.all.sum(&:fee)
+    if(order_proc_maps.empty?&&(!super.blank?))
+      super
+    else
+      order_proc_maps.all.sum(&:fee)
+    end
   end
   
   def material_fee
