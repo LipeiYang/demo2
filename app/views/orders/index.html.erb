@@ -18,7 +18,6 @@
   </tr>
 
 <% @orders.each do |order| %>
-  <!-- <%= "<tr jurl='#{order_path(order)}'>" %> -->
   <tr jurl="<%= order_path(order) -%>">
     <td><%=h order.seq %></td>
     <td><%=h order.date %></td>
@@ -30,7 +29,6 @@
     <td class="right"><%=f order.total %></td>
     <td><%=h t("t_#{order.is_paied}") %></td>
     <%= render_edit_link edit_order_path(order) %>
-    <%= render_delete_link order %>
   </tr>
 <% end %>
 </table>

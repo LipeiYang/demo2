@@ -10,7 +10,7 @@ function get_proc_price(index) {
 }
 
 if(!procs){
-  $.getJSON('../proc_types.json', function(data){
+  $.getJSON(proc_types_json_url, function(data){
     procs=data;
   });
 }

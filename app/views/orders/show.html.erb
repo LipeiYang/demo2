@@ -41,5 +41,6 @@
   <b><%=h Order.human_attribute_name :is_paied %>:</b>
   <%=h t("t_#{@order.is_paied}") %>
 </p>
-<%= link_to t('Edit'), edit_order_path(@order) %> |
+<%= link_to t('Edit'), edit_order_path(@order) %> | 
+<%= link_to(t('Destroy'), @order, :confirm => t('sure?'), :method => :delete) %> | 
 <%= link_to t('Back'), orders_path %>

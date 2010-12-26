@@ -1,3 +1,6 @@
+<script type="text/javascript" charset="utf-8">
+  var proc_types_json_url = '<%=h "#{proc_types_path}.json" -%>'
+</script>
 <%= javascript_include_tag 'order_proc' %>
 
 <% nested_form_for @order do |f| %>
@@ -40,3 +43,4 @@
     <%= f.submit_once t(button_label) %>
   </p>
 <% end %>  
+

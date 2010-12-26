@@ -2,7 +2,7 @@ class ProcTypesController < ApplicationController
   # GET /proc_types
   # GET /proc_types.xml
   def index
-    @proc_types = ProcType.all
+    @proc_types = ProcType.list
 
     respond_to do |format|
       format.html # index.html.erb

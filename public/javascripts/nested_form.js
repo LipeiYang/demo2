@@ -4,6 +4,11 @@ $(function() {
     var assoc   = $(this).attr('data-association');           // Name of child
     var content = $('#' + assoc + '_fields_blueprint').html(); // Fields template
     
+    //add for proc_maps_price default value, there is space to improve, do not forget
+    var proc_maps_price_tag = "order_order_proc_maps_attributes_new_order_proc_maps_price\"";
+    var proc_maps_price_regexp  = new RegExp(proc_maps_price_tag, 'g');
+    content = content.replace(proc_maps_price_regexp, proc_maps_price_tag+"value=\""+procs[0].proc_type.price+"\"")
+    
     // Make the context correct by replacing new_<parents> with the generated ID
     // of each of the parent objects
     var context = ($(this).parents('.fields').children('input:first').attr('name') || '').replace(new RegExp('[[a-z]+]$'), '');
