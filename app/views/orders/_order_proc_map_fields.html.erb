@@ -1,9 +1,9 @@
 <%= f.collection_select(:proc_type_id, ProcType.list, :id, :name, {}, :class => 'proc_select') %> - 
-<%= f.label :price %>
+<%= f.label :price %>:
 <%= f.text_field_hl :price, :size => 1 %> 
-<%= f.label :num %>
+<%= f.label :num %>:
 <%= f.text_field_hl :num, :size => 1 %> 
-<%= f.label :leng %>
+<%= f.label :leng %>:
 <%= f.text_field_hl :leng, :size => 1 %> - 
 <%= f.link_to_remove OrderProcMap.human_attribute_name(:remove) %>
 <br />
