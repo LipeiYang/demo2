@@ -6,6 +6,6 @@ class OrderProcMap < ActiveRecord::Base
   validates_numericality_of :num, :price
   
   def fee
-    proc_type.price*num
+    price*num
   end
 end
